@@ -1,0 +1,26 @@
+<pre>float x;
+
+float inc;
+
+void setup() {
+  size(400, 400);
+  x = 0;
+  inc = 1;
+}
+
+void draw() {
+  background(255);
+  translate(width/2, height/2);
+  noStroke();
+  fill(255,0,0, 192);
+  ellipse(x,x, 60, 60);
+  fill(0,255,0, 192);
+  ellipse(-x,x, 60, 60);
+  fill(0,0,255, 192);
+  ellipse(x,-x, 60, 60);
+  fill(255,255,0, 192);
+  ellipse(-x,-x, 60, 60);
+  x = x + inc;
+  // reverse direction when we reach the edge
+  if (inc * x > width/2) inc = -inc;
+}</pre>

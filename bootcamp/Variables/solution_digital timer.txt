@@ -1,0 +1,17 @@
+<pre>void setup() {
+  size(400,400);
+}
+
+void draw() {
+  background(255, 255, 153);
+  textSize(40);
+  fill(0);
+  
+  int seconds = frameCount / 60;
+  int minutes = seconds/ 60;
+  int hours = minutes / 60;
+  
+  String timeText = nf(hours,2)+":"+nf(minutes%60,2)+":"+nf(seconds%60,2);
+  textAlign(CENTER);
+  text(timeText, width/2,height/2);
+}  </pre>
