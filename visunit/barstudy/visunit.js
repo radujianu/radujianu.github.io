@@ -27,8 +27,11 @@ function VisUnit(){
      **/
     this.previewTask  = (gui, task, viewer, data, specificInstances = null) => {
         let instances = specificInstances == null ?
-            task.instances.filter (i => i.data == data).map( i => i.instances).flat() :
+            task.instances == null ? [] :
+                task.instances.filter (i => i.data == data).map( i => i.instances).flat() :
             specificInstances;
+        console.log("prev");
+        console.log(data);
         let block = [ { type : "preview", task : task, viewer: viewer, dataset : data,
             instances : instances, duration : 10}];
 
@@ -64,16 +67,11 @@ function VisUnit(){
         if (block.exit == true)
             progress = 100;
 
-
-
         gui.progress.innerHTML = "(" + progress + "% done)";
-
 
         if (block.type == "eval_task" || block.type == "block_task" ||
             block.type == "train" || block.type == "bridge_task" ||
             block.type == "preview"){
-
-
 
             //set up EVAL blocks and get back a 'getResponse' method
             let getResponse = setupEvalBlock(gui, block,
@@ -162,6 +160,7 @@ function VisUnit(){
      helper method for setupBlock
      **/
     function setupEvalBlock(gui, block, instance){
+        console.log("prepping eval block " + block + instance);
 
         let viewer = block.hide_viewer ? null : block.viewer;
 
@@ -169,14 +168,13 @@ function VisUnit(){
         if (viewer != null && viewer.getData() != block.dataset)
             viewer.loadData(block.dataset);
 
-        if (viewer != null)
-            viewer.clearTask();
 
         //make sure the viewer is up to date
         gui.viewer.innerHTML = "";
-       // gui.viewer.appendChild(viewer.draw());
+        if (viewer != null) viewer.draw(gui.viewer);
+
         if (viewer != null)
-            viewer.draw(gui.viewer);
+            viewer.clearTask();
 
         //this is the context of this particular visualisation;
         //it's passed into the accuracy function (and anywhere else?)
@@ -190,8 +188,7 @@ function VisUnit(){
 
 
 
-        if (viewer != null)
-            viewer.clearTask();
+
 
         //create gui outputs/answer options
         gui.answer.innerHTML = "";
@@ -291,7 +288,7 @@ function VisUnit(){
         cell.appendChild(answer);
 
         let viewer = document.createElement("div");
-        viewer.id = "visunitviewerdiv";
+        viewer.setAttribute("id", gui.getAttribute("id") + "_viewer");
         gui.appendChild(viewer);
 
         return {
@@ -372,6 +369,31 @@ function VisUnit(){
             if (typeof t.estimated_duration == "undefined") t.estimated_duration = 30;
         }
     }
+
+
+
+    /** some basic default tasks **/
+    function HTMLViewer() {
+        let data = null;
+        this.loadData = (d) => data = d;
+        this.getData = () => data;
+        this.clearTask = () => {};
+        this.draw = (div) => div.innerHTML = data != null ? data.content : "";
+    }
+    this.tasks = new Object();
+
+    this.tasks.showHTML = (html) => {
+        let ret = {
+            task : { name : "html", question : "",
+                description : "show html content", inputs :  [], outputs : [], instances : []},
+            viewer : new HTMLViewer(),
+            dataset : { name : "html", description : "html content", content : html},
+            showBefore : (b) => { ret.show = "before"; ret.block = b; return ret},
+            showAfter : (b) => { ret.show = "after"; ret.block = b; return ret},
+            exit : () => {ret.exit = true; return ret}};
+        return ret;
+    }
+
 
     /**
      --------------------------------------------------------------------
@@ -729,7 +751,8 @@ function VisUnit(){
                 }
             }
             else{
-                 return null;
+                //console.log("error in studyschedules.js: unrecognized design " + design);
+                return null;
             }
             return newSchedules;
         }

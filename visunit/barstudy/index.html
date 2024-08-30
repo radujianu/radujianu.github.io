@@ -48,6 +48,8 @@
 
         data.map( (d,i) => d.name = "d" + i);
 
+        let visUnit = new VisUnit();
+
         let g = new groupedBars();
         let s = new stackedBars();
 
@@ -105,14 +107,13 @@
           blocking : "vtd", // choose in form below: viewer->task->dataset | viewer -> dataset -> task | ..
 
           block_tasks : [
-            visUnit.tasks.showHTML("This concludes the study. Thank you for participating!")
-                    .showBefore("This is a very simple VisUnit demo study comparing bar charts and stacked bar charts."),
-            visUnit.tasks.showHTML("This concludes the study. Thank you for participating!")
-                          .showAfter("study")
+            visUnit.tasks.showHTML("This is a very simple VisUnit demo study comparing bar charts and stacked bar charts.")
+                    .showBefore("study"),
+            visUnit.tasks.showHTML("This ends the study. Thank you for participating!")
+                          .showAfter("study").exit()
           ]
         });
 
-        let visUnit = new VisUnit();
         let study = visUnit.createStudySchedules(studySpec);
         visUnit.startStudy(document.getElementById("vis"), study[0]);
 
