@@ -89,14 +89,6 @@
                   ]
                 };
 
-        let endTask = {
-          name : "say goodbye",
-          question : "This concludes the study. Thank you for taking part!",
-         // description : "",
-          inputs : [],
-          outputs : []
-        };
-
         let studySpec = ({
           viewers : {
             which : [g,s],
@@ -112,12 +104,12 @@
           },
           blocking : "vtd", // choose in form below: viewer->task->dataset | viewer -> dataset -> task | ..
 
-          block_tasks : [{
-            task : endTask,
-            show : "after",
-            block : "s",
-            viewer : null,
-            exit : true}]
+          block_tasks : [
+            visUnit.tasks.showHTML("This concludes the study. Thank you for participating!")
+                    .showBefore("This is a very simple VisUnit demo study comparing bar charts and stacked bar charts."),
+            visUnit.tasks.showHTML("This concludes the study. Thank you for participating!")
+                          .showAfter("study")
+          ]
         });
 
         let visUnit = new VisUnit();
