@@ -1,0 +1,1442 @@
+[
+  {
+    "referredNodes": [],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "goal_1",
+        "type": "Goal",
+        "label": "Data-driven analysis of COVID-19 social impacts",
+        "source": "analyst",
+        "description": "To understand the social impacts of COVID-19 by analyzing data throughout and after the pandemic.",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          0
+        ]
+      },
+      {
+        "id": "question_1",
+        "type": "Research Question",
+        "label": "Impact of COVID-19 on genders",
+        "source": "analyst",
+        "description": "Investigation into the differential impacts of COVID-19 disease and mitigation policies on men vs. women.",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "question_2",
+        "type": "Research Question",
+        "label": "Impact of COVID-19 policies on social and economic spheres",
+        "source": "analyst",
+        "description": "Explore how COVID-19 mitigation policies adopted by different countries resulted in diverse social and economic changes post-pandemic, such as remote work adoption, global inflation, and potentially rising populism/extremism.",
+        "emphasis": 93,
+        "versions": [],
+        "referred": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "task_1",
+        "type": "Task",
+        "label": "Identify Open COVID-19 Datasets",
+        "source": "analyst",
+        "description": "Discover publicly available datasets relevant for analyzing COVID-19 social impacts, focusing on gender and social-economic aspects. Several high-quality datasets include gender-disaggregated health and social data from Global Health 50/50, UN Women, Data2X, World Bank, EIGE, and IHME. Policy tracking and economic indicators datasets like Oxford COVID-19 Government Response Tracker and World Bank Economic Impact data are also key. Supplementary social media and research corpora include TBCOV and CORD19.",
+        "emphasis": 82,
+        "versions": [],
+        "referred": [
+          0,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "goal_1",
+        "target": "question_1",
+        "label": "investigate"
+      },
+      {
+        "source": "goal_1",
+        "target": "question_2",
+        "label": "investigate"
+      },
+      {
+        "source": "goal_1",
+        "target": "task_1",
+        "label": "requires"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **goal** of the analysis is to conduct a **data-driven evaluation of COVID-19 social impacts** across temporal phases of the pandemic. Two initial **research questions** focus on examining the **impact of COVID-19 on genders** and understanding the **social-economic effects** of mitigation policies. A related **task** is to **identify open datasets** relevant to these questions, suggesting the need for aligned and comprehensive information sources to support the inquiry."
+  },
+  {
+    "referredNodes": [
+      "task_1",
+      "question_1",
+      "question_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "task_1",
+        "description": "Discover publicly available datasets relevant for analyzing COVID-19 social impacts, focusing on gender and social-economic aspects. Several high-quality datasets include gender-disaggregated health and social data from Global Health 50/50, UN Women, Data2X, World Bank, EIGE, and IHME. Policy tracking and economic indicators datasets like Oxford COVID-19 Government Response Tracker and World Bank Economic Impact data are also key. Supplementary social media and research corpora include TBCOV and CORD19.",
+        "emphasis": 80
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "data_1",
+        "type": "Data",
+        "label": "Gender-disaggregated Data",
+        "source": "joint",
+        "description": "Includes datasets like Global Health 50/50, UN Women COVID-19 & Gender Data Hub, Data2X resources, World Bank Gender Data Portal, EIGE Thematic Index, and IHME Gender Equality Impact Estimates.",
+        "emphasis": 81,
+        "versions": [],
+        "referred": [
+          1
+        ]
+      },
+      {
+        "id": "data_2",
+        "type": "Data",
+        "label": "Policy and Economic Indicators",
+        "source": "joint",
+        "description": "Contains datasets such as Oxford COVID-19 Government Response Tracker, Protective Policy Index, Nature’s COVID AMP Dataset, COVID-19 Policy Tracker Aggregator, and World Bank/IMF Economic Impact data.",
+        "emphasis": 82,
+        "versions": [],
+        "referred": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "data_3",
+        "type": "Data",
+        "label": "Social Media & Research Corpora",
+        "source": "joint",
+        "description": "Includes TBCOV for sentiment analysis, Tweet datasets on gendered differences, and CORD19 for academic literature text mining.",
+        "emphasis": 81,
+        "versions": [],
+        "referred": [
+          1
+        ]
+      },
+      {
+        "id": "suggestion_1",
+        "type": "Suggestion",
+        "label": "Data Scope & Hypothesis",
+        "source": "system",
+        "description": "Define the scope and hypothesis for analysis. For gendered health outcomes, combine GH5050 with policy datasets. For socio-economic effects, merge gender survey results with macroeconomic trends.",
+        "emphasis": 81,
+        "versions": [],
+        "referred": [
+          1
+        ]
+      },
+      {
+        "id": "suggestion_2",
+        "type": "Suggestion",
+        "label": "Data Strategies",
+        "source": "system",
+        "description": "Consider geographic focus, align datasets by time frame, clean and merge data with harmonized identifiers, and add a sentiment layer for context.",
+        "emphasis": 81,
+        "versions": [],
+        "referred": [
+          1
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "question_1",
+        "target": "data_1",
+        "label": "answered with"
+      },
+      {
+        "source": "question_2",
+        "target": "data_2",
+        "label": "answered with"
+      },
+      {
+        "source": "task_1",
+        "target": "data_3",
+        "label": "includes"
+      },
+      {
+        "source": "task_1",
+        "target": "suggestion_1",
+        "label": "produce"
+      },
+      {
+        "source": "task_1",
+        "target": "suggestion_2",
+        "label": "produce"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Several **high-quality datasets** have been identified for analyzing COVID-19 social impacts. These datasets include **gender-disaggregated data** resources from Global Health and UN Women, **policy and economic indicator datasets** from Oxford and World Bank, and **social media and research corpora** like TBCOV and CORD19. Two **suggestions** were made concerning data scope and hypothesis definition, geographic focus, aligning datasets by time frame, cleaning and merging data, and augmenting with sentiment analysis. The initial task to identify datasets was updated with these resources and possible strategic directions."
+  },
+  {
+    "referredNodes": [
+      "question_2",
+      "task_1",
+      "data_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "question_2",
+        "description": "Explore how COVID-19 mitigation policies adopted by different countries resulted in diverse social and economic changes post-pandemic, such as remote work adoption, global inflation, and potentially rising populism/extremism.",
+        "emphasis": 90
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "data_4",
+        "type": "Data",
+        "label": "Kaggle COVID-19 Datasets",
+        "source": "system",
+        "description": "A variety of datasets on Kaggle include Impact of COVID-19 on Working Professionals, allowing for remote work adoption analysis through CSV format.",
+        "emphasis": 81,
+        "versions": [],
+        "referred": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "data_5",
+        "type": "Data",
+        "label": "World Bank Inflation Data",
+        "source": "system",
+        "description": "World Bank and OECD databases provide global and country-level inflation data with easy CSV downloads, facilitating understanding of economic trends post-pandemic.",
+        "emphasis": 86,
+        "versions": [],
+        "referred": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "data_6",
+        "type": "Data",
+        "label": "UN Migration and Employment Data",
+        "source": "system",
+        "description": "Includes Canada Open Data on telework statistics and UN migration/employment data, aimed at understanding employment changes in a remote work context post-pandemic.",
+        "emphasis": 81,
+        "versions": [],
+        "referred": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "data_7",
+        "type": "Data",
+        "label": "Populism & Extremism Datasets",
+        "source": "system",
+        "description": "Populism and extremism tracking data from Hedayah, Wikipedia’s COVID-19 protests, and academic insights in CSV formats for political effects analysis post-pandemic.",
+        "emphasis": 79,
+        "versions": [],
+        "referred": [
+          2,
+          3,
+          3,
+          4
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "question_2",
+        "target": "data_4",
+        "label": "answered with"
+      },
+      {
+        "source": "question_2",
+        "target": "data_5",
+        "label": "answered with"
+      },
+      {
+        "source": "question_2",
+        "target": "data_6",
+        "label": "answered with"
+      },
+      {
+        "source": "question_2",
+        "target": "data_7",
+        "label": "answered with"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "To focus on the second **research question** regarding the post-pandemic effects of COVID-19 policies, several **datasets** are proposed: **Kaggle COVID-19 datasets** covering economic indicators and remote work trends; **World Bank inflation data** to study global economic impact; **UN migration and employment data** for examining employment shifts; and datasets tracking **populism and extremism** from political research institutions. These datasets are chosen based on their accessibility and ease of use in formats like CSV and TXT, useful for comprehensive analysis of varied social outcomes."
+  },
+  {
+    "referredNodes": [
+      "question_2",
+      "data_4",
+      "data_5",
+      "data_6",
+      "data_7"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_4",
+        "description": "A variety of datasets on Kaggle include Impact of COVID-19 on Working Professionals, allowing for remote work adoption analysis through CSV format.",
+        "emphasis": 80
+      },
+      {
+        "id": "data_5",
+        "description": "World Bank and OECD databases provide global and country-level inflation data with easy CSV downloads, facilitating understanding of economic trends post-pandemic.",
+        "emphasis": 85
+      },
+      {
+        "id": "data_6",
+        "description": "Includes Canada Open Data on telework statistics and UN migration/employment data, aimed at understanding employment changes in a remote work context post-pandemic.",
+        "emphasis": 80
+      },
+      {
+        "id": "data_7",
+        "description": "Populism and extremism tracking data from Hedayah, Wikipedia’s COVID-19 protests, and academic insights in CSV formats for political effects analysis post-pandemic.",
+        "emphasis": 77
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "data_8",
+        "type": "Data",
+        "label": "Our World in Data and Policy Datasets",
+        "source": "system",
+        "description": "Our World in Data and Google COVID-19 datasets offer comprehensive policy, cases, deaths, and vaccination information in CSV/JSON formats, easing the integration with social-economic datasets.",
+        "emphasis": 92,
+        "versions": [],
+        "referred": [
+          3
+        ]
+      },
+      {
+        "id": "data_9",
+        "type": "Data",
+        "label": "Social & Sentiment Data",
+        "source": "system",
+        "description": "Includes Twitter COVID-19 discourse dataset, CoAID anti-vax Twitter datasets, and COVID-19 vaccine hesitancy tweets, available in CSV/JSON for public sentiment analysis.",
+        "emphasis": 92,
+        "versions": [],
+        "referred": [
+          3
+        ]
+      },
+      {
+        "id": "suggestion_3",
+        "type": "Suggestion",
+        "label": "Data Integration Strategy",
+        "source": "system",
+        "description": "Map policy timelines to outcomes using policy datasets. Merge with socioeconomic data such as inflation and GDP, and augment with social media signals for enriched analysis.",
+        "emphasis": 92,
+        "versions": [],
+        "referred": [
+          3
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "question_2",
+        "target": "data_8",
+        "label": "answered with"
+      },
+      {
+        "source": "question_2",
+        "target": "data_9",
+        "label": "answered with"
+      },
+      {
+        "source": "question_2",
+        "target": "suggestion_3",
+        "label": "explored with"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The exploration of post-pandemic effects of COVID-19 policies is refined with targeted datasets organized by specific topics. **Data on remote work adoption** from Kaggle, **inflation trends** from World Bank and OECD, and **political effects** tracked by Hedayah and Wikipedia provide structured insights. Newly introduced are **Our World in Data and policy datasets** and diverse **social & sentiment data** for sentiment analysis. A **data integration strategy** is suggested, focusing on mapping policy to outcomes while incorporating social-economic and social media insights for a comprehensive understanding."
+  },
+  {
+    "referredNodes": [
+      "question_2",
+      "data_7"
+    ],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "question_3",
+        "type": "Research Question",
+        "label": "Impact of COVID-19 Policies on Populism",
+        "source": "analyst",
+        "description": "Investigate whether COVID-19 mitigation policies resulted in a rise in political populism, and identify potential mechanisms facilitating this change through comparative country policy analysis.",
+        "emphasis": 94,
+        "versions": [],
+        "referred": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "data_10",
+        "type": "Data",
+        "label": "Populism and Political Analysis Datasets",
+        "source": "system",
+        "description": "The PopuList (version 3.0) dataset catalogs European political parties identified as populist, far-right, or far-left from 1989 to 2022. It contains information including country, party name, election year, ideological classification, and vote share percentages. This data aids analyses of political trends and electoral shifts related to populism across Europe, facilitating comparison with mitigation policy timelines.",
+        "emphasis": 96,
+        "versions": [],
+        "referred": [
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          9,
+          14,
+          15,
+          22,
+          23,
+          28,
+          28
+        ]
+      },
+      {
+        "id": "data_11",
+        "type": "Data",
+        "label": "Global COVID-19 Policy Datasets",
+        "source": "system",
+        "description": "OxCGRT provides daily data on COVID-19 mitigation policies across countries and sub-national entities like US states. It encompasses a variety of measures such as school closures and public event cancellations. Data is coded to track policy intensity over time, offering detailed insights into government responses at multiple administrative levels.",
+        "emphasis": 97,
+        "versions": [],
+        "referred": [
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          9,
+          22,
+          23,
+          24,
+          24,
+          25
+        ]
+      },
+      {
+        "id": "data_12",
+        "type": "Data",
+        "label": "Social Media and Public Sentiment Data",
+        "source": "system",
+        "description": "Includes GDELT for global event data on protests and sentiment, and Wikipedia's curated protest datasets, in CSV formats, helping track political sentiment shifts during COVID-19.",
+        "emphasis": 88,
+        "versions": [],
+        "referred": [
+          4,
+          5,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "question_3",
+        "target": "data_10",
+        "label": "investigated with"
+      },
+      {
+        "source": "question_3",
+        "target": "data_11",
+        "label": "investigated with"
+      },
+      {
+        "source": "question_3",
+        "target": "data_12",
+        "label": "investigated with"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "A new **research question** focuses on examining whether COVID-19 mitigation policies contributed to the rise of political populism, using a comparative analysis approach across countries. Specific **datasets** are highlighted to support this inquiry. **Populism and political analysis datasets** provide insights into changing populist dynamics. **Global COVID-19 policy datasets** like those from Oxford and Nature enable analysis of policy stringency. Additionally, **social media and public sentiment datasets** help examine public reactions and populist shifts. These datasets collectively aid in uncovering potential mechanisms linking COVID-19 policies to populist outcomes."
+  },
+  {
+    "referredNodes": [
+      "question_3",
+      "data_10",
+      "data_11",
+      "data_12"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_10",
+        "description": "Includes Global Populism Database, Votes for Populists, and The PopuList, covering political discourse and electoral outcome data by country and period, available in CSV/TSV formats.",
+        "emphasis": 90
+      },
+      {
+        "id": "data_11",
+        "description": "Datasets like OxCGRT and WNTRAC provide daily indicators and details on nonpharmaceutical interventions, enabling analysis of mitigation policy intensity, available in CSV/JSON/TSV formats.",
+        "emphasis": 90
+      },
+      {
+        "id": "data_12",
+        "description": "Includes GDELT for global event data on protests and sentiment, and Wikipedia's curated protest datasets, in CSV formats, helping track political sentiment shifts during COVID-19.",
+        "emphasis": 85
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "data_13",
+        "type": "Data",
+        "label": "Democracy Metrics",
+        "source": "system",
+        "description": "The V-Dem dataset includes over 500 variables, measuring comprehensive political regime attributes worldwide. Key indicators include democratic indices like historic liberal democracy measures, social justice indexes, media freedom, and populism variables like v2pepopul (populist discourse by the executive). Covers countries annually, making it a versatile resource for longitudinal political analysis.",
+        "emphasis": 96,
+        "versions": [],
+        "referred": [
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          9,
+          12,
+          12,
+          13,
+          13,
+          15,
+          16,
+          16,
+          17,
+          22,
+          23,
+          26,
+          26,
+          27
+        ]
+      },
+      {
+        "id": "data_14",
+        "type": "Data",
+        "label": "Contextual Sources and Mechanisms",
+        "source": "system",
+        "description": "Literature data on mechanisms like medical populism and policy compliance challenges, used to support quantitative findings with qualitative case studies.",
+        "emphasis": 95,
+        "versions": [],
+        "referred": [
+          5,
+          10
+        ]
+      },
+      {
+        "id": "suggestion_4",
+        "type": "Suggestion",
+        "label": "Analytical Workflow",
+        "source": "system",
+        "description": "Structure panel datasets with country-time units, compute averages of policy stringency, NPI counts, democracy indicators, and model populist outcomes as policy functions with control variables.",
+        "emphasis": 94,
+        "versions": [],
+        "referred": [
+          5
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "question_3",
+        "target": "data_13",
+        "label": "investigated with"
+      },
+      {
+        "source": "question_3",
+        "target": "data_14",
+        "label": "explored with"
+      },
+      {
+        "source": "question_3",
+        "target": "suggestion_4",
+        "label": "guided by"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The analysis of whether COVID-19 mitigation policies spurred a rise in political populism is complemented by targeted datasets in downloadable formats like CSV and TSV. **Populism measures**  include the Global Populism Database, Votes for Populists, and The PopuList. **Mitigation policy datasets** like OxCGRT and WNTRAC detail intervention intensity. Additional support from **democracy metrics** by VDem and **public sentiment data** from GDELT aids in examining political shifts. An **analytical workflow** is suggested to model these effects over time using country-time panel datasets."
+  },
+  {
+    "referredNodes": [
+      "data_10",
+      "data_11",
+      "data_12",
+      "data_13"
+    ],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "data_15",
+        "type": "Data",
+        "label": "Ranked Ease of Access to Populism Datasets",
+        "source": "system",
+        "description": "Datasets ranked by ease of access: Tier 1 includes Oxford COVID-19 Government Response Tracker, The PopuList, Votes for Populists, Our World in Data, and Wikipedia Protests List, all easily downloadable in CSV/TSV formats without registration or APIs. Tier 2 requires minor cleaning: includes V-Dem and WNTRAC via Zenodo. Tier 3 recommends caution: GDELT's large data and Hedayah's semi-structured formats, primarily for comprehensive but unwieldy use case.",
+        "emphasis": 99,
+        "versions": [],
+        "referred": [
+          6,
+          7
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_10",
+        "target": "data_15",
+        "label": "ranked within"
+      },
+      {
+        "source": "data_11",
+        "target": "data_15",
+        "label": "ranked within"
+      },
+      {
+        "source": "data_12",
+        "target": "data_15",
+        "label": "ranked within"
+      },
+      {
+        "source": "data_13",
+        "target": "data_15",
+        "label": "ranked within"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Datasets used to explore rise in populism due to COVID-19 policies are ranked by ease of accessibility. **The PopuList** and **Votes for Populists** datasets are the easiest to obtain, downloadable as CSV/TSV via direct links. **Global Populism Database** follows, accessible within academic networks. **OxCGRT’s** CSV/JSON data comes next, along with **WNTRAC** data. More complex datasets include **GDELT** and **VDem's** democracy metrics, requiring querying. Finally, contextual sources and **academic case studies** require more effort to gather and compile for analysis."
+  },
+  {
+    "referredNodes": [
+      "data_10",
+      "data_11",
+      "data_12",
+      "data_13"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_15",
+        "description": "Datasets ranked by ease of access: Tier 1 includes Oxford COVID-19 Government Response Tracker, The PopuList, Votes for Populists, Our World in Data, and Wikipedia Protests List, all easily downloadable in CSV/TSV formats without registration or APIs. Tier 2 requires minor cleaning: includes V-Dem and WNTRAC via Zenodo. Tier 3 recommends caution: GDELT's large data and Hedayah's semi-structured formats, primarily for comprehensive but unwieldy use case.",
+        "emphasis": 98
+      }
+    ],
+    "newNodes": [],
+    "newLinks": [],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "A ranked list categorizes datasets on populism analysis by ease of access. **Tier 1** datasets like Oxford, The PopuList, Votes for Populists, Our World in Data, and the Wikipedia Protests List offer direct downloads in CSV/TSV formats. **Tier 2**(V-Dem, WNTRAC) requires minor cleanup, while **Tier 3** datasets (GDELT, Hedayah) involve complex handling but are rich in data. A **quick-start bundle** recommends starting with Tier 1 datasets for fast integration, with optional additions, facilitating smoother data handling and quicker analysis."
+  },
+  {
+    "referredNodes": [
+      "data_11",
+      "data_10",
+      "data_13"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_11",
+        "description": "The Oxford COVID-19 Government Response Tracker (OxCGRT) provides daily, country-specific data on government policy responses including closures, economic policies, and health measures. It compiles stringency indices and other indicators to assess the strictness of government measures globally. All data are available for download in CSV and JSON formats.",
+        "emphasis": 95
+      },
+      {
+        "id": "data_10",
+        "description": "The PopuList and Votes for Populists datasets contain comprehensive electoral data for populist parties across Europe. The PopuList provides metadata and vote shares from 1989 to 2022, available via OSF as CSV/TSV. Votes for Populists offers cleaned, downloadable CSV files from Stanford’s repository, detailing populist vote shares up to 2023.",
+        "emphasis": 95
+      },
+      {
+        "id": "data_13",
+        "description": "The V-Dem dataset (Varieties of Democracy) offers over 500 indicators, including detailed measures of polarization, media freedom, and democratic backsliding. It requires a quick email registration and is available for CSV download. While rich and insightful, its large size necessitates thoughtful filtering and handling.",
+        "emphasis": 93
+      }
+    ],
+    "newNodes": [],
+    "newLinks": [],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **Oxford COVID-19 Government Response Tracker** provides global, daily policy response data in CSV and JSON formats, ideal for modeling national response strictness. The **PopuList and Votes for Populists** datasets cover electoral outcomes for populist parties across Europe, with detailed metadata and vote shares available through CSV/TSV downloads, and **V-Dem** offers rigorous democracy metrics with over 500 indicators downloadable post-registration in CSV format, perfect for analyzing political system distress, though large in size."
+  },
+  {
+    "referredNodes": [
+      "data_11",
+      "data_10",
+      "data_13"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_11",
+        "description": "OxCGRT provides daily-coded COVID-19 mitigation policies across ~180 countries, available as CSV. Key variables include various policy indices and flags like school closures and stay-at-home orders, by country and date.",
+        "emphasis": 95
+      },
+      {
+        "id": "data_10",
+        "description": "The PopuList dataset lists European political parties by ideology with vote shares per election from 1989–2022. It’s available in TSV/CSV format, including party metadata, classification (populist, far-right, far-left) and electoral data.",
+        "emphasis": 95
+      },
+      {
+        "id": "data_13",
+        "description": "VDem offers a comprehensive set of political regime indicators with over 500 democracy-focused metrics. Available in CSV upon registration, it includes data on polarization, freedom of expression, and autocratization, formatted by country and year.",
+        "emphasis": 93
+      }
+    ],
+    "newNodes": [],
+    "newLinks": [],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Detailed information about selected datasets is provided: **OxCGRT** offers daily-coded policy data across ~180 countries, downloadable as CSV with multiple policy indices. The **PopuList** database, available in TSV/CSV, details European parties by ideology and electoral vote shares. **VDem** provides CSV data on democracy indicators and regime analysis following registration. These datasets together can be used for advanced analysis linking COVID-19 policy severity to shifts in populist support and political norms, employing techniques like panel regression or difference-in-differences."
+  },
+  {
+    "referredNodes": [
+      "data_14"
+    ],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "finding_1",
+        "type": "Finding",
+        "label": "Existing Research on COVID-19 Policies and Populism",
+        "source": "joint",
+        "description": "Several academic studies and reports analyze the impact of COVID-19 policies on political populism. Key findings include the use of 'medical populism,' which involves minimizing risks, politicizing science, and dramatizing political responses to deepen distrust and polarize discourse. Notable works include Lasco's examination of medical populism in various countries and reports that highlight the exploitation of the pandemic by populist leaders to erode trust in science and public compliance.",
+        "emphasis": 91,
+        "versions": [],
+        "referred": [
+          10,
+          11,
+          11
+        ]
+      },
+      {
+        "id": "suggestion_5",
+        "type": "Suggestion",
+        "label": "Specific Papers and Reports",
+        "source": "system",
+        "description": "Explore works by International IDEA on democratic backsliding during COVID-19, peer-reviewed articles in journals like 'Political Geography' on pandemic policy effects, and reports from Pew Research on political sentiment shifts. While comprehensive overviews are available, links typically require institution access or purchase. Previews and abstracts often accessible through platforms like Google Scholar.",
+        "emphasis": 100,
+        "versions": [],
+        "referred": [
+          10,
+          11
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_14",
+        "target": "finding_1",
+        "label": "related to"
+      },
+      {
+        "source": "finding_1",
+        "target": "suggestion_5",
+        "label": "includes"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Existing **findings** on the connection between COVID-19 policies and populism highlight how harsh lockdown measures can elevate populist and anti-establishment rhetoric and how inconsistent policy responses may heighten political polarization. Concepts like 'medical populism' are studied to understand how pandemic minimizations by leaders fuel distrust. **Suggestions for further exploration** include works from International IDEA, peer-reviewed journal articles in thematic fields, and Pew Research reports. Papers typically require institutional access; however, abstracts or previews are generally accessible on platforms like Google Scholar."
+  },
+  {
+    "referredNodes": [
+      "finding_1",
+      "suggestion_5"
+    ],
+    "updatedNodes": [
+      {
+        "id": "finding_1",
+        "description": "Several academic studies and reports analyze the impact of COVID-19 policies on political populism. Key findings include the use of 'medical populism,' which involves minimizing risks, politicizing science, and dramatizing political responses to deepen distrust and polarize discourse. Notable works include Lasco's examination of medical populism in various countries and reports that highlight the exploitation of the pandemic by populist leaders to erode trust in science and public compliance.",
+        "emphasis": 90
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "finding_2",
+        "type": "Finding",
+        "label": "Recent Mechanisms of Populism during the Pandemic",
+        "source": "joint",
+        "description": "Mechanisms identified in recent studies include politicization of science, simplification and spectacle of crises, increased distrust and non-compliance with health policies, leveraging pandemic for power consolidation, and construction of polarized identities. These strategies are reinforced by populist narratives in studies from Time, and papers by Hedges, Lasco, and Uluşahin.",
+        "emphasis": 100,
+        "versions": [],
+        "referred": [
+          11
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_1",
+        "target": "finding_2",
+        "label": "illustrated by"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Numerous studies explore the influence of **COVID-19 mitigation policies** on political populism. **Findings** highlight the role of 'medical populism', where risks are minimized and science politicized to polarize public opinion. Examples from **Lasco** and **Hedges** illustrate how populist rhetoric influenced public distrust and policy compliance, with strategies such as science politicization and crisis dramatization. To contextualize, further readings from **Gerbaudo** and **Lasco & Persson** elaborate on the moral framing of public health battles. Key mechanisms identified include trust erosion and power consolidation during the pandemic."
+  },
+  {
+    "referredNodes": [
+      "data_13"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_13",
+        "description": "The V-Dem dataset provides a vast array of political regime indicators, including up-to-date metrics on democratization, polarization, and freedom. Its annual updates typically cover data up to the previous year or current period, ensuring it remains relevant for pre/post-COVID comparative analysis. However, users should verify the most recent data release to ensure alignment with study timelines.",
+        "emphasis": 92
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "concern_1",
+        "type": "Insight",
+        "label": "V-Dem Data Currency Concern",
+        "source": "analyst",
+        "description": "With V-Dem data only extending to 2023 (or up to 2024 as of the latest version), the dataset offers limited insight into long-term populism trends following COVID-19. This timeframe may not adequately capture extended political shifts driven by pandemic policies.",
+        "emphasis": 92,
+        "versions": [],
+        "referred": [
+          12,
+          13,
+          13,
+          16,
+          17,
+          17,
+          20
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_13",
+        "target": "concern_1",
+        "label": "addresses"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The V-Dem dataset is generally up-to-date with annual releases covering recent political indicators, crucial for a robust pre/post-COVID comparative analysis. **Concern** arises on its data currency for COVID context, urging verification of the latest dataset to ensure the included indicators cover the desired periods. The V-Dem dataset frequently updates to incorporate insights from recent years, addressing gaps in temporal coverage when conducting analyses."
+  },
+  {
+    "referredNodes": [
+      "data_13",
+      "concern_1"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_13",
+        "description": "The V-Dem dataset is updated annually, with the latest version (15) released in March 2025, covering data through 2024. It offers robust support for pre-COVID and post-COVID comparative analysis, with diverse democracy and populism indicators extending from 1789 through 2024. This makes it suitable for examining shifts in political landscapes relative to the pandemic.",
+        "emphasis": 95
+      },
+      {
+        "id": "concern_1",
+        "description": "Verified the recency of V-Dem data: the latest release covers up to 2024, fully supporting comparative studies pre- and post-COVID, addressing earlier concerns about data currency and relevance.",
+        "emphasis": 85
+      }
+    ],
+    "newNodes": [],
+    "newLinks": [],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The V-Dem dataset, with its latest release covering data through 2024, provides comprehensive support for pre- and post-COVID analyses. It contains extensive political indicators for cross-period comparisons, specifically suited for examining populism and democracy. The earlier **concern** regarding data currency is addressed, confirming its applicability for studying political trends throughout the pandemic era and beyond. It remains a crucial resource for evaluating the impacts of COVID-19 policies over time."
+  },
+  {
+    "referredNodes": [
+      "data_10"
+    ],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "problem_1",
+        "type": "Insight",
+        "label": "Broken Link for PopuList TSV Download",
+        "source": "analyst",
+        "description": "The TSV link for The PopuList dataset may be outdated or relocated on OSF. Alternatives include accessing the main OSF project page for updates or leveraging the Global Populism Database as a replacement. V-Dem's v2pepopul indicator provides current data to assess populist discourse.",
+        "emphasis": 85,
+        "versions": [],
+        "referred": [
+          14,
+          15,
+          15,
+          16,
+          21
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_10",
+        "target": "problem_1",
+        "label": "affected by"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "An issue has been identified concerning The PopuList dataset where the direct TSV link is not functional. The problem impacts access to the downloadable file via the OSF repository, indicating a need to verify the link or explore alternative access methods to obtain the data. Further checks may be needed to regain access and conduct analysis using this dataset."
+  },
+  {
+    "referredNodes": [
+      "problem_1",
+      "data_10",
+      "data_13"
+    ],
+    "updatedNodes": [
+      {
+        "id": "problem_1",
+        "description": "The TSV link for The PopuList dataset may be outdated or relocated on OSF. Alternatives include accessing the main OSF project page for updates or leveraging the Global Populism Database as a replacement. V-Dem's v2pepopul indicator provides current data to assess populist discourse.",
+        "emphasis": 82
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_6",
+        "type": "Suggestion",
+        "label": "Alternative Access to Populism Data",
+        "source": "system",
+        "description": "For populism research, consider VDem's v2pepopul indicator as it is current and easy to access. Also, the Global Populism Database on Harvard Dataverse provides CSV data on executive discourse as an alternative. These options can supplement The PopuList data until the TSV link issue is resolved.",
+        "emphasis": 100,
+        "versions": [],
+        "referred": [
+          15
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "problem_1",
+        "target": "suggestion_6",
+        "label": "leads to"
+      },
+      {
+        "source": "data_10",
+        "target": "suggestion_6",
+        "label": "supplements"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The direct TSV link for **The PopuList** appears to be non-functional, prompting alternative approaches for accessing populism data. Users are advised to check the OSF repository for updates, or utilize other datasets like **VDem's v2pepopul** and the **Global Populism Database** on Harvard Dataverse. These options provide comprehensive populism measures and discourse data analysis up to 2024, suitable for ongoing studies of political trends relative to COVID-19 impacts."
+  },
+  {
+    "referredNodes": [
+      "data_13",
+      "problem_1"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_13",
+        "description": "The V-Dem dataset includes data up to 2023, offering numerous indicators for political regime analysis, but it may not capture long-term post-COVID effects given the limited timeframe since the pandemic's peak.",
+        "emphasis": 92
+      },
+      {
+        "id": "concern_1",
+        "description": "V-Dem data currently extends through 2023, which may be insufficient for observing extended post-COVID effects. Analysts need to consider supplemental or future datasets to capture longer-term populism trends.",
+        "emphasis": 88
+      }
+    ],
+    "newNodes": [],
+    "newLinks": [
+      {
+        "source": "data_13",
+        "target": "concern_1",
+        "label": "does not address"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Upon verification, the **V-Dem dataset** includes data through 2023. While this grants extensive analysis capabilities for COVID-19 era effects, it may not fully capture long-term post-pandemic trends in political populism. Analysts should consider utilizing supplemental datasets, anticipating future updates, or developing methodologies that adjust for limited data timeframes to assess ongoing political shifts."
+  },
+  {
+    "referredNodes": [
+      "data_13",
+      "concern_1"
+    ],
+    "updatedNodes": [
+      {
+        "id": "concern_1",
+        "description": "With V-Dem data only extending to 2023 (or up to 2024 as of the latest version), the dataset offers limited insight into long-term populism trends following COVID-19. This timeframe may not adequately capture extended political shifts driven by pandemic policies.",
+        "emphasis": 90
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_7",
+        "type": "Suggestion",
+        "label": "Strategies for Analyzing Early Populism Trends",
+        "source": "system",
+        "description": "Utilize country-date V-Dem data for monthly measures through 2024 to capture early shifts. Supplement with databases like GDELT or anti-lockdown protest data to observe interim populism proxies. Monitor for earlier subnational electoral events. Plan revisiting around key post-COVID election cycles projected for 2025-2026.",
+        "emphasis": 100,
+        "versions": [],
+        "referred": [
+          17
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "concern_1",
+        "target": "suggestion_7",
+        "label": "addresses"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Though V-Dem data runs through 2023, with the latest version extending to 2024, this short post-COVID timeframe may not fully assess extended populist shifts. To address this, **suggested strategies** include leveraging monthly country-date data, using interim proxies like GDELT sentiment changes, and focusing on earlier subnational elections to discern early patterns. Plans to revisit key election periods post-2024 can help track more definitive trends."
+  },
+  {
+    "referredNodes": [],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "data_16",
+        "type": "Data",
+        "label": "European Social Survey (ESS)",
+        "source": "joint",
+        "description": "ESS Round 11 (2023-24) is currently the most relevant for post-pandemic analysis, capturing early changes in political trust and institutions but not the full populism/technocracy module planned for Round 12 in 2025-26. This round complements ongoing analysis and merges with data like V-Dem for mid-term insights.",
+        "emphasis": 96,
+        "versions": [],
+        "referred": [
+          18,
+          19,
+          19,
+          20,
+          20,
+          21,
+          21,
+          22,
+          23
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "question_3",
+        "target": "data_16",
+        "label": "explored with"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **European Social Survey (ESS)** offers useful bi-annual data for exploring social and political patterns across European countries, which include measures of trust, political engagement, and social norms shifts during and after the COVID-19 pandemic. It is well-suited for examining changes in political sentiment, institutional trust, and identifying early signs of populism influenced by pandemic-driven socio-political dynamics."
+  },
+  {
+    "referredNodes": [
+      "data_16"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_16",
+        "description": "The European Social Survey (ESS) provides cross-national data on attitudes towards government and science, populist sentiments, and COVID-19 induced conspiracy beliefs. Round 10 (2020-2021) focuses on trust in government and compliance, while Round 12 (2024) includes a 'Populism and Technocracy' module. These datasets are crucial for examining correlations between COVID measures, mistrust, populist attitudes, and their subsequent political impacts.",
+        "emphasis": 95
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_8",
+        "type": "Suggestion",
+        "label": "Analytical Use of ESS Data",
+        "source": "system",
+        "description": "ESS data from Rounds 10 and 12 are suited for empirical analysis of how trust, conspiracy beliefs related to COVID-19, and support for populism correlate.; integration with OxCGRT data can test models linking pandemic policies to cognitive shifts in public sentiment.",
+        "emphasis": 100,
+        "versions": [],
+        "referred": [
+          19
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_16",
+        "target": "suggestion_8",
+        "label": "supports"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **European Social Survey (ESS)** offers insights into the mechanisms connecting **COVID-19 policies** to **populist sentiment**. **Round 10** data includes trust and conspiracy beliefs, vital for understanding cognitive pathways from pandemic measures to populist attitudes. Meanwhile, **Round 12** investigates these attitudes through practical modules. These datasets allow for an analytical approach using cross-national trust metrics, conspiracy beliefs, and populism measures, with potential integration opportunities with OxCGRT to develop models on pandemic influence."
+  },
+  {
+    "referredNodes": [
+      "data_16",
+      "concern_1"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_16",
+        "description": "The European Social Survey (ESS) Round 10, conducted in 2020-2021, provides data on trust and compliance during the pandemic but offers limited insights for post-pandemic analyses. Round 12, expected in 2024, includes a 'Populism and Technocracy' module, providing more reliable post-COVID attitudinal data to analyze longer-term impacts on populist sentiments.",
+        "emphasis": 93
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "concern_2",
+        "type": "Insight",
+        "label": "ESS Round 10 Data Currency Concern",
+        "source": "analyst",
+        "description": "Given the upcoming Round 12 of ESS for populist attitudes, current analysis relies on data up to Round 11 (2023-24), until the complete post-pandemic period outcome can be analyzed with future data.",
+        "emphasis": 91,
+        "versions": [],
+        "referred": [
+          20,
+          21,
+          21
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_16",
+        "target": "concern_2",
+        "label": "leaseds to"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **European Social Survey (ESS)** provides crucial data, but **Round 10** (2020-2021), while insightful for in-pandemic analysis, may not offer sufficient post-pandemic insights. **Round 12 (2024)** is better suited to capture the longer-term impact of pandemic policies on populist attitudes. **Concerns** about the currency of earlier rounds suggest Round 12's relevance for analyzing recent ideological trends."
+  },
+  {
+    "referredNodes": [
+      "data_16",
+      "problem_1",
+      "concern_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_16",
+        "description": "ESS Round 11 (2023-24) is currently the most relevant for post-pandemic analysis, capturing early changes in political trust and institutions but not the full populism/technocracy module planned for Round 12 in 2025-26. This round complements ongoing analysis and merges with data like V-Dem for mid-term insights.",
+        "emphasis": 93
+      },
+      {
+        "id": "concern_2",
+        "description": "Given the upcoming Round 12 of ESS for populist attitudes, current analysis relies on data up to Round 11 (2023-24), until the complete post-pandemic period outcome can be analyzed with future data.",
+        "emphasis": 90
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_9",
+        "type": "Suggestion",
+        "label": "Utilizing Current ESS Data",
+        "source": "system",
+        "description": "Leverage ESS Round 11 (2023-24) for insights into early post-pandemic socio-political trends. Integrate with other datasets like V-Dem and OxCGRT for comprehensive analysis. Plan to incorporate Round 12 data in 2026 as it becomes available.",
+        "emphasis": 100,
+        "versions": [],
+        "referred": [
+          21
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_16",
+        "target": "suggestion_9",
+        "label": "utilized with"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Current **ESS Round 11 data (2023-24)** offers immediate opportunities for analyzing early post-pandemic socio-political trends. It includes political trust and institutions metrics, useful in current comparative analysis frameworks. **Round 12**, yet to be conducted, will provide future insight on populism, reinforcing longer-term analysis plans. **Suggestions** involve integrating ESS with datasets like V-Dem for holistic evaluations until Round 12 data emerges, expected in 2026."
+  },
+  {
+    "referredNodes": [
+      "data_10",
+      "data_11",
+      "data_13",
+      "data_16"
+    ],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "task_2",
+        "type": "Task",
+        "label": "Prepare Datasets for Analysis",
+        "source": "analyst",
+        "description": "Download and prepare datasets: V-Dem for democratic indices, OxCGRT for COVID policy responses, The PopuList for populist party data, and eventually ESS Round 11 for socio-political attitudes. Unpack, clean, and organize these data files for subsequent analytical steps.",
+        "emphasis": 104,
+        "versions": [],
+        "referred": [
+          22,
+          23,
+          25,
+          26,
+          28
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_2",
+        "target": "data_13",
+        "label": "includes"
+      },
+      {
+        "source": "task_2",
+        "target": "data_11",
+        "label": "includes"
+      },
+      {
+        "source": "task_2",
+        "target": "data_10",
+        "label": "includes"
+      },
+      {
+        "source": "task_2",
+        "target": "data_16",
+        "label": "planned includes"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "With access to V-Dem, OxCGRT, and The PopuList datasets, and plans to acquire ESS Round 11 data later, the next **task** is preparing these datasets for analysis. This involves downloading, cleaning, and organizing files to align their structures and ensure compatibility in forthcoming analytical procedures. The preparation phase sets the foundation for a comprehensive evaluation of post-COVID political trends and populism."
+  },
+  {
+    "referredNodes": [
+      "data_10",
+      "data_11",
+      "data_13",
+      "data_16",
+      "task_2"
+    ],
+    "updatedNodes": [],
+    "newNodes": [
+      {
+        "id": "suggestion_10",
+        "type": "Suggestion",
+        "label": "Steps After Data Preparation",
+        "source": "system",
+        "description": "Following data preparation, begin aligning datasets by country identifiers and time formats. Merge them into a unified panel (country-year or country-month). Develop derived variables such as annual policy stringency or populist discourse shifts. Then, proceed with visualizations to explore trends and perform statistical modeling, such as panel regressions, to investigate relationships.",
+        "emphasis": 102,
+        "versions": [],
+        "referred": [
+          23,
+          25
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_2",
+        "target": "suggestion_10",
+        "label": "leads to"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "Upon preparing and unpacking the datasets (V-Dem, OxCGRT, and The PopuList, plus ESS Round 11), the next **steps** involve data alignment and merging into a country-level panel. Potential **analyses** include generating variables like annual stringency or change in populist rhetoric, and employing visualization and statistical modeling techniques to unpack the impacts of COVID-19 policies on political populism and trust. This post-preparation guide sets the stage for exploring emerging political trends crisply."
+  },
+  {
+    "referredNodes": [
+      "data_11"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_11",
+        "description": "OxCGRT provides daily data on COVID-19 mitigation policies across countries and sub-national entities like US states. It encompasses a variety of measures such as school closures and public event cancellations. Data is coded to track policy intensity over time, offering detailed insights into government responses at multiple administrative levels.",
+        "emphasis": 95
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "insight_1",
+        "type": "Insight",
+        "label": "Structure of OxCGRT Dataset",
+        "source": "joint",
+        "description": "The OxCGRT dataset offers a detailed timeline of COVID policies at daily intervals for countries and sub-national entities like US states. Key features include policy indicators, composite indices (e.g., StringencyIndex), and structured data for aggregating and comparing policy impacts over time.",
+        "emphasis": 93,
+        "versions": [],
+        "referred": [
+          24,
+          25
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_11",
+        "target": "insight_1",
+        "label": "described by"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **OxCGRT dataset** describes COVID-19 policy responses across countries and sub-national jurisdictions, such as US states. It provides a timeline and intensity coding of measures including school closures and public event cancellations. This structure allows for in-depth analysis of how pandemic responses varied across administrative levels. The dataset is geared towards capturing the dynamic landscape of government interventions during the pandemic."
+  },
+  {
+    "referredNodes": [
+      "data_11",
+      "suggestion_10",
+      "task_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "insight_1",
+        "description": "The OxCGRT dataset offers a detailed timeline of COVID policies at daily intervals for countries and sub-national entities like US states. Key features include policy indicators, composite indices (e.g., StringencyIndex), and structured data for aggregating and comparing policy impacts over time.",
+        "emphasis": 92
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "guide_1",
+        "type": "Suggestion",
+        "label": "Guide to Exploring OxCGRT Data",
+        "source": "system",
+        "description": "Use OxCGRT for constructing country-level COVID policy timelines. Focus on daily-to-monthly aggregation of indices, policy timelines comparison, and sub-national analyses. Align with VDem and populism data using CountryCode + Date/Year keys. Initial steps include determining aggregation level and identifying core policies for tracking.",
+        "emphasis": 102,
+        "versions": [],
+        "referred": [
+          25
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_11",
+        "target": "guide_1",
+        "label": "explained with"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **OxCGRT dataset** is positioned to construct detailed COVID mitigation policy timelines. It contains daily data for countries and sub-national units, with key indicators and composite indices. A **guide** for exploration includes aggregating data, comparing country timelines, and sub-national analysis, which can be aligned with VDem and populism data for broader analytical insights. Initial examinations should focus on policy severity indices and integration with other datasets."
+  },
+  {
+    "referredNodes": [
+      "data_13",
+      "task_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_13",
+        "description": "The V-Dem dataset includes over 500 variables, measuring comprehensive political regime attributes worldwide. Key indicators include democratic indices like historic liberal democracy measures, social justice indexes, media freedom, and populism variables like v2pepopul (populist discourse by the executive). Covers countries annually, making it a versatile resource for longitudinal political analysis.",
+        "emphasis": 94
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "insight_2",
+        "type": "Insight",
+        "label": "Core Variables in V-Dem Dataset",
+        "source": "joint",
+        "description": "V-Dem's dataset structure includes high-level democracy indices (such as Electoral, Liberal, Deliberative, Participatory, and Egalitarian Democracy), mid-level sub-indices like judicial independence and media freedoms, and detailed low-level indicators across elections, political parties, executive power, civil society, judiciary, media regulation, and policy on exclusion and inequality. A special section of COVID-19-related variables tracks restrictions and rights limitations unique to the pandemic. These elements offer extensive flexibility for tracking political changes longitudinally, useful for detailed analysis of democracy and populist discourse, e.g., v2pepopul, v2x_liberal.",
+        "emphasis": 96,
+        "versions": [],
+        "referred": [
+          26,
+          27,
+          27
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_13",
+        "target": "insight_2",
+        "label": "detailed by"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The **V-Dem dataset** comprises a rich array of over 500 variables assessing political regime characteristics worldwide. Noteworthy variables include democratic indices (encompassing liberal, participative, and deliberative aspects), media freedom, social polarization, and populism (v2pepopul). These indicators provide a foundational basis for examining political trends longitudinally, particularly useful for assessing shifts in political discourse and regime dynamics pre- and post-COVID."
+  },
+  {
+    "referredNodes": [
+      "data_13",
+      "insight_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "insight_2",
+        "description": "V-Dem's dataset structure includes high-level democracy indices (such as Electoral, Liberal, Deliberative, Participatory, and Egalitarian Democracy), mid-level sub-indices like judicial independence and media freedoms, and detailed low-level indicators across elections, political parties, executive power, civil society, judiciary, media regulation, and policy on exclusion and inequality. A special section of COVID-19-related variables tracks restrictions and rights limitations unique to the pandemic. These elements offer extensive flexibility for tracking political changes longitudinally, useful for detailed analysis of democracy and populist discourse, e.g., v2pepopul, v2x_liberal.",
+        "emphasis": 95
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_11",
+        "type": "Suggestion",
+        "label": "V-Dem Dataset Analysis Plan",
+        "source": "system",
+        "description": "Focus on key V-Dem indicators relevant to your analysis: choose between high-level democracy indices and more granular low-level variables like media freedom, executive power, or COVID-19 measures. Utilize populist discourse measures like v2pepopul in tandem with OxCGRT data to investigate how pandemic responses relate to democratic or populist dynamics.",
+        "emphasis": 103,
+        "versions": [],
+        "referred": [
+          27
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_13",
+        "target": "suggestion_11",
+        "label": "applied through"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "A detailed breakdown of **V-Dem variables** reveals five high-level democracy indices, numerous sub-indices, and low-level thematic indicators, including new COVID-19-specific variables. Analysts can leverage this structure to examine political changes over time, focusing on factors like populist discourse (v2pepopul) and executive power. A **suggested plan** recommends targeting specific indicators for comparison with OxCGRT data to explore the impacts of COVID-19 mitigation policies on democratic systems and populism."
+  },
+  {
+    "referredNodes": [
+      "data_10",
+      "task_2"
+    ],
+    "updatedNodes": [
+      {
+        "id": "data_10",
+        "description": "The PopuList (version 3.0) dataset catalogs European political parties identified as populist, far-right, or far-left from 1989 to 2022. It contains information including country, party name, election year, ideological classification, and vote share percentages. This data aids analyses of political trends and electoral shifts related to populism across Europe, facilitating comparison with mitigation policy timelines.",
+        "emphasis": 95
+      }
+    ],
+    "newNodes": [
+      {
+        "id": "insight_3",
+        "type": "Insight",
+        "label": "Structure and Content of PopuList 3.0",
+        "source": "joint",
+        "description": "The PopuList (v3.0) CSV includes columns for country, party name, electoral year, ideologies (populist, far-right, far-left), and vote shares. Example entries feature Italian League (populist) and French National Rally (far-right), representing broad populist dynamics in European electoral outcomes.",
+        "emphasis": 104,
+        "versions": [],
+        "referred": [
+          28
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_10",
+        "target": "insight_3",
+        "label": "detailed by"
+      }
+    ],
+    "deletedNodes": [],
+    "deletedLinks": [],
+    "summary": "The PopuList dataset (version 3.0) identifies and catalogs populist, far-right, and far-left political parties across Europe, covering data from 1989-2022. Key columns denote country, party names, electoral dates, ideological tags, and vote shares, which are useful for exploring trends and shifts in political landscapes related to populism. Example entries, such as the Italian League or French National Rally, provide context for analyzing these entities' electoral performance within broader socio-political frameworks, especially when linked to measures like OxCGRT data."
+  }
+]
