@@ -1,0 +1,2564 @@
+[
+  {
+    "referredNodes": [],
+    "newNodes": [
+      {
+        "id": "goal_covid19_social_impact_analysis",
+        "type": "Goal",
+        "label": "Data-driven analysis of COVID-19 social impacts (during and after pandemic)",
+        "source": "analyst",
+        "description": "Conduct a data-driven analysis focused on the social impacts of COVID-19 during and after the pandemic, with evolving research questions as the investigation continues.",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          2,
+          72
+        ]
+      },
+      {
+        "id": "rq_gendered_impacts",
+        "type": "Research Question",
+        "label": "COVID-19 disease & mitigation: Impact on men vs. women",
+        "source": "analyst",
+        "description": "How did COVID-19 (the disease itself) and COVID mitigation policies affect men vs. women?",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          2
+        ]
+      },
+      {
+        "id": "rq_policy_to_social_economic_effects",
+        "type": "Research Question",
+        "label": "COVID-19 policies: Social & economic effects (per country, during/after pandemic)",
+        "source": "analyst",
+        "description": "How did COVID mitigation policies (by country) translate into social and economic effects during, and especially after, the pandemic?",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": "data_gender_disaggregated_covid",
+        "type": "Data",
+        "label": "Gender-disaggregated health & social COVID-19 data",
+        "source": "system",
+        "description": "Datasets:\n- Global Health 50/50 Sex-and-Gender COVID-19 Project: age/sex-split cases, deaths, vaccination by country\n- UN Women COVID-19 & Gender Data Hub: rapid gender assessments, 45+ countries (unpaid care, economic impacts, GBV)\n- Data2X Gender & COVID-19 Resources: curated data tools for gender-sensitive pandemic impacts\n- World Bank Gender Data Portal: high-frequency surveys, gender socio-economic indicators\n- European Institute for Gender Equality (EIGE): EU survey, work/care division, wellbeing by gender\n- IHME COVID-19 Gender Equality Impact Estimates: modelled estimates for gendered impacts, Mar 2020–Sep 2021",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          2
+        ]
+      },
+      {
+        "id": "data_policy_tracking_socioeconomic",
+        "type": "Data",
+        "label": "Policy tracking, social & economic indicators (COVID-19)",
+        "source": "system",
+        "description": "Datasets:\n- Oxford COVID-19 Government Response Tracker (OxCGRT): time-series policy measures by country\n- Protective Policy Index (PPI): global dataset of government protective behavior\n- Nature’s COVID AMP Dataset: granular legal/policy docs with dates, types\n- COVID-19 Policy Tracker Aggregator: aggregator of intervention trackers\n- World Bank / IMF Economic Impact Data: household, firm, macroeconomic indicators",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          2
+        ]
+      },
+      {
+        "id": "data_supplementary_socialmedia_research",
+        "type": "Data",
+        "label": "Supplementary social media & research corpora (COVID-19)",
+        "source": "system",
+        "description": "Datasets & corpora:\n- TBCOV (2 billion tweets with gender/sentiment labels)\n- Tweet datasets focusing on gendered differences (e.g. English-language, women's topics)\n- CORD19/other bibliographic corpora (scholarly COVID-19 publications)",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          2
+        ]
+      },
+      {
+        "id": "data_crosssectional_gendersocial_indices",
+        "type": "Data",
+        "label": "Cross-sectional gender and social indices (COVID-19 period)",
+        "source": "system",
+        "description": "Datasets:\n- OECD Gender, Institutions & Development Database (GIDDB): gender equality indicators, social norms\n- European Data Portal/Data.gov.uk/UK Data Service: portals for COVID-era survey modules (time use, labor, health)",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          2
+        ]
+      },
+      {
+        "id": "suggestions_next_steps_data_handling",
+        "type": "Suggestion(s)",
+        "label": "Suggested next analytical steps",
+        "source": "system",
+        "description": "Suggestions:\n- Pick scope & hypothesis (e.g., gendered health outcomes: GH5050 <-> OxCGRT/PPI; socio-economic effects: UN/World Bank surveys + macro trends)\n- Select geographic focus (regions/countries with strong data coverage)\n- Align time framing (e.g., OxCGRT monthly indices, World Bank in 2020-22)\n- Harmonize and clean data (country/time IDs; consider lags in policy->outcome)\n- Add qualitative/sentiment layer using tweet data for context",
+        "emphasis": 1,
+        "versions": [],
+        "referred": [
+          2
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "goal_covid19_social_impact_analysis",
+        "target": "rq_gendered_impacts",
+        "label": "operationalized by"
+      },
+      {
+        "source": "goal_covid19_social_impact_analysis",
+        "target": "rq_policy_to_social_economic_effects",
+        "label": "operationalized by"
+      },
+      {
+        "source": "rq_gendered_impacts",
+        "target": "data_gender_disaggregated_covid",
+        "label": "informs"
+      },
+      {
+        "source": "rq_gendered_impacts",
+        "target": "data_supplementary_socialmedia_research",
+        "label": "informs"
+      },
+      {
+        "source": "rq_gendered_impacts",
+        "target": "data_crosssectional_gendersocial_indices",
+        "label": "informs"
+      },
+      {
+        "source": "rq_policy_to_social_economic_effects",
+        "target": "data_policy_tracking_socioeconomic",
+        "label": "informs"
+      },
+      {
+        "source": "rq_policy_to_social_economic_effects",
+        "target": "data_gender_disaggregated_covid",
+        "label": "informs"
+      },
+      {
+        "source": "rq_policy_to_social_economic_effects",
+        "target": "data_supplementary_socialmedia_research",
+        "label": "informs"
+      },
+      {
+        "source": "rq_policy_to_social_economic_effects",
+        "target": "data_crosssectional_gendersocial_indices",
+        "label": "informs"
+      },
+      {
+        "source": "rq_gendered_impacts",
+        "target": "suggestions_next_steps_data_handling",
+        "label": "next step suggested"
+      },
+      {
+        "source": "rq_policy_to_social_economic_effects",
+        "target": "suggestions_next_steps_data_handling",
+        "label": "next step suggested"
+      }
+    ],
+    "summary": "<b>Nodes</b> were added for the <b>goal</b> (COVID-19 social impact analysis), two <b>research questions</b> (gendered impacts; policy link to socioeconomic outcomes), multiple categories of <b>data</b> resources (gendered, policy, supplementary, indices), and a <b>suggestions</b> node covering next analytic steps. <b>Links</b> position research questions as operationalizations of the goal, connect data types as informative to each question, and attach suggestions as the next step for both lines of inquiry."
+  },
+  {
+    "referredNodes": [
+      "rq_policy_to_social_economic_effects"
+    ],
+    "newNodes": [
+      {
+        "id": "rq_covid_policy_postpandemic_effects",
+        "type": "Research Question",
+        "label": "Post-pandemic effects triggered by COVID mitigation policies",
+        "source": "analyst",
+        "description": "Which social, economic, and political effects were produced post-pandemic as a result of COVID mitigation policies? Examples include increase in remote work, high inflation, and possible rise in populism/extremism. Ever-expanding potential effect list.",
+        "emphasis": 3,
+        "versions": [
+          "rq_policy_to_social_economic_effects"
+        ],
+        "referred": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": "data_downloadable_postpandemic_effect_datasets",
+        "type": "Data",
+        "label": "Downloadable datasets on post-pandemic policy effects",
+        "source": "system",
+        "description": "Grouped datasets (all easy-to-raw, downloadable as CSV/TSV/JSON):\n\n1. Working from Home/Remote Work:\n- Kaggle: Impact of COVID19 on Working Professionals (remote adoption, CSV)\n- Canada Open Data: Telework stats (CSV, time-series)\n\n2. Inflation & Economic Trends:\n- World Bank Global Inflation Database (CPI, CSV)\n- OECD CPI Inflation (consumer price indices, CSV)\n- FRED (U.S. CPI, CSV)\n- Our World in Data GDP per Capita (CSV)\n\n3. Populism/Extremism & Political Effects:\n- Hedayah’s Extremism reports (CSV)\n- Wikipedia: COVID-19 protests/political impact (event data compilation)\n- Academic study insights\n\n4. Policy & Case Data:\n- Our World in Data COVID19 Policy Dataset (policy, stringency, cases, CSV/JSON)\n- Google COVID-19 Open Data (subnational/country level, CSV/JSON)\n\n5. Social & Sentiment Data:\n- Twitter COVID-19 discourse dataset (Tweet IDs, CSV/JSON)\n- CoAID & anti-vax Twitter datasets (labeled tweets, CSV)\n- COVID19 vaccine hesitancy tweets (CSV/JSON)\n\nAll datasets are straightforward to process in Python, R, or similar tools.",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          4
+        ]
+      },
+      {
+        "id": "suggestion_narrowed_policy_effect_pipeline",
+        "type": "Suggestion(s)",
+        "label": "Suggested pipeline for analyzing post-pandemic policy effects",
+        "source": "system",
+        "description": "1. Map COVID policy timeline using Our World in Data/Google data\n2. Overlay socioeconomic outcomes: merge in GDP/inflation and remote work data\n3. Incorporate public sentiment and political datasets (tweets, protests, extremism)\n4. Note: All recommended sources are available in CSV/JSON and easy to merge for country–date analytic work.",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          4
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "rq_policy_to_social_economic_effects",
+        "target": "rq_covid_policy_postpandemic_effects",
+        "label": "specialized as"
+      },
+      {
+        "source": "rq_covid_policy_postpandemic_effects",
+        "target": "data_downloadable_postpandemic_effect_datasets",
+        "label": "can be explored using"
+      },
+      {
+        "source": "rq_covid_policy_postpandemic_effects",
+        "target": "suggestion_narrowed_policy_effect_pipeline",
+        "label": "next step suggested"
+      }
+    ],
+    "summary": "A <b>specialized research question</b> was added, focusing specifically on post-pandemic effects of COVID mitigation policies (e.g., remote work, inflation, populism), superseding the broader policy-to-effect question. A <b>node for downloadable, easy-to-process datasets</b> by topical effect area, and a <b>suggested analysis pipeline</b> for this focus were also added. <b>Links</b> associate the new research question with its broader predecessor, recommended datasets, and the tailored suggestion pipeline."
+  },
+  {
+    "referredNodes": [
+      "rq_covid_policy_postpandemic_effects"
+    ],
+    "newNodes": [
+      {
+        "id": "rq_policy_populism_mechanisms",
+        "type": "Research Question",
+        "label": "Did COVID-19 mitigation policies fuel a rise in political populism? If so, by what mechanisms?",
+        "source": "analyst",
+        "description": "Did COVID-19 mitigation policies translate into a rise of (political) populism? If so, through what mechanisms? Comparative analysis between countries and/or policies is envisioned.",
+        "emphasis": 7,
+        "versions": [
+          "rq_covid_policy_postpandemic_effects"
+        ],
+        "referred": [
+          6,
+          12,
+          20,
+          22,
+          24
+        ]
+      },
+      {
+        "id": "data_policy_vs_populism_comparative",
+        "type": "Data",
+        "label": "Datasets for comparative analysis: COVID-19 policies & populist trends",
+        "source": "system",
+        "description": "Key datasets for comparative country/policy–populism analysis (all CSV/TSV/JSON):\n\n1. COVID-19 Mitigation Policies:\n  - OxCGRT (Oxford COVID-19 Government Response Tracker): daily stringency, containment, economics\n  - WNTRAC (Worldwide NPIs): 6,000+ NPIs, dates, 261 countries\n\n2. Measures of Populism:\n  - Global Populism Database (Harvard): populist rhetoric/discourse, country, period\n  - Votes for Populists (Stanford FSI): party vote shares, world regions, 2023\n  - The PopuList: populist parties Europe, expert-coded, vote shares, metadata\n\n3. Democracy/Polarization Metrics:\n  - VDem (Varieties of Democracy): indices, polarization, science prevarication, democratic norms\n\n4. Political Events, Protests, Sentiment:\n  - GDELT: daily global events (protests, sentiment, speeches)\n  - Wikipedia: anti-lockdown protest event lists\n\n5. Mechanistic/Contextual Sources:\n  - Literature: “medical populism”, policy compliance case studies (Philippines, Brazil, Austria, etc)",
+        "emphasis": 4,
+        "versions": [],
+        "referred": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": "suggestion_populism_mechanism_workflow",
+        "type": "Suggestion(s)",
+        "label": "Workflow: Comparative, mechanism-informed populism analysis",
+        "source": "system",
+        "description": "Suggested workflow:\n- Construct a panel (country × time: month/quarter)\n- For each period, calculate: average policy stringency (OxCGRT), NPI count (WNTRAC), VDem metrics, electoral/populist measures, protest rates\n- Model populist rise (e.g., change in vote share, rhetoric) as function of lagged policy measures, controlling for baseline democracy, GDP, etc.\n- Augment quantitative analysis with qualitative case evidence on mechanisms (e.g., government blame-shifting, medical populism, policy overreach)",
+        "emphasis": 3,
+        "versions": [],
+        "referred": [
+          6
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "rq_covid_policy_postpandemic_effects",
+        "target": "rq_policy_populism_mechanisms",
+        "label": "specialized as"
+      },
+      {
+        "source": "rq_policy_populism_mechanisms",
+        "target": "data_policy_vs_populism_comparative",
+        "label": "can be explored using"
+      },
+      {
+        "source": "rq_policy_populism_mechanisms",
+        "target": "suggestion_populism_mechanism_workflow",
+        "label": "next step suggested"
+      }
+    ],
+    "summary": "A further <b>specialized research question</b> was introduced: did COVID-19 mitigation policies lead to a rise in political populism, and through what mechanisms? A <b>comparative data node</b> covering policy, populism, and democracy/event datasets was added. A <b>suggestion</b> node outlines a country–time comparative, mechanism-oriented panel analysis. <b>Links</b> show the question's specialization path and data/workflow alignment."
+  },
+  {
+    "referredNodes": [
+      "data_policy_vs_populism_comparative"
+    ],
+    "newNodes": [
+      {
+        "id": "data_policy_populism_ranked_accessibility",
+        "type": "Data",
+        "label": "Ranked accessibility: comparative-populism datasets",
+        "source": "system",
+        "description": "Datasets ranked by ease of access (CSV/TSV/TXT availability, direct downloads):\n\nTier 1 – Easiest\n- Oxford COVID-19 Government Response Tracker (OxCGRT): CSVs, official site\n- The PopuList: CSV/TSV on OSF\n- Votes for Populists: CSV, Stanford site\n- Our World in Data COVID-19: CSVs for stringency, cases, deaths\n- Wikipedia Protests List: copy/paste or scrape, also mirrored\n\nTier 2 – Easy with minor cleaning\n- V-Dem Dataset: CSV after email registration\n- WNTRAC: TSV/CSV via Zenodo\n- Global Populism Database: CSV, simple portal\n\nTier 3 – Heavy/tricky\n- GDELT: Huge daily CSVs, best via BigQuery\n- Hedayah Extremism Reports: Mostly PDFs/semi-structured Excel, some CSVs\n- Academic Studies/Literature: Papers only, no raw data\n\nQuick start bundle: OxCGRT, Votes-for-Populists, PopuList, V-Dem, optional Wikipedia protest data (manual extraction).",
+        "emphasis": 5,
+        "versions": [],
+        "referred": [
+          8,
+          10
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_policy_vs_populism_comparative",
+        "target": "data_policy_populism_ranked_accessibility",
+        "label": "ranked for ease of use as"
+      }
+    ],
+    "summary": "A new <b>data node</b> provides a ranked listing of comparative policy-populism datasets, prioritized by ease of access (direct CSV/TXT/TSV ability). The <b>link</b> specifies this ranking as a refinement of the existing comparative data node. All tiers and 'quick start' options are captured for practical workflow planning."
+  },
+  {
+    "referredNodes": [
+      "data_policy_populism_ranked_accessibility"
+    ],
+    "newNodes": [
+      {
+        "id": "data_oxcgrt_detail",
+        "type": "Data",
+        "label": "Detailed: OxCGRT (Oxford COVID-19 Government Response Tracker)",
+        "source": "system",
+        "description": "What it is:\n- Daily-coded COVID-19 mitigation policies for ~180 countries from Jan 2020 onward\nFile format: CSV (daily updates)\nDownload: GitHub, direct merged CSV\nKey variables:\n- StringencyIndex, GovernmentResponseIndex, ContainmentHealthIndex, EconomicSupportIndex\n- Policy flags (school closures, public events, stay-at-home orders, etc.)\n- Country, date, ISO codes\nUse in analysis:\n- Quantify policy severity/duration per country\n- Lagged indices test predictive power for populist support/unrest",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          10,
+          24,
+          26
+        ]
+      },
+      {
+        "id": "data_populist_detail",
+        "type": "Data",
+        "label": "Detailed: The PopuList (Populist Parties in Europe)",
+        "source": "system",
+        "description": "What it is:\n- Curated expert list of European political parties by ideology (populist/far-right/far-left, etc.) and vote shares\nFile format: TSV/CSV\nDownload: OSF repository, direct TSV link\nKey variables:\n- Country, Party, Populist (TRUE/FALSE), FarRight, ElectionYear, VoteShare, EU/National\n- Party IDs, ideology tags, source links\nUse in analysis:\n- Identify which countries' populist parties gained/lost ground post-COVID\n- Merge with OxCGRT by country/year for policy–populist correlation analysis",
+        "emphasis": 14,
+        "versions": [],
+        "referred": [
+          10,
+          16,
+          24,
+          30,
+          32,
+          34,
+          36,
+          52,
+          54,
+          56
+        ]
+      },
+      {
+        "id": "data_vdem_detail",
+        "type": "Data",
+        "label": "Detailed: VDem (Varieties of Democracy Dataset)",
+        "source": "system",
+        "description": "What it is:\n- Cross-national dataset of political regime indicators\n- Features: freedom of expression, polarization, misinformation, autocratization\nFile format: CSV (wide/panel)\nDownload: v-dem.net (registration required)\nKey variables:\n- v2x_polyarchy, v2x_libdem, v2x_delibdem, v2x_partipdem (democracy indices)\n- v2cacamps, v2pepopul (polarization, populist discourse)\n- country_name, year, country_id\nUse in analysis:\n- Track shifts in democratic norms post-COVID\n- Use v2pepopul for rhetorical populism tracking\n- Test interaction between restrictive policy, weak democracy, and populist backlash",
+        "emphasis": 16,
+        "versions": [],
+        "referred": [
+          10,
+          14,
+          16,
+          18,
+          24,
+          28,
+          60,
+          62,
+          64,
+          66,
+          68,
+          70
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_policy_populism_ranked_accessibility",
+        "target": "data_oxcgrt_detail",
+        "label": "detailed as"
+      },
+      {
+        "source": "data_policy_populism_ranked_accessibility",
+        "target": "data_populist_detail",
+        "label": "detailed as"
+      },
+      {
+        "source": "data_policy_populism_ranked_accessibility",
+        "target": "data_vdem_detail",
+        "label": "detailed as"
+      }
+    ],
+    "summary": "<b>Detailed data nodes</b> were created for OxCGRT, The PopuList, and VDem datasets—covering content, download instructions, key variables, and analysis applications for comparative COVID-policy/populism studies. Each new node is explicitly <b>linked</b> as a drill-down from the previously ranked accessibility node."
+  },
+  {
+    "referredNodes": [
+      "rq_policy_populism_mechanisms"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_covid_policy_populism_literature",
+        "type": "Finding",
+        "label": "Literature findings: COVID-19 mitigation policies and political populism",
+        "source": "system",
+        "description": "Studies and reports on the link between COVID19 mitigation policies and a rise/intensification of political populism:\n\nKey academic/think tank findings:\n\n1. Medical populism (Lasco 2020): Leaders (Brazil, Philippines, US) used 'medical populism'—minimizing risk, politicizing science, dramatizing crisis, and framing experts as elites—which led to deeper distrust in science and polarized discourse.\n2. Medical Populism and COVID19 Testing (Hedges & Lasco 2021): Populist leaders simplified messaging, used spectacle, 'us-vs-them' narratives, and exclusive-knowledge claims, affecting public perceptions and policy compliance.\n3. Science contrarianism & populism (2024): Populist rhetoric amidst health crises eroded trust in science/public health, promoting misinformation and less compliance.\n4. Populist beliefs & compliance (Uluşahin et al. 2024): Survey evidence—populist beliefs/distrust of authority strongly correlated with poor compliance, reinforcing anti-elitism.\n5. Perilous Mix report: Populist governments neglected expert advice, overstated achievements, and consolidated power, undermining democratic accountability.\n6. RightWing Populism & COVID19 Measures (2022): Correlation between right-wing populism support and resistance to vaccination/mitigation, linked to political trust/identity.\n7. National case studies (e.g., Time 2021): Populist leaders leveraged crisis rhetoric for crackdowns, blame-shifting, polarizing society, and undermining institutions.\n\nKey mechanisms identified:\n- Politicization of science/elite framing\n- Simplification/spectacle\n- Distrust and non-compliance\n- Power consolidation/oversight bypass\n- Policies as identity/polarization markers\n\nReferences provided for further reading and prominent news/newsletter articles.",
+        "emphasis": 5,
+        "versions": [],
+        "referred": [
+          12
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "rq_policy_populism_mechanisms",
+        "target": "finding_covid_policy_populism_literature",
+        "label": "addressed by"
+      }
+    ],
+    "summary": "A new <b>finding node</b> synthesizes major literature and empirical reports on the link between COVID-19 mitigation policies and political populism. It summarizes prominent mechanisms, case evidence, and provides sources. This finding is <b>linked</b> to the research question regarding COVID policy-driven rises in populism."
+  },
+  {
+    "referredNodes": [
+      "data_vdem_detail"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_vdem_data_recency_and_suitability",
+        "type": "Finding",
+        "label": "Finding: VDem recency and pre/post COVID suitability",
+        "source": "system",
+        "description": "V-Dem dataset, Version 15 (March 2025), covers annual data through 2024 for 202 countries. Suitable for pre-/post-COVID comparison:\n- Annual data: 2019 (pre-pandemic), 2020-21 (pandemic years), 2022-24 (post-pandemic)\n- Key population/discourse/democracy indices: v2x_liberal, v2x_partipdem, v2x_delibdem, v2pepopul\n- Special Pandemic Backsliding project contextualizes indicators for COVID response (March 2020–June 2021)\n- Country-date (monthly) data available in Version 14+\n- Recommended: filter 2018–2024, select relevant variables for balanced trend analysis, merge with OxCGRT.\n\nSummary: VDem's current annual (and available monthly) data support robust pre- and post-COVID comparative analyses of democracy, populism, and related indicators.",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          14,
+          18
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_vdem_detail",
+        "target": "finding_vdem_data_recency_and_suitability",
+        "label": "characterized by"
+      }
+    ],
+    "summary": "Added a <b>finding node</b> evaluating <b>VDem's recency and suitability</b> for pre-/post-COVID comparative analysis. This finding—detailing coverage (to 2024), relevant indices, and usage tips—is <b>linked to the VDem dataset node</b> as an explicit characteristic."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "data_vdem_detail"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_populist_data_access_broken_links_and_alternatives",
+        "type": "Finding",
+        "label": "Finding: Populist party data (PopuList) broken link and alternatives",
+        "source": "system",
+        "description": "The PopuList (CSV/TSV expert-coded party classification) link appears broken or relocated. Alternatives for populism data:\n\n- Try accessing The PopuList through the main OSF project—check under 'Files' or contact project members for an updated link.\n- Global Populism Database (Harvard Dataverse, DOI: 10.7910/DVN/LFTQEZ): CSV data on populist rhetoric by world leaders (2000–2018).\n- VDem v2pepopul: CountryYear, annual metric reflecting populist discourse by executives (up to 2024). Directly downloadable after signup.\n\nRecommended approach: Use VDem's v2pepopul variable for current, global, and pre-/post-COVID analysis. Optionally cross-validate with the Global Populism Database. Revisit PopuList for party-level data when link is restored.",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          16
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_populist_data_access_broken_links_and_alternatives",
+        "target": "data_populist_detail",
+        "label": "supersedes with alternatives"
+      },
+      {
+        "source": "finding_populist_data_access_broken_links_and_alternatives",
+        "target": "data_vdem_detail",
+        "label": "endorses as alternative"
+      }
+    ],
+    "summary": "Added a <b>finding node</b> detailing that <b>The PopuList</b> link is broken and outlining <b>alternative sources for populist data</b>. The node references both the PopuList data node (with a supersedence/alternatives relationship) and the VDem detail node (as a recommended substitute for up-to-date, global populist discourse data)."
+  },
+  {
+    "referredNodes": [
+      "data_vdem_detail",
+      "finding_vdem_data_recency_and_suitability"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_vdem_time_lag_populism_analysis",
+        "type": "Finding",
+        "label": "Finding: VDem temporal coverage limits longer-term post-COVID populism trends",
+        "source": "system",
+        "description": "VDem (v15, March 2025) includes up to 2024. Only one year beyond the main pandemic period, which is likely insufficient to robustly assess longer-term, lagged political populism effects arising from COVID-19 mitigation policies. Populism may shift over multiple years, especially around electoral cycles that often fall after 2024. Some countries had key national or subnational elections before or after 2023/24, possibly delaying observable policy effects until 2025–2026. Interim strategies: Use monthly VDem indicators (2020–24), include proxies (sentiment/protest event data, discourse). Plan to revisit the analysis after future elections.",
+        "emphasis": 8,
+        "versions": [],
+        "referred": [
+          18
+        ]
+      },
+      {
+        "id": "suggestion_early_warning_populism_approach",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Early-warning populism trend analysis and mitigation steps",
+        "source": "system",
+        "description": "1. Retrieve and filter Country-Date VDem data for v2pepopul (2020–2024, monthly where possible)\n2. Supplement with protest sentiment/event data (e.g., anti-lockdown/vaccine protest databases, GDELT) for 2022–24\n3. Align with electoral calendar—analyze for subnational or referenda outcomes tied to pandemic policy effects\n4. Build early trend analysis—check if populism is trending up, flat, or declining in immediate post-COVID period\n5. Identify countries with reversal or waning populism for comparative cases\n6. Plan for mid/long-term follow-up—revisit after 2025–2026 major elections\n7. Offer assistance in dataset access or code for filtering/merging",
+        "emphasis": 8,
+        "versions": [],
+        "referred": [
+          18
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_vdem_time_lag_populism_analysis",
+        "target": "finding_vdem_data_recency_and_suitability",
+        "label": "refines"
+      },
+      {
+        "source": "suggestion_early_warning_populism_approach",
+        "target": "finding_vdem_time_lag_populism_analysis",
+        "label": "proposes approach for"
+      },
+      {
+        "source": "suggestion_early_warning_populism_approach",
+        "target": "data_vdem_detail",
+        "label": "operationalizes using"
+      }
+    ],
+    "summary": "Added a <b>finding</b> capturing the <b>temporal limitations of VDem for longer-term post-COVID populism analysis</b>, refining the previous node on VDem's data recency. Introduced a <b>suggestion node</b> detailing an early-warning trend analysis and mitigation strategy, including proxies and future analytical follow-ups. These nodes are linked to each other, to the older finding, and to the <b>VDem dataset node</b>."
+  },
+  {
+    "referredNodes": [
+      "rq_policy_populism_mechanisms"
+    ],
+    "newNodes": [
+      {
+        "id": "data_ess_covid_populism_modules",
+        "type": "Data",
+        "label": "Data: European Social Survey (ESS) COVID and Populism Modules",
+        "source": "joint",
+        "description": "ESS Round 10 (2020–2021):\n- 20 COVID-19 module items: trust in government & scientists, rule compliance, conspiracy beliefs (lab-made virus, etc.)\n- Core ESS modules: political trust, democracy, sociopolitical attitudes\n\nESS Round 12 (2024):\n- 'Attitudes towards technocracy and populism' module: populist support, technocratic preferences, trust in experts vs democracy\n\n- Mechanism variables from R10: trust/conspiracies as mediators between policy and populism\n- Outcome variables from R12: populist/technocratic attitudes\n- High-quality, cross-national (up to 35 European countries)\n- Data downloadable and mergeable with pandemic policy data\n\n- Additional: CRONOS online interim survey (2024) as timely ESS extension",
+        "emphasis": 10,
+        "versions": [],
+        "referred": [
+          20,
+          22,
+          24
+        ]
+      },
+      {
+        "id": "suggestion_ess_integration_approach",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Integrating ESS into COVID→Populism Mechanism Analysis",
+        "source": "system",
+        "description": "1. Download ESS Rounds 10 & 12 datasets\n2. Calculate country-level summaries:\n  - Conspiracy belief prevalence (R10)\n  - Trust in scientists/government (R10)\n  - Populist/technocratic attitudes (R12)\n3. Merge these with OxCGRT stringency indices for country-years of interest\n4. Model structure: Stringency → Trust/Conspiracies → Populist Attitudes\n5. Optional: Combine with protest/event/electoral trend data for triangulation\n6. Use CRONOS survey for more recent signals if needed",
+        "emphasis": 9,
+        "versions": [],
+        "referred": [
+          20,
+          22
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_ess_covid_populism_modules",
+        "target": "rq_policy_populism_mechanisms",
+        "label": "enables mechanism linkage data for"
+      },
+      {
+        "source": "suggestion_ess_integration_approach",
+        "target": "data_ess_covid_populism_modules",
+        "label": "operationalizes"
+      },
+      {
+        "source": "suggestion_ess_integration_approach",
+        "target": "rq_policy_populism_mechanisms",
+        "label": "addresses with integration steps"
+      }
+    ],
+    "summary": "Two <b>new nodes</b> added: <b>ESS COVID and Populism Modules data</b> (Rounds 10 & 12) with variables for trust, conspiracies, and populist attitudes; and a <b>suggested analytical approach</b> using ESS for mediation models. Links added to the research question node on COVID policy and populism mechanisms. Approach node references the data node."
+  },
+  {
+    "referredNodes": [
+      "data_ess_covid_populism_modules",
+      "suggestion_ess_integration_approach",
+      "rq_policy_populism_mechanisms"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_ess_rounds_timing_and_limitations",
+        "type": "Finding",
+        "label": "Finding: ESS Round 11 best for early post-pandemic attitudes; Round 12 not yet available",
+        "source": "system",
+        "description": "ESS Round 10 (2020–22) includes pandemic-era attitudes but is not optimal for post-pandemic analysis. ESS Round 11, fielded in 2023–24 with data released June 2024, is the most up-to-date cross-national source currently available for early post-pandemic trust, political attitudes, and potential populism mechanism variables—though it may lack the full populism/technocracy module planned for Round 12. ESS Round 12 is only scheduled for data collection in 2025–26; no data available for analysis until 2026. For now, Round 11 should be leveraged for early signals; plan to update future analyses with Round 12 once released.",
+        "emphasis": 9,
+        "versions": [],
+        "referred": [
+          22
+        ]
+      },
+      {
+        "id": "suggestion_practical_ess_postpandemic_integration",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Practical early post-pandemic populism analysis pipeline using ESS Round 11",
+        "source": "system",
+        "description": "1. Download ESS Round 11 (2023–24) now for immediate cross-national data on political trust, institutions, and social values.\n2. Identify and extract variables that are relevant to populism mechanisms (particularly trust in elites/scientists, attitudes toward democracy).\n3. Merge and jointly analyze with VDem (up to 2024) and OxCGRT policy indices for overlapping countries/time windows.\n4. Supplement with protest/event signal datasets (e.g., GDELT, national or European public opinion studies) as proxies for increased populist attitudes.\n5. Plan timeline: realize that direct attitudinal populism measurement from ESS will be possible only after Round 12 (2026+).",
+        "emphasis": 9,
+        "versions": [],
+        "referred": [
+          22
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_ess_rounds_timing_and_limitations",
+        "target": "data_ess_covid_populism_modules",
+        "label": "updates timing, suitability of"
+      },
+      {
+        "source": "suggestion_practical_ess_postpandemic_integration",
+        "target": "finding_ess_rounds_timing_and_limitations",
+        "label": "responds to timing finding with practical approach"
+      },
+      {
+        "source": "suggestion_practical_ess_postpandemic_integration",
+        "target": "rq_policy_populism_mechanisms",
+        "label": "operationalizes for current analysis"
+      }
+    ],
+    "summary": "Added a <b>finding</b> on ESS data timing: <b>Round 11</b> (2023–24) is currently the best for early post-pandemic trust/attitude measures; <b>Round 12</b> (populism/technocracy module) will not be available until 2026. Added a <b>suggestion</b> for a practical pipeline using <b>ESS Round 11</b> plus VDem/OxCGRT and protest data. New links connect these to the prior ESS data node and to the research question."
+  },
+  {
+    "referredNodes": [
+      "data_vdem_detail",
+      "data_oxcgrt_detail",
+      "data_populist_detail",
+      "data_ess_covid_populism_modules",
+      "rq_policy_populism_mechanisms"
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_preprocessing_and_analytic_staging",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Data Prep & Analytic Staging for COVID-Policy/Populism Research",
+        "source": "system",
+        "description": "Pipeline for unpacked VDem, OxCGRT, PopuList (Global Populism Database) and ESS Round 11 (planned):\n\n1. Clean and harmonize raw files: country names, ISO codes, date/time formats\n2. Merge datasets: construct unified country–year or country–month panel\n3. Generate new variables: e.g.\n   - Average/annual stringency (OxCGRT)\n   - Year-over-year changes (V-Dem v2pepopul, etc.)\n4. Visualize trends: populism over time/under different policy regimes\n5. Conduct modeling: exploratory regressions or cluster analysis\n\nSystem will provide walkthroughs for each step when analyst requests.",
+        "emphasis": 13,
+        "versions": [],
+        "referred": [
+          24,
+          26,
+          28,
+          30
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "suggestion_preprocessing_and_analytic_staging",
+        "target": "data_vdem_detail",
+        "label": "preparation pipeline for"
+      },
+      {
+        "source": "suggestion_preprocessing_and_analytic_staging",
+        "target": "data_oxcgrt_detail",
+        "label": "preparation pipeline for"
+      },
+      {
+        "source": "suggestion_preprocessing_and_analytic_staging",
+        "target": "data_populist_detail",
+        "label": "preparation pipeline for"
+      },
+      {
+        "source": "suggestion_preprocessing_and_analytic_staging",
+        "target": "data_ess_covid_populism_modules",
+        "label": "preparation pipeline (future) for"
+      },
+      {
+        "source": "suggestion_preprocessing_and_analytic_staging",
+        "target": "rq_policy_populism_mechanisms",
+        "label": "enables analytic pipeline for"
+      }
+    ],
+    "summary": "Added a <b>suggestion</b> node describing a <b>data preparation and analytic staging pipeline</b> for VDem, OxCGRT, Populist/Global Populism DB, and ESS Round 11. Node outlines harmonization, merging, variable creation, visualization, and modeling. Pipeline is linked to all relevant data detail nodes and to the populism research question."
+  },
+  {
+    "referredNodes": [
+      "data_oxcgrt_detail",
+      "suggestion_preprocessing_and_analytic_staging"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_oxcgrt_structure_and_usage",
+        "type": "Explanation",
+        "label": "Explanation: OxCGRT Dataset Structure and Use Cases",
+        "source": "system",
+        "description": "Overview of OxCGRT dataset contents and notable features:\n\n- File: OxCGRT_latest.csv\n- Structure: Daily time-series for each country and many sub-national units (e.g. US states, UK home nations)\n- Columns:\n  - CountryName, CountryCode (ISO-3)\n  - RegionName (for sub-national/territorial splits; e.g., US states)\n  - Date (YYYYMMDD)\n- Policy Indicators (coded as 'C', 'E', 'H' columns):\n  - Severity or binary presence, e.g.,\n    - C1: School closure (0–3)\n    - C2: Workplace closure (0–3)\n    - C3: Cancel public events (0–2)\n    - ...\n  - Flags for e.g. national/local scope (e.g., C1_Flag)\n- Aggregate Indices (constructed, 0–100 scale):\n  - StringencyIndex\n  - GovernmentResponseIndex\n  - ContainmentHealthIndex\n  - EconomicSupportIndex\n- Utility:\n  - Aggregate policy variables by month/year\n  - Visualize timelines for countries/policies\n  - Merge with VDem/populism data (country, date/year as keys)\n  - Subnational (state/province) analysis supported for some large countries\n",
+        "emphasis": 11,
+        "versions": [],
+        "referred": [
+          26
+        ]
+      },
+      {
+        "id": "suggestion_oxcgrt_first_exploration_steps",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: OxCGRT First Exploration - Checklist",
+        "source": "system",
+        "description": "Checklist for exploring OxCGRT:\n1. Review file structure and metadata (main columns, policy codes, dates)\n2. Select a set of 3–5 countries for initial timeline comparison\n3. Aggregate policy indicators to meaningful temporal windows (month/year)\n4. Plot stringency and major policy indicators for selected units\n5. Try sub-national breakdown if interested (e.g., US states, UK nations)\n6. Prepare for merging with outcome/attitude data (VDem, PopuList, ESS) using country/date keys\n7. Share or examine snippet/sample of data to clarify structure if needed\n\nDirect support available for plotting and data manipulation upon sharing sample rows.",
+        "emphasis": 11,
+        "versions": [],
+        "referred": [
+          26
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_oxcgrt_structure_and_usage",
+        "target": "data_oxcgrt_detail",
+        "label": "unpacks fields and data structure of"
+      },
+      {
+        "source": "suggestion_oxcgrt_first_exploration_steps",
+        "target": "explanation_oxcgrt_structure_and_usage",
+        "label": "provides actions for"
+      },
+      {
+        "source": "suggestion_oxcgrt_first_exploration_steps",
+        "target": "suggestion_preprocessing_and_analytic_staging",
+        "label": "is detailed checklist complement"
+      }
+    ],
+    "summary": "Added an <b>explanation</b> clarifying the <b>OxCGRT structure</b>, its policy fields, indices, and subnational features. Added a <b>suggestion checklist</b> for <b>first exploration</b> steps: review structure, select countries, aggregate variables, plotting, and preparing for merges. Linked these to the OxCGRT detail and analytic staging nodes."
+  },
+  {
+    "referredNodes": [
+      "data_vdem_detail",
+      "suggestion_preprocessing_and_analytic_staging"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_vdem_variable_structure_and_contents",
+        "type": "Explanation",
+        "label": "Explanation: VDem Dataset Variable Structure and Thematic Contents",
+        "source": "system",
+        "description": "V-Dem CountryYear Core v15 dataset variable structure:\n\n1. High-Level Indices (continuous –4 to +4):\n   - Electoral Democracy (v2x_polyarchy)\n   - Liberal Democracy (v2x_liberal)\n   - Deliberative Democracy (v2x_delibdem)\n   - Participatory Democracy (v2x_partipdem)\n   - Egalitarian Democracy (v2x_egal)\n\n2. Mid-Level/Sub-Indices (~92 variables):\n   - Judicial Independence (v2jind*)\n   - Legislative constraints (v2lgleg)\n   - Civil society robustness (v2cssec)\n   - Media freedoms (v2mecenef)\n   - Political equality (v2pepriv)\n   - Exclusion of minorities (v2x_excl)\n   - Executive oversight (v2x_execoversight)\n\n3. Low-Level Indicators (~167 variables):\n   - Elections (competition, fairness, turnout)\n   - Political Parties (autonomy, elite infiltration)\n   - Direct Democracy (referendum use)\n   - Executive (power, manipulation)\n   - Legislature (power, oversight)\n   - Judiciary (rule of law, review)\n   - Civil Liberties, Sovereignty/State Efficiency, Civil Society, Media, Political Equality\n   - Exclusion/Vulnerable Groups, Academic & Civic Space\n   - COVID-19 variables: pandemic-related restrictions & exceptional measures\n\n4. COVID-19 Special Section (Section 3.16)\n   - Tracks pandemic-related restrictions and rights limitations\n\n5. Metadata/External Indices\n   - country name, ISO, region, year, external econ/demo data\n\nKey points:\n- Flexible: use high-level indices or narrow indicators\n- Populist discourse: v2pepopul variable\n- COVID-19 linkage: analyze effect of pandemic policies on democracy/populism",
+        "emphasis": 15,
+        "versions": [],
+        "referred": [
+          28,
+          60,
+          62,
+          66
+        ]
+      },
+      {
+        "id": "suggestion_vdem_first_exploration_steps",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: VDem First Exploration - Practical Steps",
+        "source": "system",
+        "description": "Next steps to leverage VDem data:\n1. Identify key indicators (e.g., v2pepopul, v2x_liberal, v2mecenef)\n2. Filter for years 2018–2024 (pre/during/post COVID)\n3. Prepare VDem for merge with OxCGRT/populism proxies by aligning on Country-Year\n4. Explore data: visualize democracy vs. stringency indices over time\n5. Option: List specific COVID-related variables; preview/summary walkthrough of variables recommended",
+        "emphasis": 12,
+        "versions": [],
+        "referred": [
+          28
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_vdem_variable_structure_and_contents",
+        "target": "data_vdem_detail",
+        "label": "details variables in"
+      },
+      {
+        "source": "suggestion_vdem_first_exploration_steps",
+        "target": "explanation_vdem_variable_structure_and_contents",
+        "label": "operationalizes explanation for"
+      },
+      {
+        "source": "suggestion_vdem_first_exploration_steps",
+        "target": "suggestion_preprocessing_and_analytic_staging",
+        "label": "complements general pipeline"
+      }
+    ],
+    "summary": "Added an <b>explanation</b> clarifying the <b>VDem dataset variable structure</b>: high-level indices, mid/low-level indicators, COVID-19 variables, and metadata. Added a <b>suggestion</b> listing <b>practical first exploration steps</b>: indicator selection, time filtering, prepping for merges/visualization. Linked these to the detailed VDem node and to the joint analytic pipeline."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "suggestion_preprocessing_and_analytic_staging"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_populist_v3_structure_content_usecases",
+        "type": "Explanation",
+        "label": "Explanation: PopuList 3.0 Dataset Structure, Key Columns, and Use Cases",
+        "source": "joint",
+        "description": "PopuList 3.0 dataset structure and content:\n\n- Each row: a European political party entry (possibly multiple epochs per party)\n- Columns:\n   - country (party's country)\n   - partyname (official/short)\n   - partyid (unique ID)\n   - populist (TRUE/FALSE/borderline)\n   - far_right, far_left, eurosceptic (TRUE/FALSE/borderline)\n   - euparl (TRUE/FALSE; elected to EU PARL)\n   - parliament (TRUE/FALSE; held seats in national parliament)\n   - electionyear, voteshare (year and %)\n   - *_start, *_end (start/end years for classifications: e.g., populist_start)\n   - *_bl flags (borderline status for each coding)\n   - *_nobl (non-borderline sample only for robustness)\n- Example row (not literal):\n   - country: Hungary\n   - partyname: Fidesz\n   - populist: TRUE\n   - far_right: TRUE\n   - eurosceptic: TRUE\n   - electionyear: 2018\n   - voteshare: 49.3\n   - populist_start: 2010\n   - populist_end: NA\n- Use cases:\n   1. Track rise of populism across time/countries using *start and *end columns\n   2. Merge with COVID-19 policy data to test if populist governments had distinctive stringency, vaccination, Eurosceptic narratives\n   3. Group/aggregate by ideological families (far-right/left)\n   4. Subset by certainty/borderline status for robustness, using *_bl and *_nobl\n   5. Ask research questions (e.g. populist EU opposition, pandemic position by ideology, timing of parliamentary entry)",
+        "emphasis": 15,
+        "versions": [],
+        "referred": [
+          30,
+          32,
+          44
+        ]
+      },
+      {
+        "id": "suggestion_populist_v3_exploration_steps",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: PopuList 3.0 Data - Practical Exploration/Analysis Steps",
+        "source": "system",
+        "description": "1. Generate summary statistics (n parties/country, proportion populist, EuParl/national seats)\n2. Create time series visualizations of populist/far-right/Eurosceptic party rise with *start/*end columns\n3. Merge/compare with OxCGRT (lockdown/vaccine policy) by country-year\n4. Filter to robust (non-borderline) cases and compare to full data\n5. Example research questions:\n   - Are Eurosceptic populist parties more likely to resist COVID-19 restrictions?\n   - What is the lag between parliamentary breakthrough and ideological re-classification?\n6. Option to request direct descriptive analytics, or merging/visualization assistance",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          30,
+          44,
+          52,
+          54,
+          56
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_populist_v3_structure_content_usecases",
+        "target": "data_populist_detail",
+        "label": "unpacks structure of"
+      },
+      {
+        "source": "suggestion_populist_v3_exploration_steps",
+        "target": "explanation_populist_v3_structure_content_usecases",
+        "label": "operationalizes explanation"
+      },
+      {
+        "source": "suggestion_populist_v3_exploration_steps",
+        "target": "suggestion_preprocessing_and_analytic_staging",
+        "label": "adds to joint analytic staging"
+      }
+    ],
+    "summary": "Added an <b>explanation</b> detailing the <b>PopuList 3.0 dataset structure</b>, key columns (country, partyname, ideology flags, years), and main use cases (tracking, merging, robustness, research). Added a <b>suggestion</b> with <b>exploratory steps</b>: summary stats, time series, merging with policy data, robust subsetting, and sample questions. Linked to the detailed PopuList node and the analytic pipeline."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "explanation_populist_v3_structure_content_usecases"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_populist_v3_actual_csv_structure_and_variables",
+        "type": "Explanation",
+        "label": "Explanation: PopuList 3.0 Actual CSV Structure and Verified Variables",
+        "source": "joint",
+        "description": "Based on direct inspection of PopuList 3.0 CSV provided:\n\n- Each row: political party in Europe (may appear in multiple years/epochs)\n- Main columns:\n  - party_name (native language)\n  - party_name_english\n  - party_name_short\n  - country_name\n- Key binary classification fields (0 = no, 1 = yes):\n  - populist\n  - farright\n  - farleft\n  - eurosceptic\n- Temporal markers, with/without borderline cases:\n  - populist_start, populist_endnobl (start/end years)\n  - populist_bl (borderline flag)\n- Status flags:\n  - in_parliament (1 = yes, as of Dec 31, 2022)\n  - partyfacts_id, parlgov_id (external join fields)\n- Confirms: early summary was illustrative, but this is accurate for the actual CSV received.\n- Verifies the origin of example rows (authentic, not assumed) and types of variables now confirmed.",
+        "emphasis": 17,
+        "versions": [
+          "explanation_populist_v3_structure_content_usecases"
+        ],
+        "referred": [
+          32,
+          34,
+          36,
+          44
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_populist_v3_actual_csv_structure_and_variables",
+        "target": "data_populist_detail",
+        "label": "verifies source structure"
+      },
+      {
+        "source": "explanation_populist_v3_actual_csv_structure_and_variables",
+        "target": "explanation_populist_v3_structure_content_usecases",
+        "label": "supercedes/gives direct CSV"
+      }
+    ],
+    "summary": "Added a new <b>explanation</b> node detailing the <b>actual structure and main variables of PopuList 3.0</b> using direct inspection of the uploaded CSV, confirming (and correcting) earlier structure/column summaries. Linked this node to both the main PopuList data node and the prior, more generic codebook-based explanation."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "explanation_populist_v3_actual_csv_structure_and_variables"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_populist_v3_time_encoding_placeholder_years",
+        "type": "Explanation",
+        "label": "Explanation: PopuList 3.0 Placeholder Years (1900/2100) in Classification Start/End",
+        "source": "system",
+        "description": "In columns like populist_start, populist_end, farright_start, and similar, values such as 1900 and 2100 are not literal years. According to the codebook:\n\n- 1900 = Placeholder; party classified as such since the start of the relevant time horizon (e.g., 1989)\n- 2100 = Placeholder; party is still classified as such up to the latest coding year (e.g., 2022)\n\nExamples:\n- Lega and AfD: populist_start = 2013 (populist since then, still as of 2022)\n- Kukiz’15: populist_start = 2015, populist_end = 2020\n- “Party X”: populist_start = 1900 (means since the start of coded period, e.g., 1989), populist_end = 1995\n\nPurpose:\n- These encodings facilitate filtering and time operations when plotting or joining to country-year panel data. They require mapping to actual calendar boundaries for correct use in visualization or analysis.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          34,
+          38,
+          46
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_populist_v3_time_encoding_placeholder_years",
+        "target": "explanation_populist_v3_actual_csv_structure_and_variables",
+        "label": "unpacks temporal encoding"
+      },
+      {
+        "source": "explanation_populist_v3_time_encoding_placeholder_years",
+        "target": "data_populist_detail",
+        "label": "explains data value semantics"
+      }
+    ],
+    "summary": "Added an <b>explanation</b> node clarifying the <b>use of special placeholder years (1900/2100)</b> in PopuList 3.0 classification start/end columns, based on codebook definitions. Linked this explanation to the verified PopuList data variable structure and the core data node, clarifying their meaning and operational purpose for the temporal range."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "explanation_populist_v3_actual_csv_structure_and_variables"
+    ],
+    "newNodes": [
+      {
+        "id": "data_populist_austria_subset",
+        "type": "Data",
+        "label": "Extracted subset: Austria parties from PopuList 3.0",
+        "source": "joint",
+        "description": "Filtered table including all parties from Austria as listed in PopuList 3.0 dataset. Extracted after correcting CSV delimiter from comma to semicolon to address parsing issues. Output prepared as standalone CSV for download.",
+        "emphasis": 18,
+        "versions": [],
+        "referred": [
+          36,
+          38,
+          40
+        ]
+      },
+      {
+        "id": "visualization_populist_austria_timeline",
+        "type": "Visualization",
+        "label": "Visualization: Timeline of populist parties in Austria (1989–2022)",
+        "source": "system",
+        "description": "Image-based timeline visualization showing the period (1989–2022) of populist classification for each Austrian party present in PopuList 3.0. Each party is aligned by years of classification, facilitating comparison of populism trends and cohorts in Austria. Delivered as a PNG image, with option to extend to other ideological markers (far-right, eurosceptic) or other countries.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          36,
+          38
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_populist_austria_subset",
+        "target": "data_populist_detail",
+        "label": "filtered from"
+      },
+      {
+        "source": "visualization_populist_austria_timeline",
+        "target": "data_populist_austria_subset",
+        "label": "visualizes"
+      },
+      {
+        "source": "data_populist_austria_subset",
+        "target": "explanation_populist_v3_actual_csv_structure_and_variables",
+        "label": "uses column structure"
+      }
+    ],
+    "summary": "Added a new <b>data</b> node representing the <b>Austrian subset of PopuList 3.0</b> (after CSV parsing fix), and a new <b>visualization</b> node—a timeline of populist Austrian parties (1989–2022). Linked the subset to the main PopuList data and its validated structure, and linked the visualization to the Austria subset it represents."
+  },
+  {
+    "referredNodes": [
+      "visualization_populist_austria_timeline",
+      "explanation_populist_v3_time_encoding_placeholder_years",
+      "data_populist_austria_subset"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_visual_encoding_austria_populist_timeline",
+        "type": "Explanation",
+        "label": "Explanation: Visual encoding and classification limits in Austria populist timeline",
+        "source": "system",
+        "description": "In the Austria party timeline visualization: \n- Colors are default matplotlib assignments, not meaningful (no specific variable encoded).\n- Recommended improvements: color by ideology (e.g. far-right, far-left), highlight borderline cases, indicate classification changes over time.\nOn the appearance of parties classified as populist since 1990 with no designation change:\n- Most parties show populist_start = 1900 (interpreted as 1989), populist_end = 2100 (interpreted as 2022); these are placeholders indicating the party is classified as populist from the start to the end of the observation window, not actual formation dates or lifetime activity.\n- True party lifetimes or reclassifications are not directly captured—e.g., BZÖ (founded 2005), Team Stronach (active 2012–2017) — so dataset only records when a party is labeled populist, not when it existed.\n- Candidate refinements: add actual founding dates, mark classification change events, improve color coding for more insight.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          38
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_visual_encoding_austria_populist_timeline",
+        "target": "visualization_populist_austria_timeline",
+        "label": "explains visual encoding"
+      },
+      {
+        "source": "explanation_visual_encoding_austria_populist_timeline",
+        "target": "explanation_populist_v3_time_encoding_placeholder_years",
+        "label": "clarifies meaning via"
+      },
+      {
+        "source": "explanation_visual_encoding_austria_populist_timeline",
+        "target": "data_populist_austria_subset",
+        "label": "addresses interpretive limits of"
+      }
+    ],
+    "summary": "Added an <b>explanation</b> node clarifying the <b>visual encoding</b> of the Austria populist timeline: colors have no current meaning, and classification periods stem from placeholder values (not party lifetimes). Linked this to the timeline visualization, to the placeholder convention explanation, and to the Austria subset data (whose interpretive constraints are highlighted)."
+  },
+  {
+    "referredNodes": [
+      "data_populist_austria_subset"
+    ],
+    "newNodes": [
+      {
+        "id": "data_populist_austria_with_foundation",
+        "type": "Data",
+        "label": "Austria parties dataset with foundation/dissolution dates",
+        "source": "joint",
+        "description": "Austria parties PopuList 3.0 subset with two additional columns:\n- party_founded: Year party founded\n- party_dissolved: Year party dissolved (if applicable)\nColumns are now part of the downloadable CSV, enabling further visualization or analysis of party timelines that reflect formation and dissolution, in addition to populist classification.",
+        "emphasis": 20,
+        "versions": [
+          "data_populist_austria_subset"
+        ],
+        "referred": [
+          40,
+          42,
+          46
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_populist_austria_with_foundation",
+        "target": "data_populist_austria_subset",
+        "label": "extends"
+      }
+    ],
+    "summary": "Added new <b>data</b> node for the <b>Austria parties dataset with foundation/dissolution dates</b>, capturing inclusion of 'party_founded' and 'party_dissolved' columns. Linked this version as an extension of the previous Austria PopuList subset node."
+  },
+  {
+    "referredNodes": [
+      "data_populist_austria_with_foundation"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_austria_party_lifespans_colored_by_ideology",
+        "type": "Visualization",
+        "label": "Visualization: Austria party lifespans colored by ideology",
+        "source": "joint",
+        "description": "Timeline visualization displaying existence periods for parties in Austria, with duration lines reflecting only the interval between party_founded and party_dissolved (if applicable).\nColor legend clarifies ideological coding:\n- Red = Far-right\n- Blue = Far-left\n- Orange = Populist (not far-right or far-left)\n- Gray = Other/Unclassified\nEach party is represented by a line from foundation to dissolution (or present); color denotes ideological group. Visualization URL provided.",
+        "emphasis": 19,
+        "versions": [
+          "visualization_populist_austria_timeline"
+        ],
+        "referred": [
+          42
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_austria_party_lifespans_colored_by_ideology",
+        "target": "data_populist_austria_with_foundation",
+        "label": "visualizes with color"
+      },
+      {
+        "source": "visualization_austria_party_lifespans_colored_by_ideology",
+        "target": "visualization_populist_austria_timeline",
+        "label": "supersedes for lifespans, adds color coding"
+      }
+    ],
+    "summary": "Added a new <b>visualization</b> node: <b>Austria party lifespans colored by ideology</b>, using party formation/dissolution data and explicit color codes for ideological/type. Linked as an updated and extended version of prior visualizations, referencing the enhanced Austria dataset."
+  },
+  {
+    "referredNodes": [
+      "explanation_populist_v3_structure_content_usecases",
+      "explanation_populist_v3_actual_csv_structure_and_variables",
+      "suggestion_populist_v3_exploration_steps"
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_populist_v3_applied_analysis_options",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: PopuList 3.0 applied analysis options",
+        "source": "system",
+        "description": "Suggested core use cases for PopuList 3.0 dataset:\n1. Track the rise/spread of populism over time (using populist_start, populist_end across countries and periods);\n2. Analyze populism’s relationship to government power (filter on in_parliament, compare populist parties holding office and their policy behavior, e.g., on COVID);\n3. Compare populist ideologies and associated policy stances (far-right/left/centrist, Euroscepticism, climate, pandemic response);\n4. Merge with other datasets (OxCGRT, electoral, economic, survey data, using country_name, party_name_short, parlgov_id, partyfacts_id);\nIncludes suggested visuals (timelines, maps, stacked area charts, scatter plots), technical usage notes, and examples of research questions.",
+        "emphasis": 19,
+        "versions": [
+          "suggestion_populist_v3_exploration_steps",
+          "explanation_populist_v3_structure_content_usecases"
+        ],
+        "referred": [
+          44
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "suggestion_populist_v3_applied_analysis_options",
+        "target": "explanation_populist_v3_structure_content_usecases",
+        "label": "applied summary from"
+      },
+      {
+        "source": "suggestion_populist_v3_applied_analysis_options",
+        "target": "explanation_populist_v3_actual_csv_structure_and_variables",
+        "label": "grounds use cases in actual variables"
+      },
+      {
+        "source": "suggestion_populist_v3_applied_analysis_options",
+        "target": "suggestion_populist_v3_exploration_steps",
+        "label": "expands on practical analytic steps"
+      }
+    ],
+    "summary": "Added <b>suggestion</b> node: <b>PopuList 3.0 applied analysis options</b>, summarizing use cases, visuals, and technical options for the dataset. Linked to both the structure/use case explanations and prior suggestion node, incorporating practical and methodological context."
+  },
+  {
+    "referredNodes": [
+      "data_populist_austria_with_foundation",
+      "explanation_populist_v3_time_encoding_placeholder_years"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_no_reclassified_populist_parties_austria",
+        "type": "Finding",
+        "label": "Finding: No parties reclassified as populist (Austria, 1990-2022)",
+        "source": "system",
+        "description": "In the Austria-specific PopuList 3.0 subset, all parties listed as populist are marked as such since the beginning of the classification window (populist_start = 1900, interpreted as 1989). There are no examples in this country where a party acquired a populist classification after 1989. This suggests either all included parties were already considered populist by 1989 or the dataset does not capture within-period reclassification for Austria.",
+        "emphasis": 20,
+        "versions": [],
+        "referred": [
+          46
+        ]
+      },
+      {
+        "id": "suggestion_crossnational_populist_reclassification_query",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Cross-national search for new populist party classifications post-1989",
+        "source": "system",
+        "description": "To find parties that became classified as populist after 1989, expand the query to all countries in PopuList 3.0. Filter for rows where:\n- populist == 1\n- populist_start > 1989\nReturn parties matching these criteria for examples of later reclassifications.",
+        "emphasis": 21,
+        "versions": [],
+        "referred": [
+          46,
+          48
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_no_reclassified_populist_parties_austria",
+        "target": "data_populist_austria_with_foundation",
+        "label": "drawn from"
+      },
+      {
+        "source": "finding_no_reclassified_populist_parties_austria",
+        "target": "explanation_populist_v3_time_encoding_placeholder_years",
+        "label": "interprets placeholder convention"
+      },
+      {
+        "source": "suggestion_crossnational_populist_reclassification_query",
+        "target": "finding_no_reclassified_populist_parties_austria",
+        "label": "addresses limitation"
+      }
+    ],
+    "summary": "Added a <b>finding</b> node: <b>No parties reclassified as populist (Austria, 1990-2022)</b>, based on the Austria party dataset and use of placeholder year codes. Added a <b>suggestion</b> node: <b>Cross-national search for new populist party classifications post-1989</b>, with links showing the proposed analytic next step to overcome dataset limitations."
+  },
+  {
+    "referredNodes": [
+      "suggestion_crossnational_populist_reclassification_query"
+    ],
+    "newNodes": [
+      {
+        "id": "data_populist_late_reclassification_examples",
+        "type": "Data",
+        "label": "Data: Sample of parties reclassified as populist post-1989 (PopuList 3.0, all Europe)",
+        "source": "system",
+        "description": "Filtered subset of PopuList 3.0 dataset, containing sample cases of European political parties that became classified as populist after 1989. These parties' populist_start > 1989 and populist == 1. Provided as a text sample (full CSV available upon request).",
+        "emphasis": 22,
+        "versions": [],
+        "referred": [
+          48,
+          50
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_populist_late_reclassification_examples",
+        "target": "suggestion_crossnational_populist_reclassification_query",
+        "label": "fulfills"
+      }
+    ],
+    "summary": "Added new <b>data</b> node: <b>Sample of parties reclassified as populist post-1989 (PopuList 3.0, all Europe)</b>—the output of the system's cross-national query as suggested. Linked this dataset to the previous <b>suggestion</b> node for the cross-national search."
+  },
+  {
+    "referredNodes": [
+      "data_populist_late_reclassification_examples"
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_party_foundation_fill_full_populist_v3",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Methods and tradeoffs for adding foundation/dissolution dates (full PopuList 3.0)",
+        "source": "system",
+        "description": "Systematic approaches to populating party_founded and party_dissolved columns across all parties in PopuList 3.0:\n- Automatic lookup via Wikidata SPARQL, PartyFacts, ParlGov, or scraping Wikipedia (10–30 minutes runtime with script; matching on party_name_short or party_name_english; prone to ambiguous matches and missing data).\n- Manual review for minority, short-lived, or obscure parties (several hours).\n- Tradeoff: A partial fill with focus on major parties or those in parliament is fast; high precision/coverage, especially for all 30+ countries, is labor-intensive.\n- Possible to supply a script for maximum auto-fill and detailed highlight of remaining manual-check needs.\n- Analyst decision required: Preference for comprehensive but incomplete (with NaN for missing), trimmed subset, or more manual precision.",
+        "emphasis": 22,
+        "versions": [],
+        "referred": [
+          50
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "suggestion_party_foundation_fill_full_populist_v3",
+        "target": "data_populist_late_reclassification_examples",
+        "label": "applies to"
+      }
+    ],
+    "summary": "Added <b>suggestion</b> node: <b>Methods and tradeoffs for adding foundation/dissolution dates (full PopuList 3.0)</b>, outlining technical steps, possible sources, and time tradeoffs for expanding the dataset with party foundation/dissolution years. Linked it to the existing <b>data</b> node for late-reclassified populist parties."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "suggestion_populist_v3_exploration_steps"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_overall_european_populism_evolution_1990_2022",
+        "type": "Visualization",
+        "label": "Visualization: European populist parties trend (1989–2022)",
+        "source": "system",
+        "description": "Line graph (PNG image) depicting the number of active populist parties across Europe annually from 1989 to 2022 based on PopuList 3.0. The plot summarizes the count per year, showing a steady rise throughout the 2000s and 2010s, followed by plateauing in the early 2020s. System interpretation notes the possible causes (consolidation, reclassification).",
+        "emphasis": 22,
+        "versions": [],
+        "referred": [
+          52
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_overall_european_populism_evolution_1990_2022",
+        "target": "data_populist_detail",
+        "label": "summarizes"
+      },
+      {
+        "source": "visualization_overall_european_populism_evolution_1990_2022",
+        "target": "suggestion_populist_v3_exploration_steps",
+        "label": "implements"
+      }
+    ],
+    "summary": "Added a <b>visualization</b> node: <b>European populist parties trend (1989–2022)</b>, a line graph summarizing annual counts of active populist parties from PopuList 3.0. Linked it to the <b>PopuList data</b> node and the <b>suggested time-series analysis steps</b> for practical exploration."
+  },
+  {
+    "referredNodes": [
+      "data_populist_detail",
+      "suggestion_populist_v3_exploration_steps"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_western_vs_eastern_europe_populism_1989_2022",
+        "type": "Visualization",
+        "label": "Visualization: Western vs. Eastern Europe populist parties, 1989–2022",
+        "source": "system",
+        "description": "A comparative line graph (PNG image) tracking active populist party numbers by year, separated into Western and Eastern Europe (1989–2022). Describes diverging regional trends: rapid post-1990 rise in the East (tied to post-communist transitions); steadier rise in the West with marked acceleration in the 2010s (possibly linked to migration, austerity, Euroscepticism).",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          54,
+          56,
+          58
+        ]
+      },
+      {
+        "id": "insight_regional_populism_dynamics",
+        "type": "Insight",
+        "label": "Insight: Regional populism dynamics since 1990",
+        "source": "system",
+        "description": "Eastern Europe: Rapid populist party surge late 1990s, post-communist transitions.\nWestern Europe: Steady rise, accelerates 2010s (migration crises, austerity, Euroscepticism). Distinct shaping forces in each region.",
+        "emphasis": 22,
+        "versions": [],
+        "referred": [
+          54
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_western_vs_eastern_europe_populism_1989_2022",
+        "target": "data_populist_detail",
+        "label": "splits by region"
+      },
+      {
+        "source": "visualization_western_vs_eastern_europe_populism_1989_2022",
+        "target": "suggestion_populist_v3_exploration_steps",
+        "label": "implements"
+      },
+      {
+        "source": "insight_regional_populism_dynamics",
+        "target": "visualization_western_vs_eastern_europe_populism_1989_2022",
+        "label": "interprets"
+      }
+    ],
+    "summary": "Added <b>visualization</b> node: <b>Western vs. Eastern Europe populist parties, 1989–2022</b> (shows regional party count trends). Added <b>insight</b> node: <b>Regional populism dynamics since 1990</b> summarizing observed East/West divergence and associated drivers. Both reference underlying PopuList data and the suggested analysis workflow."
+  },
+  {
+    "referredNodes": [
+      "visualization_western_vs_eastern_europe_populism_1989_2022",
+      "data_populist_detail",
+      "suggestion_populist_v3_exploration_steps"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+        "type": "Visualization",
+        "label": "Visualization: Populist parties per capita (Western vs. Eastern Europe, 1989–2022)",
+        "source": "system",
+        "description": "Line graph (PNG image) displaying the annual number of populist parties per 10 million people for Western and Eastern Europe from 1989 to 2022. Based on country groups defined for each region, using official population data. Shows normalized party counts, allowing for direct regional comparison independent of absolute population.",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          56,
+          58
+        ]
+      },
+      {
+        "id": "insight_disproportionate_eastern_populism_per_capita",
+        "type": "Insight",
+        "label": "Insight: Disproportionately higher per capita populism in Eastern Europe",
+        "source": "system",
+        "description": "Eastern Europe maintains a much higher number of populist parties per capita than Western Europe throughout 1989–2022. The post-communist surge is driven by country-level dynamics, not just region size; normalization reveals persistent East–West differences independent of population.",
+        "emphasis": 23,
+        "versions": [],
+        "referred": [
+          56
+        ]
+      },
+      {
+        "id": "data_country_groupings_and_population_for_regional_normalization",
+        "type": "Data",
+        "label": "Data: Country groupings and population data for Western/Eastern Europe",
+        "source": "joint",
+        "description": "Country assignment lists used for regional grouping (Western vs. Eastern Europe) as applied in the PopuList-based visualizations. Includes population dataset for each country (annual values), merged to enable computation of normalized party counts per region.",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          56,
+          58
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+        "target": "visualization_western_vs_eastern_europe_populism_1989_2022",
+        "label": "normalizes"
+      },
+      {
+        "source": "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+        "target": "data_country_groupings_and_population_for_regional_normalization",
+        "label": "computes from"
+      },
+      {
+        "source": "insight_disproportionate_eastern_populism_per_capita",
+        "target": "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+        "label": "interprets"
+      },
+      {
+        "source": "data_country_groupings_and_population_for_regional_normalization",
+        "target": "data_populist_detail",
+        "label": "extends"
+      },
+      {
+        "source": "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+        "target": "suggestion_populist_v3_exploration_steps",
+        "label": "deepens"
+      }
+    ],
+    "summary": "Added <b>visualization</b>: Populist parties per capita (Western/Eastern Europe, 1989–2022), which normalizes prior regional party counts by population. Added <b>insight</b>: Persistent, disproportionate per capita populism in Eastern Europe. Introduced <b>data node</b> for country grouping and population info. Linked data and insight to prior visualizations and analytical suggestions."
+  },
+  {
+    "referredNodes": [
+      "visualization_western_vs_eastern_europe_populism_1989_2022",
+      "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+      "data_country_groupings_and_population_for_regional_normalization"
+    ],
+    "newNodes": [
+      {
+        "id": "assumption_country_groupings_regional_split",
+        "type": "Assumption",
+        "label": "Assumption: Country groupings for Western and Eastern Europe split",
+        "source": "system",
+        "description": "Regional categorization explicitly used in comparative visualizations:\n\nWestern Europe:\n  - Austria, Belgium, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Portugal, Spain, Switzerland, United Kingdom\n- High-income, long-standing democracies, mostly early EU members.\n\nEastern Europe:\n  - Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Estonia, Hungary, Kosovo, Latvia, Lithuania, Moldova, Montenegro, North Macedonia, Poland, Romania, Serbia, Slovakia, Slovenia, Ukraine\n- Mostly post-communist states, transitioned to democracy in 1990s/2000s, EU joiners 2004 or later.\n\nOther: Countries not in either list (e.g., Cyprus, Greece, Malta, Nordics beyond Sweden/Finland) excluded from the regional split.",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          58
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "assumption_country_groupings_regional_split",
+        "target": "visualization_western_vs_eastern_europe_populism_1989_2022",
+        "label": "defines groupings for"
+      },
+      {
+        "source": "assumption_country_groupings_regional_split",
+        "target": "visualization_normalized_populist_parties_per_capita_regionally_1989_2022",
+        "label": "defines groupings for"
+      },
+      {
+        "source": "assumption_country_groupings_regional_split",
+        "target": "data_country_groupings_and_population_for_regional_normalization",
+        "label": "details"
+      }
+    ],
+    "summary": "Added <b>assumption</b> node detailing the explicit country groupings used for the Western/Eastern Europe split in regional populism analyses. Linked this grouping logic to both key visualizations and to the <b>country groupings/population</b> data node for traceability. No new data or findings were introduced."
+  },
+  {
+    "referredNodes": [
+      "data_vdem_detail",
+      "explanation_vdem_variable_structure_and_contents"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_vdem_codebook_categorized_variables",
+        "type": "Explanation",
+        "label": "Explanation: V-Dem variable categories and coverage (from codebook)",
+        "source": "joint",
+        "description": "V-Dem measures over 450 indicators, grouped in thematic categories:\n1. Core Indices: Liberal Democracy Index (LDI), Electoral Democracy Index (EDI), Participatory Democracy Index, Deliberative Democracy Index, Egalitarian Democracy Index (composite scores, annual, by country).\n2. Elections & Electoral Integrity: v2elefree, v2eltype_*, election violence, democracy/autocracy measures.\n3. Rule of Law & Judiciary: v2jureview, v2jupurge, judicial independence, access to justice, executive oversight.\n4. Freedom of Expression & Media: Freedom of speech, academic freedom, v2mefreedom (media censorship), internet/media bias.\n5. Civil Society & Participation: Civil society repression, activism, association/assembly freedoms, government engagement with CSOs.\n6. Equality & Inclusion: Equal protection, power distribution (gender, socioeconomic, ethnicity), social discrimination.\n7. Executive Constraints & Corruption: Legislative/judicial/media checks, executive corruption (v2excrptps), transparency/accountability.\n8. Autocracy & Repression: Political purges, opposition harassment, civil liberties violations, regime type classification.\n9. Political Parties: Party bans/repression, opposition autonomy, party-society linkages.\n10. Miscellaneous: Regime duration/transitions, constitutional changes, military/religious influence in politics.\nTime coverage: Annual, 1900–present for most countries.",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          60
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_vdem_codebook_categorized_variables",
+        "target": "data_vdem_detail",
+        "label": "clarifies variables in"
+      },
+      {
+        "source": "explanation_vdem_codebook_categorized_variables",
+        "target": "explanation_vdem_variable_structure_and_contents",
+        "label": "summarizes for analyst"
+      }
+    ],
+    "summary": "Added an <b>explanation</b> node summarizing the thematic variable categories in the <b>V-Dem dataset</b> based on the codebook, including core democracy indices, elections, judiciary, media freedom, civil society, equality, executive constraints, repression, parties, and other contextual domains. Linked this summary to earlier <b>V-Dem detail</b> and variable structure nodes."
+  },
+  {
+    "referredNodes": [
+      "data_vdem_detail",
+      "explanation_vdem_variable_structure_and_contents"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_romania_vdem_highlevel_indices",
+        "type": "Visualization",
+        "label": "Visualization: Romania V-Dem 5 High-Level Democratic Indices Over Time",
+        "source": "joint",
+        "description": "Line plot displaying annual values for the five major V-Dem indices—Liberal Democracy Index, Electoral Democracy Index, Participatory Democracy Index, Deliberative Democracy Index, Egalitarian Democracy Index—for Romania, for all available years in the national subset. Each index trends from 0 (min) to 1 (max), showing variance over time.",
+        "emphasis": 27,
+        "versions": [],
+        "referred": [
+          62,
+          64,
+          66,
+          68
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_romania_vdem_highlevel_indices",
+        "target": "data_vdem_detail",
+        "label": "plotted from"
+      },
+      {
+        "source": "visualization_romania_vdem_highlevel_indices",
+        "target": "explanation_vdem_variable_structure_and_contents",
+        "label": "shows time trends for"
+      }
+    ],
+    "summary": "Added a <b>visualization</b> node for plotting the five high-level <b>V-Dem indices</b> (Liberal, Electoral, Participatory, Deliberative, Egalitarian Democracy) over time for Romania. This plot draws from the <b>V-Dem details</b> and references the structure of these indices. No new analytical concepts or findings introduced."
+  },
+  {
+    "referredNodes": [
+      "visualization_romania_vdem_highlevel_indices",
+      "data_vdem_detail"
+    ],
+    "newNodes": [
+      {
+        "id": "insight_romania_1940s_collapse_democracy",
+        "type": "Insight",
+        "label": "Insight: 1940s collapse of democracy in Romania",
+        "source": "system",
+        "description": "The sharp decline in V-Dem democracy indices for Romania around 1940 corresponds to: \n- King Carol II's suspension of the constitution and establishment of a royal dictatorship (1938–1940)\n- 1940: King Carol II abdicates; General Ion Antonescu forms military/fascist government allied with Nazi Germany\n- Abolition of elections, suppression of pluralism, and authoritarian rule\nThis regime transformation is mirrored in sharp drops across liberal, electoral, and participatory democracy indicators.",
+        "emphasis": 25,
+        "versions": [],
+        "referred": [
+          64
+        ]
+      },
+      {
+        "id": "insight_romania_1989_2000_post_communist_transition",
+        "type": "Insight",
+        "label": "Insight: 1989–2000 post-communist democratic transition in Romania",
+        "source": "system",
+        "description": "The sharp rise in all high-level V-Dem democracy indices for Romania circa 1989–2000 reflects: \n- 1989 Romanian Revolution (violent end of Ceaușescu's regime)\n- Restoration of multi-party elections (1990), democratic constitution (1991), EU alignment process\n- Strengthening civil liberties, checks and balances, and civic space\nThis phase indicates the transition from authoritarian rule/communism to democratic consolidation.",
+        "emphasis": 25,
+        "versions": [],
+        "referred": [
+          64
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "insight_romania_1940s_collapse_democracy",
+        "target": "visualization_romania_vdem_highlevel_indices",
+        "label": "explains sharp drop"
+      },
+      {
+        "source": "insight_romania_1940s_collapse_democracy",
+        "target": "data_vdem_detail",
+        "label": "interprets"
+      },
+      {
+        "source": "insight_romania_1989_2000_post_communist_transition",
+        "target": "visualization_romania_vdem_highlevel_indices",
+        "label": "explains sharp rise"
+      },
+      {
+        "source": "insight_romania_1989_2000_post_communist_transition",
+        "target": "data_vdem_detail",
+        "label": "interprets"
+      }
+    ],
+    "summary": "Added two <b>insight</b> nodes: one linking Romania's 1940s decline in V-Dem indices to the fall of democracy and fascist/military rule; another connecting the 1989–2000 rises in indices to the post-communist transition and democratic reforms. Both insights connect directly to the <b>Romania V-Dem timeline visualization</b> and are grounded in the underlying <b>V-Dem data</b>."
+  },
+  {
+    "referredNodes": [
+      "visualization_romania_vdem_highlevel_indices",
+      "data_vdem_detail",
+      "explanation_vdem_variable_structure_and_contents"
+    ],
+    "newNodes": [
+      {
+        "id": "insight_vdem_electoral_democracy_similarity_communist_interwar",
+        "type": "Insight",
+        "label": "Insight: Similarity in Electoral Democracy Index between communist and interwar Romania",
+        "source": "joint",
+        "description": "Observation: The Electoral Democracy Index (v2x_polyarchy) for Romania is not dramatically lower under communism (1960–1989) than in the interwar years. \nContext/hypothesis: \n- Interwar (1919–1939) included pluralism, but ended with increasing authoritarianism (King Carol II, late 1930s) and election manipulation/violence.\n- Communist era (1947–1989) had regular elections, universal suffrage, but no true competition (only Communist party allowed). \n- Some mid-level indicators may be moderate due to universal suffrage and the formal holding of elections even under communism.\n- Key variables: v2elmulpar (multi-party elections), v2elfrfair (free/fair elections), v2elvotbuy (vote buying), v2elirreg (irregularities), v2x_suffr (suffrage). \nExplanation: Index values can be comparable due to moderate suffrage/regular elections scores under communism and electoral manipulation/authoritarian drift in late interwar period.",
+        "emphasis": 26,
+        "versions": [],
+        "referred": [
+          66
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "insight_vdem_electoral_democracy_similarity_communist_interwar",
+        "target": "visualization_romania_vdem_highlevel_indices",
+        "label": "interprets patterns in"
+      },
+      {
+        "source": "insight_vdem_electoral_democracy_similarity_communist_interwar",
+        "target": "data_vdem_detail",
+        "label": "draws on"
+      },
+      {
+        "source": "insight_vdem_electoral_democracy_similarity_communist_interwar",
+        "target": "explanation_vdem_variable_structure_and_contents",
+        "label": "references variable structure"
+      }
+    ],
+    "summary": "Added a new <b>insight</b> node explaining the unexpected similarity in Romania's <b>Electoral Democracy Index</b> between the communist and interwar periods. This draws on the <b>mid-level V-Dem components</b>, formal election structures, and patterns of authoritarianism or repression, and links to the existing V-Dem indices <b>visualization</b> and relevant V-Dem data/explanations."
+  },
+  {
+    "referredNodes": [
+      "visualization_romania_vdem_highlevel_indices",
+      "data_vdem_detail"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_romania_vdem_indices_2000_2022",
+        "type": "Visualization",
+        "label": "Visualization: Romania V-Dem high-level indices, 2000–2022",
+        "source": "joint",
+        "description": "Line plot of Romania's five high-level V-Dem indices (Liberal, Electoral, Deliberative, Participatory, Egalitarian democracy) from 2000 to 2022, highlighting spikes and drops in the late 2010s/early 2020s.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          68,
+          70
+        ]
+      },
+      {
+        "id": "insight_romania_indices_2017_2022_instability",
+        "type": "Insight",
+        "label": "Insight: V-Dem indices volatility in Romania, 2017–2022 (protests, reforms, instability)",
+        "source": "joint",
+        "description": "Observed pattern: Dip in indices through 2017–2019 (anti-corruption protests, government backsliding), sharp rise c. 2019–2020 (new pro-reform government, judicial independence, resumed reform agenda), then renewed drop 2021–2022 (political instability, populist/anti-vax pressures, attacks on judiciary/press). Underlying causes align with major government changes, policy swings, and societal pressures.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          68,
+          70
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_romania_vdem_indices_2000_2022",
+        "target": "visualization_romania_vdem_highlevel_indices",
+        "label": "temporal subset of"
+      },
+      {
+        "source": "visualization_romania_vdem_indices_2000_2022",
+        "target": "data_vdem_detail",
+        "label": "based on"
+      },
+      {
+        "source": "insight_romania_indices_2017_2022_instability",
+        "target": "visualization_romania_vdem_indices_2000_2022",
+        "label": "interprets"
+      },
+      {
+        "source": "insight_romania_indices_2017_2022_instability",
+        "target": "data_vdem_detail",
+        "label": "draws on"
+      }
+    ],
+    "summary": "Added a <b>visualization</b> node for Romania's V-Dem indices from 2000–2022, capturing the unusual 2019–2022 volatility, and an <b>insight</b> node explaining this fluctuation as the product of anti-corruption protests, reform, instability, and later anti-vax/populist pressures. Both reference the main <b>visualization</b> and <b>V-Dem dataset</b> nodes."
+  },
+  {
+    "referredNodes": [
+      "visualization_romania_vdem_indices_2000_2022",
+      "insight_romania_indices_2017_2022_instability",
+      "data_vdem_detail"
+    ],
+    "newNodes": [
+      {
+        "id": "researchquestion_vdem_recency_visibility_bias",
+        "type": "Research Question",
+        "label": "Are V-Dem scores significantly shaped by recency effects, data visibility, or measurement shifts?",
+        "source": "joint",
+        "description": "How much are the V-Dem scores for Romania (and similar countries) in the 2000–2022 period shaped by:\n- Recency bias (more media/international attention in recent years),\n- Improved data visibility/coverage (especially after 2010),\n- Methodological shifts (indicator additions, coder rotation, question framing),\nas opposed to actual changes in democratic or political reality? Does this bias lead to underrepresentation of major events (e.g., Mineriads 1990/91) in earlier periods versus more sharply-recorded recent events?",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          70
+        ]
+      },
+      {
+        "id": "finding_vdem_data_coverage_timeliness_biases",
+        "type": "Finding",
+        "label": "Finding: V-Dem data coverage, recency, and measurement biases",
+        "source": "system",
+        "description": "1. Recency Effects: V-Dem scores post-2010 benefit from\n   - Greater media/NGO/international coverage\n   - More consistent expert access to data\n   - More transparency\nEarlier decades (especially 1990s):\n   - Fewer watchdogs, weaker press, less data\n   - Major events (Mineriads, 1990/91) less fully captured by coders/indices\n2. Methodology: V-Dem adds indicators, rotates coders, and occasionally reframes questions—introducing noise and inconsistency in time series,\n   - Earlier data (pre-2000, 2000s) particularly impacted.\n3. Bottom line: Recent spikes/drops (e.g., 2019–2021 volatility) may reflect both real institutional change and increased responsiveness/documentation, whereas prior shocks (1990s) can be muted/missed in data.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          70
+        ]
+      },
+      {
+        "id": "suggestion_vdem_biases_empirical_tests",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Empirical approaches to recency/visibility bias in V-Dem",
+        "source": "system",
+        "description": "- Annotate major documented events, compare magnitude of V-Dem index response for early vs. late periods\n- Apply a \"visibility adjustment lens\" (rate/score media/international coverage for each event)\n- Examine coder disagreement/uncertainty (V-Dem has bounds) as a proxy for historical reliability\n- Consider trend break or measurement consistency analysis\n- Compare with contemporaneous datasets or eyewitness/archival sources for pre-2010 events",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          70
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "researchquestion_vdem_recency_visibility_bias",
+        "target": "visualization_romania_vdem_indices_2000_2022",
+        "label": "provoked by volatility in"
+      },
+      {
+        "source": "finding_vdem_data_coverage_timeliness_biases",
+        "target": "researchquestion_vdem_recency_visibility_bias",
+        "label": "addresses"
+      },
+      {
+        "source": "suggestion_vdem_biases_empirical_tests",
+        "target": "researchquestion_vdem_recency_visibility_bias",
+        "label": "suggested by"
+      },
+      {
+        "source": "finding_vdem_data_coverage_timeliness_biases",
+        "target": "insight_romania_indices_2017_2022_instability",
+        "label": "qualifies explanation of"
+      },
+      {
+        "source": "suggestion_vdem_biases_empirical_tests",
+        "target": "data_vdem_detail",
+        "label": "empirical strategies for"
+      }
+    ],
+    "summary": "<b>Research question</b> node added: Does V-Dem show real shifts or recency/visibility/measuring bias? Linked this to Romania's recent index volatility (visualization/insight). Added a <b>finding</b> node on recency effects, data/documentation disparities, and methodological drift in V-Dem. Added a <b>suggestion</b> node outlining empirical approaches to test for such biases (e.g., annotating shocks, uncertainty analysis), referencing the main V-Dem data."
+  },
+  {
+    "referredNodes": [
+      "goal_covid19_social_impact_analysis"
+    ],
+    "newNodes": [
+      {
+        "id": "data_justonwards2000_all_countries",
+        "type": "Data",
+        "label": "Dataset: V-Dem, All Countries, 2000 onwards",
+        "source": "analyst",
+        "description": "CSV file containing V-Dem-style political/democracy-related indicators for all available countries from the year 2000 onwards. Source URL: https://radujianu.github.io/analysismapper/covidanalysis/justonwards2000.csv. Loaded using tolerant encoding (ISO-8859-1 or cp1252) due to non-UTF-8 characters.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          72
+        ]
+      },
+      {
+        "id": "task_split_dataset_by_custom_regions",
+        "type": "Task",
+        "label": "Task: Split all-country dataset by custom global regions, 2000+",
+        "source": "joint",
+        "description": "Subdivide the 2000-onward all-country dataset into three region-specific subsets:\n- Europe + West: All European countries, plus US, Canada, Australia\n- Latin America: All Central and South American countries\n- Asia: All Asian countries, including South Asian island states but excluding Australia\nRegion assignments as per analyst's specification.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          72
+        ]
+      },
+      {
+        "id": "data_europe_plus_west_2000onward",
+        "type": "Data",
+        "label": "Dataset: Europe + West (Europe, US, Canada, Australia, 2000+)",
+        "source": "joint",
+        "description": "Extracted subset of the all-country 2000+ dataset containing:\n- All European countries\n- United States\n- Canada\n- Australia\nPrepared with special regional definition combining Western democracies for further analysis.",
+        "emphasis": 35,
+        "versions": [],
+        "referred": [
+          72,
+          74,
+          76,
+          80,
+          82,
+          84,
+          86,
+          88
+        ]
+      },
+      {
+        "id": "data_latin_america_2000onward",
+        "type": "Data",
+        "label": "Dataset: Latin America (Central/South America, 2000+)",
+        "source": "joint",
+        "description": "Extracted subset of the all-country 2000+ dataset containing all countries of Central and South America.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          72
+        ]
+      },
+      {
+        "id": "data_asia_2000onward",
+        "type": "Data",
+        "label": "Dataset: Asia (with South Asian island states, 2000+; excl. Australia)",
+        "source": "joint",
+        "description": "Extracted subset of the all-country 2000+ dataset containing all countries in Asia, including South Asian island states but explicitly excluding Australia.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          72
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_justonwards2000_all_countries",
+        "target": "goal_covid19_social_impact_analysis",
+        "label": "enables"
+      },
+      {
+        "source": "task_split_dataset_by_custom_regions",
+        "target": "data_justonwards2000_all_countries",
+        "label": "applied to"
+      },
+      {
+        "source": "data_europe_plus_west_2000onward",
+        "target": "task_split_dataset_by_custom_regions",
+        "label": "output of"
+      },
+      {
+        "source": "data_latin_america_2000onward",
+        "target": "task_split_dataset_by_custom_regions",
+        "label": "output of"
+      },
+      {
+        "source": "data_asia_2000onward",
+        "target": "task_split_dataset_by_custom_regions",
+        "label": "output of"
+      }
+    ],
+    "summary": "Added <b>data</b> node for the new full-country dataset from 2000 onward, and a <b>task</b> node for region-based splitting as per analyst's custom groupings. Three <b>data</b> nodes (Europe+West, Latin America, Asia) represent the outputs. All are linked through the splitting <b>task</b>, which is directly tied to the analyst's global COVID-19 impact analysis <b>goal</b>."
+  },
+  {
+    "referredNodes": [
+      "data_europe_plus_west_2000onward"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_task_small_multiples_europe_west",
+        "type": "Task",
+        "label": "Task: Small multiples plot of 5 main indicators per country (Europe+West)",
+        "source": "joint",
+        "description": "Generate a small multiple plot in which, for each country in the Europe+West subset (Europe, US, Canada, Australia, 2000+), five main indicators are plotted as time series lines (one per indicator, over the last 20 years). Intended as a comparative overview of indicator evolution.\n\nSystem feedback: Plot generation failed due to exceeding memory/rendering limits (too many subplots).\n\nSystem suggestions to proceed:\n- Split countries into smaller groups (e.g., batches of 10–15)\n- Generate separate small multiple plots for each group\n- Optionally, provide manual or alphabetical selection of countries per plot\n- Await analyst preference for batch size or country selection.",
+        "emphasis": 34,
+        "versions": [],
+        "referred": [
+          74,
+          76,
+          80,
+          82,
+          84,
+          86
+        ]
+      },
+      {
+        "id": "suggestion_batch_split_small_multiples",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Batch split or manual selection for small multiples",
+        "source": "system",
+        "description": "- Split the Europe+West country list into several smaller batches (e.g., groups of 10–15 countries)\n- Generate a separate small multiple plot for each batch\n- As alternatives, allow selection of the first 10 countries alphabetically or manual specification of countries for initial plotting\n- Await analyst's feedback for preferred procedure",
+        "emphasis": 29,
+        "versions": [],
+        "referred": [
+          74
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_task_small_multiples_europe_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "plot on"
+      },
+      {
+        "source": "suggestion_batch_split_small_multiples",
+        "target": "visualization_task_small_multiples_europe_west",
+        "label": "addresses technical limits for"
+      }
+    ],
+    "summary": "Added a new <b>task</b> node capturing the attempted small multiples plot of 5 main indicators for each Europe+West country. System's <b>suggestion</b> node provides two main routes: splitting into batches or manual country selection to address rendering limits. Both are linked—task to dataset, suggestion to task."
+  },
+  {
+    "referredNodes": [
+      "visualization_task_small_multiples_europe_west",
+      "data_europe_plus_west_2000onward"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_small_multiples_first10_europe_west",
+        "type": "Visualization",
+        "label": "Visualization: Small multiples for first 10 countries (Europe+West, 5 indicators)",
+        "source": "joint",
+        "description": "Small multiples plot showing, for each of the first 10 countries in the Europe+West group (2003–2022): time series of 5 core V-Dem indices. Each country is a panel, each index is a line within the panel. Reference image provided (image8.png). System offers to generate next batch (next 10), individual, or custom-country plots for further analysis.",
+        "emphasis": 31,
+        "versions": [],
+        "referred": [
+          76,
+          78
+        ]
+      },
+      {
+        "id": "suggestion_next_batches_or_custom_small_multiples",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Next steps - small multiples for next 10/specific/single country",
+        "source": "system",
+        "description": "System offers the following follow-up plot options:\n- Display small multiples for the next 10 countries\n- Generate plots for a specific set of countries\n- Focus on a single country in greater detail\nAwaiting analyst's direction for batch progression or bespoke selection.",
+        "emphasis": 31,
+        "versions": [],
+        "referred": [
+          76,
+          80
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_small_multiples_first10_europe_west",
+        "target": "visualization_task_small_multiples_europe_west",
+        "label": "fulfills subset of"
+      },
+      {
+        "source": "visualization_small_multiples_first10_europe_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "visualizes"
+      },
+      {
+        "source": "suggestion_next_batches_or_custom_small_multiples",
+        "target": "visualization_small_multiples_first10_europe_west",
+        "label": "suggests next steps for"
+      }
+    ],
+    "summary": "<b>Visualization</b> node added for the generated small multiples plot (5 indicators, first 10 Europe+West countries). New <b>suggestion</b> node captures system's offer to generate additional plots for next country batches or custom selections. Links indicate fulfillment of the previous task, concrete data used, and next-step options."
+  },
+  {
+    "referredNodes": [
+      "visualization_small_multiples_first10_europe_west"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_small_multiples_first10_europe_west_fixed_layout",
+        "type": "Visualization",
+        "label": "Visualization: Small multiples, first 10 Europe+West (layout fixed)",
+        "source": "joint",
+        "description": "Update to the small multiples plot for the first 10 countries in the Europe+West group (2003–2022): the top caption (overall title) layout has been revised so that the title no longer overlaps with the country labels. Image provided (image9.png). System invites further batches or additional refinements as next steps.",
+        "emphasis": 32,
+        "versions": [
+          "visualization_small_multiples_first10_europe_west"
+        ],
+        "referred": [
+          78,
+          80
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_small_multiples_first10_europe_west_fixed_layout",
+        "target": "visualization_small_multiples_first10_europe_west",
+        "label": "refines"
+      }
+    ],
+    "summary": "Added a new <b>visualization</b> node detailing the fixed-layout version of the small multiples plot for the first 10 Europe+West countries. This node updates the previous visualization to resolve caption overlap. A version/refinement link connects the new and previous visual outputs."
+  },
+  {
+    "referredNodes": [
+      "visualization_task_small_multiples_europe_west",
+      "data_europe_plus_west_2000onward",
+      "suggestion_next_batches_or_custom_small_multiples",
+      "visualization_small_multiples_first10_europe_west_fixed_layout"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_small_multiples_second10_europe_west",
+        "type": "Visualization",
+        "label": "Visualization: Small multiples for second 10 countries (Europe+West, 5 indicators)",
+        "source": "joint",
+        "description": "Small multiples plot displaying, for each of the next 10 countries alphabetically in the Europe + West group (years 2003–2022): time series of 5 core V-Dem indices. Each country is a panel, each index is a line within its respective panel. Output delivered as an image (image10.png). System proposes further plots for more countries, specific countries, or alternative regions (Asia, Latin America) depending on analyst's preference.",
+        "emphasis": 33,
+        "versions": [],
+        "referred": [
+          80,
+          82
+        ]
+      },
+      {
+        "id": "suggestion_further_small_multiples_batches_or_region_switch",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Continue with more countries or switch to Asia/Latin America",
+        "source": "system",
+        "description": "Options for next steps in the small multiples workflow:\n- Continue to additional batches of countries in the Europe + West group\n- Highlight or focus on specific country/countries\n- Switch regional focus to Asia or Latin America for equivalent visualization\nSystem awaits analyst's decision for progression.",
+        "emphasis": 35,
+        "versions": [],
+        "referred": [
+          80,
+          82,
+          84,
+          86
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_small_multiples_second10_europe_west",
+        "target": "visualization_task_small_multiples_europe_west",
+        "label": "fulfills subset of"
+      },
+      {
+        "source": "visualization_small_multiples_second10_europe_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "visualizes"
+      },
+      {
+        "source": "visualization_small_multiples_second10_europe_west",
+        "target": "visualization_small_multiples_first10_europe_west_fixed_layout",
+        "label": "continues batch sequence from"
+      },
+      {
+        "source": "suggestion_further_small_multiples_batches_or_region_switch",
+        "target": "visualization_small_multiples_second10_europe_west",
+        "label": "suggests next steps for"
+      }
+    ],
+    "summary": "Added <b>visualization</b> node for the small multiples plot of the next 10 Europe+West countries (5 indicators, 2003–2022). New <b>suggestion</b> node records system's offers: further batches, focus on specific countries, or regional switch. Links capture workflow continuation, data origin, and task sequence."
+  },
+  {
+    "referredNodes": [
+      "visualization_task_small_multiples_europe_west",
+      "data_europe_plus_west_2000onward",
+      "visualization_small_multiples_second10_europe_west",
+      "suggestion_further_small_multiples_batches_or_region_switch"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_small_multiples_third10_europe_west",
+        "type": "Visualization",
+        "label": "Visualization: Small multiples for countries 21–30 (Europe+West, 5 indicators)",
+        "source": "joint",
+        "description": "Small multiples plot showing, for each of countries 21 through 30 alphabetically in the Europe+West group (2003–2022): time series of 5 main V-Dem indices. Each subplot is a country panel, plotting the five indicators. Delivered as image11.png. System again offers more batches or regional/indicator-set shift.",
+        "emphasis": 34,
+        "versions": [],
+        "referred": [
+          82,
+          84
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_small_multiples_third10_europe_west",
+        "target": "visualization_task_small_multiples_europe_west",
+        "label": "fulfills subset of"
+      },
+      {
+        "source": "visualization_small_multiples_third10_europe_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "visualizes"
+      },
+      {
+        "source": "visualization_small_multiples_third10_europe_west",
+        "target": "visualization_small_multiples_second10_europe_west",
+        "label": "continues batch sequence from"
+      },
+      {
+        "source": "visualization_small_multiples_third10_europe_west",
+        "target": "suggestion_further_small_multiples_batches_or_region_switch",
+        "label": "operationalizes"
+      }
+    ],
+    "summary": "Added <b>visualization</b> node for the third batch (countries 21–30) of Europe+West small multiples (5 indicators, 2003–2022). Linked as continuation of sequential batches and fulfillment of task. Referred prior suggestion for further workflow direction. All relevant prior nodes referenced."
+  },
+  {
+    "referredNodes": [
+      "visualization_task_small_multiples_europe_west",
+      "data_europe_plus_west_2000onward",
+      "visualization_small_multiples_third10_europe_west",
+      "suggestion_further_small_multiples_batches_or_region_switch"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_small_multiples_fourth10_europe_west",
+        "type": "Visualization",
+        "label": "Visualization: Small multiples countries 31–40 (Europe+West, 5 indicators)",
+        "source": "joint",
+        "description": "Small multiples plot depicting the next batch (countries 31–40, by alphabetical order) in the Europe + West set, for years 2003–2022, with time series for 5 core V-Dem indices per country. Each panel represents a country; each indicator is a separate line within the panel. Delivered as image12.png. System prompts options: continue with last batch or shift focus.",
+        "emphasis": 35,
+        "versions": [],
+        "referred": [
+          84,
+          86
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_small_multiples_fourth10_europe_west",
+        "target": "visualization_task_small_multiples_europe_west",
+        "label": "fulfills subset of"
+      },
+      {
+        "source": "visualization_small_multiples_fourth10_europe_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "visualizes"
+      },
+      {
+        "source": "visualization_small_multiples_fourth10_europe_west",
+        "target": "visualization_small_multiples_third10_europe_west",
+        "label": "continues batch sequence from"
+      },
+      {
+        "source": "visualization_small_multiples_fourth10_europe_west",
+        "target": "suggestion_further_small_multiples_batches_or_region_switch",
+        "label": "operationalizes"
+      }
+    ],
+    "summary": "Added <b>visualization</b> node for the small multiples plot of countries 31–40 in Europe+West (5 indicators, 2003–2022). This continues the batch sequence, fulfills the overarching small multiples task, visualizes the region-specific data, and operationalizes the system's ongoing suggestion for further batches or shifting regional focus."
+  },
+  {
+    "referredNodes": [
+      "visualization_task_small_multiples_europe_west",
+      "data_europe_plus_west_2000onward",
+      "visualization_small_multiples_fourth10_europe_west",
+      "suggestion_further_small_multiples_batches_or_region_switch"
+    ],
+    "newNodes": [
+      {
+        "id": "visualization_small_multiples_fifthbatch_europe_west",
+        "type": "Visualization",
+        "label": "Visualization: Small multiples for final (remaining) Europe+West countries, 5 indicators",
+        "source": "joint",
+        "description": "Small multiples plot covering the final batch of countries (alphabetically, countries 41–end) in the Europe+West group, years 2003–2022. Each country has a panel displaying time series for 5 core V-Dem indices. Image provided (image13.png). System reiterates options to switch to different regions (Latin America, Asia) or focus on specific countries/indicators.",
+        "emphasis": 35,
+        "versions": [],
+        "referred": [
+          86
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "visualization_small_multiples_fifthbatch_europe_west",
+        "target": "visualization_task_small_multiples_europe_west",
+        "label": "fulfills subset of"
+      },
+      {
+        "source": "visualization_small_multiples_fifthbatch_europe_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "visualizes"
+      },
+      {
+        "source": "visualization_small_multiples_fifthbatch_europe_west",
+        "target": "visualization_small_multiples_fourth10_europe_west",
+        "label": "continues batch sequence from"
+      },
+      {
+        "source": "visualization_small_multiples_fifthbatch_europe_west",
+        "target": "suggestion_further_small_multiples_batches_or_region_switch",
+        "label": "operationalizes"
+      }
+    ],
+    "summary": "Added <b>visualization</b> node for the final (fifth) batch of small multiples in the Europe+West group (5 V-Dem indicators, 2003–2022). Linked as the batch sequence conclusion, visualizing the regional data subset, fulfilling part of the main small multiples task, and referencing the system’s ongoing suggestion for workflow progression or regional shift."
+  },
+  {
+    "referredNodes": [
+      "data_europe_plus_west_2000onward"
+    ],
+    "newNodes": [
+      {
+        "id": "assumption_vdem_official_degradation_and_policy_timing_limitation",
+        "type": "Assumption",
+        "label": "Assumption: V-Dem data reflects official democratic changes post-policy, not anticipatory effects",
+        "source": "analyst",
+        "description": "V-Dem democracy indicators primarily capture 'official' changes resulting from policies enacted by newly elected administrations. Indirect, anticipatory, or pre-electoral social or political dynamics (such as increased polarization or unrest that precede elections) are not detected if those elections and resultant policies fall outside the last measurement period covered in the data. For example, U.S. democracy scores do not reflect COVID's downstream electoral/political effects since the relevant changes (Trump's election, policy shifts) occurred after the latest available data.",
+        "emphasis": 35,
+        "versions": [],
+        "referred": [
+          88
+        ]
+      },
+      {
+        "id": "task_identify_2023_elections_europe_plus_west",
+        "type": "Task",
+        "label": "Task: Identify Europe+West countries with 2023 national elections",
+        "source": "joint",
+        "description": "Find and list, from the Europe + West country group (Europe, US, Canada, Australia), only those countries which held national elections in 2023.",
+        "emphasis": 36,
+        "versions": [],
+        "referred": [
+          88,
+          90
+        ]
+      },
+      {
+        "id": "data_europe_plus_west_2023_national_elections_subset",
+        "type": "Data",
+        "label": "Data: Europe+West countries with 2023 national elections",
+        "source": "system",
+        "description": "Subset list of countries from Europe + West group with national elections in 2023:\n- Spain (General Election, July 23)\n- Poland (Parliamentary Election, Oct 15)\n- Slovakia (Parliamentary Election, Sep 30)\n- Luxembourg (Parliamentary Election, Oct 8)\n- Finland (Parliamentary Election, Apr 2)\nNot included: US, Canada, Australia (no national elections in 2023).",
+        "emphasis": 36,
+        "versions": [],
+        "referred": [
+          88,
+          90
+        ]
+      },
+      {
+        "id": "suggestion_next_filter_or_analysis_step_on_2023_elections",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Filter or analyze democracy indicators for countries with 2023 elections",
+        "source": "system",
+        "description": "Proposed next steps:\n- Filter the dataset to include only the identified countries (Spain, Poland, Slovakia, Luxembourg, Finland), i.e., those with 2023 national elections (Europe + West)\n- Analyze/plot how their democracy indicators shifted before vs. after 2023\nAwaiting analyst instruction for preferred next step.",
+        "emphasis": 35,
+        "versions": [],
+        "referred": [
+          88
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "assumption_vdem_official_degradation_and_policy_timing_limitation",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "constrains interpretation of"
+      },
+      {
+        "source": "task_identify_2023_elections_europe_plus_west",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "filters by country and election event"
+      },
+      {
+        "source": "data_europe_plus_west_2023_national_elections_subset",
+        "target": "task_identify_2023_elections_europe_plus_west",
+        "label": "is result of"
+      },
+      {
+        "source": "data_europe_plus_west_2023_national_elections_subset",
+        "target": "data_europe_plus_west_2000onward",
+        "label": "subset of"
+      },
+      {
+        "source": "suggestion_next_filter_or_analysis_step_on_2023_elections",
+        "target": "data_europe_plus_west_2023_national_elections_subset",
+        "label": "suggests further analysis on"
+      }
+    ],
+    "summary": "Added <b>assumption</b> node regarding the limitation of V-Dem data to capturing only post-policy, official changes in democracy. Added a <b>task</b> for identifying Europe+West countries with 2023 elections, and a corresponding <b>data</b> node listing those countries. Added a <b>suggestion</b> for next steps: filter dataset to these countries or analyze their democracy indicators pre/post 2023. Linked all new nodes to their relevant prior data/task elements."
+  },
+  {
+    "referredNodes": [
+      "data_europe_plus_west_2023_national_elections_subset",
+      "task_identify_2023_elections_europe_plus_west"
+    ],
+    "newNodes": [
+      {
+        "id": "task_identify_2022_2023_elections_europe_plus_west",
+        "type": "Task",
+        "label": "Task: Identify Europe+West countries with national elections in 2022 or 2023",
+        "source": "joint",
+        "description": "Expand previous filtering to include countries in the Europe + West group that held national or federal elections in 2022 or 2023.",
+        "emphasis": 37,
+        "versions": [],
+        "referred": [
+          90,
+          92
+        ]
+      },
+      {
+        "id": "data_europe_plus_west_2022_2023_elections_full_list",
+        "type": "Data",
+        "label": "Data: Europe+West countries with national elections in 2022–2023 (full list)",
+        "source": "system",
+        "description": "List of Europe + West countries that held national or federal elections in either 2022 or 2023:\n\n2022:\n- Portugal (Parliamentary, Jan 30)\n- Malta (Parliamentary, Mar 26)\n- Hungary (Parliamentary, Apr 3)\n- Slovenia (Parliamentary, Apr 24)\n- Sweden (Parliamentary, Sep 11)\n- Italy (Parliamentary, Sep 25)\n- Latvia (Parliamentary, Oct 1)\n- Bosnia and Herzegovina (Parliamentary, Oct 2)\n- Bulgaria (Parliamentary, Oct 2)\n- Austria (Presidential, Oct 9)\n\n2023:\n- Finland (Parliamentary, Apr 2)\n- Spain (General, Jul 23)\n- Slovakia (Parliamentary, Sep 30)\n- Luxembourg (Parliamentary, Oct 8)\n- Poland (Parliamentary, Oct 15)\n\nTotal (2022–2023): 15 countries.",
+        "emphasis": 37,
+        "versions": [],
+        "referred": [
+          90,
+          92
+        ]
+      },
+      {
+        "id": "suggestion_next_compare_or_visualize_pre_post_election_vdem",
+        "type": "Suggestion(s)",
+        "label": "Suggestion: Compare or visualize V-Dem trends pre- and post-election for these 15 countries",
+        "source": "system",
+        "description": "Recommended options:\n- Extract and compare V-Dem democracy index trends before and after election years (2022/2023) for these 15 countries\n- Visualize pre- and post-election changes\n- Optionally, narrow the focus to any subset of countries from this list\nAwaiting analyst instruction for preferred approach.",
+        "emphasis": 37,
+        "versions": [],
+        "referred": [
+          90,
+          92
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_identify_2022_2023_elections_europe_plus_west",
+        "target": "task_identify_2023_elections_europe_plus_west",
+        "label": "extends"
+      },
+      {
+        "source": "task_identify_2022_2023_elections_europe_plus_west",
+        "target": "data_europe_plus_west_2023_national_elections_subset",
+        "label": "broadens filter of"
+      },
+      {
+        "source": "data_europe_plus_west_2022_2023_elections_full_list",
+        "target": "task_identify_2022_2023_elections_europe_plus_west",
+        "label": "fulfills"
+      },
+      {
+        "source": "data_europe_plus_west_2022_2023_elections_full_list",
+        "target": "data_europe_plus_west_2023_national_elections_subset",
+        "label": "supersedes (adds 2022 data)"
+      },
+      {
+        "source": "suggestion_next_compare_or_visualize_pre_post_election_vdem",
+        "target": "data_europe_plus_west_2022_2023_elections_full_list",
+        "label": "suggests analysis using"
+      }
+    ],
+    "summary": "Added <b>task</b> node to identify Europe+West countries with national elections in 2022 or 2023 (broader than the prior 2023-only filter). Added <b>data</b> node with the full list of such countries, superseding the previous 2023-only subset. Added <b>suggestion</b> node proposing comparative or visual V-Dem analysis pre-/post-election for this expanded group. Linked all new nodes to prior data/task nodes."
+  },
+  {
+    "referredNodes": [
+      "task_identify_2022_2023_elections_europe_plus_west",
+      "data_europe_plus_west_2022_2023_elections_full_list",
+      "suggestion_next_compare_or_visualize_pre_post_election_vdem"
+    ],
+    "newNodes": [
+      {
+        "id": "task_extract_and_download_election_countries_vdem",
+        "type": "Task",
+        "label": "Task: Extract and provide download of V-Dem data for 2022/2023 election countries",
+        "source": "joint",
+        "description": "Extract V-Dem data (2000–2023) for the 15 Europe+West countries that held national or federal elections in 2022 or 2023. Prepare the dataset for analyst download.",
+        "emphasis": 39,
+        "versions": [],
+        "referred": [
+          92,
+          94,
+          96
+        ]
+      },
+      {
+        "id": "visualization_pre_post_election_democracy_changes_per_country",
+        "type": "Visualization",
+        "label": "Visualization: Pre- and post-election changes in democracy indicators (per country, 2022/2023 elections)",
+        "source": "joint",
+        "description": "Visualize V-Dem democracy indicators for the 15 Europe+West countries with 2022/2023 elections. Approaches:\n- Show short-term changes (e.g., 3 years before and after election) for each country\n- Display as small multiples (one panel per country) or aggregated/average trend lines to compare before and after election periods\nAwaiting specification for individual charts vs. combined average trends.",
+        "emphasis": 39,
+        "versions": [],
+        "referred": [
+          92,
+          94,
+          96
+        ]
+      },
+      {
+        "id": "suggestion_visualization_options_prepost_election",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Visualization design options for pre/post election shifts",
+        "source": "system",
+        "description": "System offers choices for how to visualize pre- vs. post-election democracy indicators for the 15 extracted countries:\n1. Individual pre/post-election charts per country (small multiples)\n2. Combined visualization showing average shifts across all countries\nAwaiting analyst preference before proceeding.",
+        "emphasis": 38,
+        "versions": [],
+        "referred": [
+          92,
+          96
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_extract_and_download_election_countries_vdem",
+        "target": "data_europe_plus_west_2022_2023_elections_full_list",
+        "label": "operates on"
+      },
+      {
+        "source": "visualization_pre_post_election_democracy_changes_per_country",
+        "target": "task_extract_and_download_election_countries_vdem",
+        "label": "follows"
+      },
+      {
+        "source": "visualization_pre_post_election_democracy_changes_per_country",
+        "target": "suggestion_next_compare_or_visualize_pre_post_election_vdem",
+        "label": "instantiates"
+      },
+      {
+        "source": "suggestion_visualization_options_prepost_election",
+        "target": "visualization_pre_post_election_democracy_changes_per_country",
+        "label": "frames approach to"
+      }
+    ],
+    "summary": "Added <b>task</b> to extract and download V-Dem data for 15 Europe+West countries with 2022/2023 elections. Added <b>visualization</b> node for showing pre- and post-election democracy changes (per country or aggregated), and an explicit <b>suggestion</b> node enumerating chart design options. Linked new nodes to previously established tasks, data, and suggestions concerning the 2022/2023 election country subset."
+  },
+  {
+    "referredNodes": [
+      "task_extract_and_download_election_countries_vdem",
+      "visualization_pre_post_election_democracy_changes_per_country"
+    ],
+    "newNodes": [
+      {
+        "id": "task_reupload_democracy_europe_plus_west_csv",
+        "type": "Task",
+        "label": "Task: Re-upload Democracy_Europe_Plus_West.csv to enable continuation",
+        "source": "system",
+        "description": "Request analyst to re-upload the file Democracy_Europe_Plus_West.csv, as file access has been lost due to session reset. File is needed to proceed with filtering for 2022–2023 election countries, generating download, and producing pre-/post-election democracy score visualizations.",
+        "emphasis": 39,
+        "versions": [],
+        "referred": [
+          94,
+          96
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_reupload_democracy_europe_plus_west_csv",
+        "target": "task_extract_and_download_election_countries_vdem",
+        "label": "prerequisite for"
+      },
+      {
+        "source": "task_reupload_democracy_europe_plus_west_csv",
+        "target": "visualization_pre_post_election_democracy_changes_per_country",
+        "label": "required to enable"
+      }
+    ],
+    "summary": "Added a <b>task</b> node for re-uploading the 'Democracy_Europe_Plus_West.csv' file, as requested by the system to restore access after session reset. This re-upload is now marked as a <b>prerequisite</b> task for both the data extraction and the pre/post election democracy visualization tasks already established."
+  },
+  {
+    "referredNodes": [
+      "task_reupload_democracy_europe_plus_west_csv",
+      "task_extract_and_download_election_countries_vdem",
+      "visualization_pre_post_election_democracy_changes_per_country",
+      "suggestion_visualization_options_prepost_election"
+    ],
+    "newNodes": [
+      {
+        "id": "data_vdem_2022_2023_election_countries_europe_west",
+        "type": "Data",
+        "label": "Data: V-Dem (2000–2023) for 15 Europe+West countries with 2022/2023 elections",
+        "source": "joint",
+        "description": "V-Dem dataset (2000–2023) for the 15 Europe+West countries that held national or federal elections in 2022 or 2023, filtered and made available for download. Prepared as the subset underlying subsequent visual analysis.",
+        "emphasis": 39,
+        "versions": [],
+        "referred": [
+          96
+        ]
+      },
+      {
+        "id": "visualization_average_democracy_indices_prepost_election",
+        "type": "Visualization",
+        "label": "Visualization: Average pre/post-election democracy index trends (Europe+West, 15 countries, 2022/2023 elections)",
+        "source": "joint",
+        "description": "Line graph visualizing average scores on the 5 core V-Dem indices for the 15 Europe+West countries that held national elections in 2022–2023. Time axis is centered on the election year (−3 to +3), Y-axis is average index score (0–1). Each line represents one V-Dem index. Dashed vertical line marks the election year (year 0).",
+        "emphasis": 40,
+        "versions": [],
+        "referred": [
+          96,
+          98
+        ]
+      },
+      {
+        "id": "explanation_visualization_design_prepost_election",
+        "type": "Explanation",
+        "label": "Explanation: Visualization design and interpretation – average pre/post election",
+        "source": "system",
+        "description": "X-axis: Years before and after the election (−3 to +3).\nY-axis: Average index score (0–1).\nLines: Each of the 5 core V-Dem indices.\nDashed line: Election year (year 0).\nShows aggregated temporal trends in democracy indicators across the 15 countries, enabling comparison of pre-election vs. post-election average trajectories per index.",
+        "emphasis": 39,
+        "versions": [],
+        "referred": [
+          96
+        ]
+      },
+      {
+        "id": "suggestion_further_visualization_variants_country_breakdown",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Country-specific panels, change distributions, or year breakdowns for pre/post election analysis",
+        "source": "system",
+        "description": "System offers further analytical/visualization refinements:\n- Present country-specific panels\n- Plot change distributions (e.g., gain/loss histograms)\n- Separate breakdown by 2022 vs. 2023 election cohorts\nAwaiting analyst direction to proceed deeper in any of these directions.",
+        "emphasis": 39,
+        "versions": [],
+        "referred": [
+          96
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_vdem_2022_2023_election_countries_europe_west",
+        "target": "task_extract_and_download_election_countries_vdem",
+        "label": "output of"
+      },
+      {
+        "source": "visualization_average_democracy_indices_prepost_election",
+        "target": "data_vdem_2022_2023_election_countries_europe_west",
+        "label": "visualizes"
+      },
+      {
+        "source": "visualization_average_democracy_indices_prepost_election",
+        "target": "visualization_pre_post_election_democracy_changes_per_country",
+        "label": "instantiates (average trend option)"
+      },
+      {
+        "source": "explanation_visualization_design_prepost_election",
+        "target": "visualization_average_democracy_indices_prepost_election",
+        "label": "explains"
+      },
+      {
+        "source": "suggestion_further_visualization_variants_country_breakdown",
+        "target": "visualization_average_democracy_indices_prepost_election",
+        "label": "offers deeper breakdowns of"
+      },
+      {
+        "source": "suggestion_further_visualization_variants_country_breakdown",
+        "target": "visualization_pre_post_election_democracy_changes_per_country",
+        "label": "suggests alternative visual analysis for"
+      }
+    ],
+    "summary": "Added <b>data</b> node for the V-Dem 2000–2023 subset of the 15 Europe+West countries with 2022/2023 elections. Added <b>visualization</b> node for average democracy index trends pre/post election, an <b>explanation</b> of this design, and a <b>suggestion</b> node with options for deeper breakdown (country panels, distribution plots, 2022 vs. 2023). Linked these to the filtration and visualization task chain."
+  },
+  {
+    "referredNodes": [
+      "visualization_average_democracy_indices_prepost_election"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_average_democracy_trends_pre_post_election",
+        "type": "Finding",
+        "label": "Finding: Pre-election rise, election-year peak, post-election dip in average democracy indices (Europe+West, 2022–2023 elections)",
+        "source": "system",
+        "description": "Structured observations extracted from the system's interpretation of the graph visualizing average V-Dem indices for 15 Europe+West countries with 2022/2023 national elections:\n1. Flat or Slight Rise Before the Election (−3 to 0): Most indices, especially liberal and electoral democracy, show a modest increase; possible effects: pre-election reforms, signaling, increased civic engagement.\n2. Peak or Plateau Around Election Year (0): Year 0 often a local maximum; possible effects: optimal procedural performance, transparency bump.\n3. Slight Dip Post-Election (+1 to +3): Noticeable decline, especially for deliberative and egalitarian democracy; possible explanations: disillusionment/backlash, partisan governance, resolved uncertainty failing to yield reform.\n\nAdditional interpretations/caveats:\n- Elections as 'democracy showcase' but the boost is short-lived; lack of structural follow-through, especially if authoritarian-leaning winners.\n- Data lag and visibility bias: some effects only register later; V-Dem may reflect only well-documented events, not immediate ones.\n\nHypothesis supported by the graph: Elections often create temporary democratic health boosts, but scores can stagnate or decline without institutional follow-through.",
+        "emphasis": 40,
+        "versions": [],
+        "referred": [
+          98
+        ]
+      },
+      {
+        "id": "suggestion_drilldown_graph_extensions_post_election_trends",
+        "type": "Suggestion(s)",
+        "label": "Suggestions: Country-level panels, cohort splits, winner-correlation for post-election democracy trends",
+        "source": "system",
+        "description": "System offers analytical/visual extension proposals based on the observed average trend finding:\n- Build country-level panels ('small multiples') to identify outlier or deviant country patterns\n- Separate analyses for countries with elections in 2022 vs 2023\n- Drill down on whether democracy score changes correlate with winner type (populist, reformist, etc)\nAwaiting analyst instruction for which post-election trend angle to pursue.",
+        "emphasis": 40,
+        "versions": [],
+        "referred": [
+          98
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_average_democracy_trends_pre_post_election",
+        "target": "visualization_average_democracy_indices_prepost_election",
+        "label": "interprets results from"
+      },
+      {
+        "source": "suggestion_drilldown_graph_extensions_post_election_trends",
+        "target": "finding_average_democracy_trends_pre_post_election",
+        "label": "proposes analytical extensions to"
+      }
+    ],
+    "summary": "<b>Finding</b> node added: identifies pre-election rise, election-year peak, and post-election dip in average democracy indices for 15 Europe+West countries (2022–2023 elections), based on the referenced graph. Added <b>suggestion</b> node: proposes country-level panels, 2022/2023 cohort breakdowns, and correlation to election winners as next analysis options. All new elements are linked to the aggregate pre/post-election visualization."
+  }
+]
