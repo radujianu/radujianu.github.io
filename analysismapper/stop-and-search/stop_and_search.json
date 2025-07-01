@@ -1,6 +1,6 @@
 [
   {
-    "role": user,
+    "role": "user",
     "content": "I want to do a data-driven analysis of crime and perceptions of the police in London. I am interested in the spatiotemporal dynamics of crime and use of force by the police. I am also interested in how crime and police use of force relate to people's perceptions of the police both spatially and across different demographic groups (such as age and race). Can you help me define a few (up to 4) clear research questions to help direct my analysis?"
   },
   {
