@@ -1,0 +1,1619 @@
+[
+  {
+    "referredNodes": [],
+    "newNodes": [
+      {
+        "id": "goal_1",
+        "type": "Goal",
+        "label": "Data-driven analysis of crime and perceptions of police in London",
+        "source": "analyst",
+        "description": "Data-driven analysis of crime, police use of force, and public perceptions in London, with focus on spatiotemporal dynamics and demographic variation.",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          2,
+          6,
+          26,
+          44,
+          46,
+          56,
+          58
+        ]
+      },
+      {
+        "id": "rq_1",
+        "type": "Research Question",
+        "label": "How do crime rates and police use of force vary across different areas of London over time?",
+        "source": "joint",
+        "description": "Understand spatiotemporal trends in both crime incidence and police interventions.\n\nData Sources: Metropolitan Police crime data by borough/ward, police use of force data, GIS shapefiles for spatial analysis.\nAnalytical Approaches: Time-series analysis, spatial clustering (e.g., hot spot analysis), choropleth mapping.",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": "rq_2",
+        "type": "Research Question",
+        "label": "What is the relationship between local crime levels, police use of force, and public trust in the police across London neighborhoods?",
+        "source": "joint",
+        "description": "Investigate whether higher crime or police force correlates with lower trust in police, and whether this varies spatially.\n\nData Sources: Crime statistics, police use of force records, public perception survey data (e.g., MOPAC Public Attitudes Survey).\nAnalytical Approaches: Correlation/regression modeling, spatial regression (e.g., geographically weighted regression), mixed effects models.",
+        "emphasis": 4,
+        "versions": [],
+        "referred": [
+          2,
+          4,
+          46,
+          58
+        ]
+      },
+      {
+        "id": "rq_3",
+        "type": "Research Question",
+        "label": "How do experiences and perceptions of police fairness and effectiveness differ across demographic groups?",
+        "source": "joint",
+        "description": "Examine disparities in how people perceive and experience policing. Demographic dimensions include race, age, and socioeconomic status.\n\nData Sources: Survey data with demographic breakdowns (e.g., MOPAC, Crime Survey for England and Wales), complaints data, stop and search data.\nAnalytical Approaches: Disaggregated analysis, interaction effects in regression models, subgroup comparison tests.",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          2,
+          4,
+          44,
+          46,
+          54,
+          56,
+          58
+        ]
+      },
+      {
+        "id": "rq_4",
+        "type": "Research Question",
+        "label": "Is there a measurable impact of specific policing strategies on public perception and crime levels over time?",
+        "source": "joint",
+        "description": "Assess the effectiveness and consequences of policy interventions, such as increased stop-and-search or neighborhood patrols.\n\nData Sources: Policy implementation records, crime/use-of-force data, survey data before and after interventions.\nAnalytical Approaches: Interrupted time series, difference-in-differences, event studies.",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          2,
+          4
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "goal_1",
+        "target": "rq_1",
+        "label": "operationalized by"
+      },
+      {
+        "source": "goal_1",
+        "target": "rq_2",
+        "label": "operationalized by"
+      },
+      {
+        "source": "goal_1",
+        "target": "rq_3",
+        "label": "operationalized by"
+      },
+      {
+        "source": "goal_1",
+        "target": "rq_4",
+        "label": "operationalized by"
+      }
+    ],
+    "summary": "<b>Goal</b> node created for the overarching aim: data-driven analysis of crime and perceptions of police in London. <b>Four Research Question</b> nodes added, each capturing a core analytic focus (spatiotemporal trends, relationships with trust, demographic disparities, and effects of policing strategies). <b>Links</b> connect each research question as operationalizations of the main analysis goal."
+  },
+  {
+    "referredNodes": [
+      "rq_1",
+      "rq_2",
+      "rq_3",
+      "rq_4"
+    ],
+    "newNodes": [
+      {
+        "id": "data_1",
+        "type": "Data",
+        "label": "Metropolitan Police Crime Data",
+        "source": "system",
+        "description": "Monthly counts of crimes by type, at borough and ward level.\nSources: Met Police Crime Data Dashboard, data.police.uk\nUseful for: Spatiotemporal analysis of crime (Q1, Q2, Q4).",
+        "emphasis": 3,
+        "versions": [],
+        "referred": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": "data_2",
+        "type": "Data",
+        "label": "Metropolitan Police Use of Force Data",
+        "source": "system",
+        "description": "Incident-level data including type of force used, reason, subject and officer demographics, location (by borough).\nSources: Met Police Use of Force Dashboard\nUseful for: Trends in police conduct, force by demographics (Q1, Q2, Q3).",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          4
+        ]
+      },
+      {
+        "id": "data_3",
+        "type": "Data",
+        "label": "MOPAC Public Attitudes Survey (PAS)",
+        "source": "system",
+        "description": "Londoners' views on policing, trust, fear of crime, contact with police, broken down by demographic groups and boroughs.\nSources: London.gov.uk: PAS data releases\nUseful for: Measuring public trust, perceptions by group/location (Q2, Q3).",
+        "emphasis": 2,
+        "versions": [],
+        "referred": [
+          4
+        ]
+      },
+      {
+        "id": "data_4",
+        "type": "Data",
+        "label": "Stop and Search Data",
+        "source": "system",
+        "description": "Details of stop-and-searches by reason, outcome, location, and subject demographics.\nSources: data.police.uk Stop and Search, Met Police Stop and Search Dashboard\nUseful for: Evaluating patterns of proactive policing and possible bias (Q3, Q4).",
+        "emphasis": 4,
+        "versions": [],
+        "referred": [
+          4,
+          6,
+          10
+        ]
+      },
+      {
+        "id": "data_5",
+        "type": "Data",
+        "label": "UK Census and Demographic Data",
+        "source": "system",
+        "description": "Population, ethnicity, age, income, deprivation, education at granular geographic levels.\nSources: ONS Census 2021, London Datastore\nUseful for: Demographic control variables, spatial overlays (Q2, Q3).",
+        "emphasis": 5,
+        "versions": [],
+        "referred": [
+          4,
+          6,
+          22,
+          24
+        ]
+      },
+      {
+        "id": "data_6",
+        "type": "Data",
+        "label": "Crime Survey for England and Wales (CSEW)",
+        "source": "system",
+        "description": "National survey capturing unreported crime and detailed perceptions of police and safety.\nSources: UK Data Service - CSEW (registration required)\nUseful for: National-level perceptions and underreported crime (Q3; contextual for Q2).",
+        "emphasis": 6,
+        "versions": [],
+        "referred": [
+          4,
+          6,
+          54,
+          56,
+          58
+        ]
+      },
+      {
+        "id": "data_7",
+        "type": "Data",
+        "label": "GIS Data for Mapping",
+        "source": "system",
+        "description": "Provides geographical boundary data for spatial analysis.\nSources: ONS Open Geography Portal, London Datastore – Boundaries",
+        "emphasis": 3,
+        "versions": [],
+        "referred": [
+          4,
+          26
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_1",
+        "target": "rq_1",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_1",
+        "target": "rq_2",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_1",
+        "target": "rq_4",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_2",
+        "target": "rq_1",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_2",
+        "target": "rq_2",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_2",
+        "target": "rq_3",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_3",
+        "target": "rq_2",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_3",
+        "target": "rq_3",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_4",
+        "target": "rq_3",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_4",
+        "target": "rq_4",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_5",
+        "target": "rq_2",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_5",
+        "target": "rq_3",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_6",
+        "target": "rq_3",
+        "label": "can be used to address"
+      },
+      {
+        "source": "data_6",
+        "target": "rq_2",
+        "label": "can be used to address (contextual)"
+      },
+      {
+        "source": "data_7",
+        "target": "rq_1",
+        "label": "can be used to address"
+      }
+    ],
+    "summary": "<b>Seven new data nodes</b> were added: <b>Metropolitan Police Crime Data</b>, <b>Metropolitan Police Use of Force Data</b>, <b>MOPAC Public Attitudes Survey</b>, <b>Stop and Search Data</b>, <b>UK Census and Demographic Data</b>, <b>Crime Survey for England and Wales</b>, and <b>GIS Data for Mapping</b>. These are linked to relevant <b>Research Question</b> nodes (rq_1–rq_4) based on their utility for addressing the specified analytical aims."
+  },
+  {
+    "referredNodes": [
+      "goal_1",
+      "data_4",
+      "data_5",
+      "data_1",
+      "data_6"
+    ],
+    "newNodes": [
+      {
+        "id": "rq_5",
+        "type": "Research Question",
+        "label": "How does the frequency and outcome of stop and search actions in London vary across neighborhoods and demographic groups, and to what extent do these patterns align with local crime rates?",
+        "source": "joint",
+        "description": "How does the frequency and outcome of stop and search actions in London vary across neighborhoods and demographic groups, and to what extent do these patterns align with local crime rates?\n\nSub-questions and themes:\nSpatial Variation:\n  - Are stop and search rates higher in certain boroughs or wards?\n  - Are some areas disproportionately targeted relative to their crime levels?\nDemographic Disparities:\n  - Are individuals from specific racial or age groups stopped at higher rates?\n  - How do stop outcomes (e.g. arrest, no further action) vary by demographic?\nAlignment with Crime:\n  - Are stop and search actions correlated with actual local crime rates?\n  - Are certain areas over-policed relative to their crime levels?\n\nPotential Data to Use:\n  - Stop and Search records: With location (borough or LSOA), ethnicity, age, gender, outcome.\n  - Crime data: By area and crime type.\n  - Demographics: ONS data by neighborhood (for population baselines).\n  - (Optional) MOPAC or CSEW survey data to add public perception angle.\n\nAnalytical Approaches:\n  - Per capita stop rates by ethnicity and location (controlling for local demographics).\n  - Choropleth maps showing spatial distribution of stop rates and outcomes.\n  - Regression models (e.g. Poisson or logistic) to explore relationships between area-level demographics/crime and stop-and-search intensity or outcomes.\n  - Disparity Indexes to quantify racial disproportionality (e.g. \"Black individuals are X times more likely to be stopped than White individuals\").",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          6,
+          8,
+          10,
+          26,
+          28
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "rq_5",
+        "target": "goal_1",
+        "label": "operationalizes"
+      },
+      {
+        "source": "rq_5",
+        "target": "data_4",
+        "label": "requires"
+      },
+      {
+        "source": "rq_5",
+        "target": "data_5",
+        "label": "requires"
+      },
+      {
+        "source": "rq_5",
+        "target": "data_1",
+        "label": "requires"
+      },
+      {
+        "source": "rq_5",
+        "target": "data_6",
+        "label": "may require"
+      }
+    ],
+    "summary": "<b>New research question node:</b> <b>How does the frequency and outcome of stop and search actions in London vary across neighborhoods and demographic groups, and to what extent do these patterns align with local crime rates?</b> This node details related sub-questions and possible data/methods. <b>Links</b> connect it to the analytic <b>goal</b> and relevant <b>datasets</b> (Stop and Search, Crime, Demographic, and optionally survey data). Existing nodes are referenced but not modified."
+  },
+  {
+    "referredNodes": [
+      "rq_5"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_1",
+        "type": "Finding",
+        "label": "Relevant findings: stop and search in London by neighborhood and demographic group",
+        "source": "system",
+        "description": "1. Stark racial disproportionality in stop and search rates:\n   - Black individuals are around 3.5 times more likely to be stopped than White individuals, even after adjusting for population distribution.\n   - Black people in the Met area: ~71 stops/1,000; White people: ~18 stops/1,000.\n   - Lammy Review (2017): Black individuals ~9 times more likely than White for drug possession stops, despite lower drug use.\n2. Low “find” or arrest rates, especially among minority groups:\n   - Black Londoners: 26.7% find-rate vs 30.5% for Whites.\n   - StopWatch: Black people 9× more likely to be stopped for drugs, but low stop success rate.\n3. Spatial concentration in high-minority or high-deprivation areas:\n   - Strong link between economic/deprivation and elevated stop-and-search.\n   - 80% of stops involving Black people in 8 force areas: urban/diverse regions.\n4. Questionable effectiveness in reducing crime:\n   - Initiatives like “Operation Blunt 2” found little/no sustained impact on crime or knife crime call volumes.\n   - Community engagement/health strategies showed greater promise.\n5. Impact on children and public trust:\n   - Black children 15% more likely to be criminalised than Whites via stop-and-search (Youth Endowment Fund).\n   - IOPC: 'Adultification' of Black youth—perceived as older, impacts both stop-and-search and use-of-force.\nKey Takeaways/Benchmarking for Analysis:\n- Benchmark results on disparities; test spatial/demographic trends.\n- Analyze local data for link between stop-and-search and crime reduction.\n- Overlay public perception data if possible.\n- Disaggregate findings by age to examine 'adultification'.\nCitations:\n- Lammy Review (2017)\n- StopWatch\n- Youth Endowment Fund\n- IOPC\n- Multiple news and academic reports",
+        "emphasis": 4,
+        "versions": [],
+        "referred": [
+          8
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_1",
+        "target": "rq_5",
+        "label": "addresses"
+      }
+    ],
+    "summary": "A new <b>Finding</b> node (<b>finding_1</b>) summarizing <b>relevant research and key findings</b> on stop and search in London by neighborhood and demographic group has been added. It connects to the <b>specific stop-and-search research question</b> (<b>rq_5</b>) as directly addressing it. No prior nodes required updating."
+  },
+  {
+    "referredNodes": [
+      "rq_5",
+      "data_4"
+    ],
+    "newNodes": [
+      {
+        "id": "task_1",
+        "type": "Task",
+        "label": "Combine uploaded stop and search CSV files (May 2022–Aug 2024)",
+        "source": "joint",
+        "description": "Combine all monthly stop and search CSV files (May 2022–August 2024) downloaded from data.police.uk into one dataset for analysis.",
+        "emphasis": 8,
+        "versions": [],
+        "referred": [
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      {
+        "id": "task_2",
+        "type": "Task",
+        "label": "Inspect structure of combined stop and search dataset",
+        "source": "joint",
+        "description": "Inspect the structure of the combined stop and search dataset:\n- List of columns\n- Data types\n- Completeness (missing values)\n- Variations across months",
+        "emphasis": 6,
+        "versions": [],
+        "referred": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": "task_3",
+        "type": "Task",
+        "label": "Summarize key variables in stop and search dataset",
+        "source": "joint",
+        "description": "Provide a summary of key variables in the stop and search dataset, including:\n- Date and location of stop\n- Reason for stop\n- Outcome\n- Self-defined and officer-defined ethnicity\n- Age and gender (if available)",
+        "emphasis": 6,
+        "versions": [],
+        "referred": [
+          10,
+          12
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_1",
+        "target": "data_4",
+        "label": "operates on"
+      },
+      {
+        "source": "task_2",
+        "target": "task_1",
+        "label": "follows"
+      },
+      {
+        "source": "task_3",
+        "target": "task_2",
+        "label": "follows"
+      },
+      {
+        "source": "task_1",
+        "target": "rq_5",
+        "label": "supports analysis for"
+      },
+      {
+        "source": "task_2",
+        "target": "rq_5",
+        "label": "supports analysis for"
+      },
+      {
+        "source": "task_3",
+        "target": "rq_5",
+        "label": "supports analysis for"
+      }
+    ],
+    "summary": "<b>Three new Task nodes</b> were added: <b>Combine uploaded stop and search CSV files (May 2022–Aug 2024)</b>, <b>Inspect structure of combined stop and search dataset</b>, and <b>Summarize key variables in stop and search dataset</b>. Each of these tasks references the <b>stop and search data</b> node (<b>data_4</b>) and the focused <b>research question</b> (<b>rq_5</b>) about spatial and demographic variation in stop and search outcomes. The tasks are linked in a logical sequence and anchor the hands-on data operations to the guiding research question."
+  },
+  {
+    "referredNodes": [
+      "task_1",
+      "task_2",
+      "task_3"
+    ],
+    "newNodes": [
+      {
+        "id": "data_8",
+        "type": "Data",
+        "label": "Combined 10-month stop and search dataset (Nov 2023–Aug 2024)",
+        "source": "joint",
+        "description": "A dataset created by combining 10 monthly stop-and-search CSV files covering November 2023 to August 2024 from data.police.uk. Contains approximately 15 columns. Sample variables include: date and location of stop, reason for stop, outcome, self-defined and officer-defined ethnicity, age, gender. Further structure and completeness analysis pending receipt of all data batches.",
+        "emphasis": 7,
+        "versions": [],
+        "referred": [
+          12,
+          14
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_8",
+        "target": "task_1",
+        "label": "produced by"
+      },
+      {
+        "source": "task_2",
+        "target": "data_8",
+        "label": "targets"
+      },
+      {
+        "source": "task_3",
+        "target": "data_8",
+        "label": "summarizes"
+      }
+    ],
+    "summary": "<b>Task</b> nodes for combining, inspecting, and summarizing stop-and-search data were referenced. Added new <b>Data</b> node: <b>Combined 10-month stop and search dataset (Nov 2023–Aug 2024)</b> representing the interim combined dataset. Linked this data node to the combination <b>Task</b> as output, and to the <b>inspect</b> and <b>summarize</b> <b>Task</b> nodes as their target. This captures the state of progress as stopped at the point of the 10-month dataset."
+  },
+  {
+    "referredNodes": [
+      "task_1",
+      "data_8"
+    ],
+    "newNodes": [
+      {
+        "id": "data_9",
+        "type": "Data",
+        "label": "Combined 20-month stop and search dataset (Jan 2023–Aug 2024)",
+        "source": "joint",
+        "description": "A dataset resulting from merging the first and second batch of stop-and-search CSV files, now spanning from January 2023 through August 2024. Contains 225,506 rows and approximately 15 columns for each record. Columns include date and location of stop, reason for stop, outcome, self-defined and officer-defined ethnicity, age, and gender. Awaiting final batch for full coverage.",
+        "emphasis": 8,
+        "versions": [
+          "data_8"
+        ],
+        "referred": [
+          14,
+          16
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_8",
+        "target": "data_9",
+        "label": "expanded to include more months and records"
+      },
+      {
+        "source": "task_1",
+        "target": "data_9",
+        "label": "output dataset"
+      }
+    ],
+    "summary": "<b>Task</b> <b>Combine uploaded stop and search CSV files</b> (May 2022–Aug 2024) and initial node <b>Combined 10-month stop and search dataset</b> (Nov 2023–Aug 2024) were referenced. A new <b>Data</b> node for the <b>Combined 20-month stop and search dataset</b> (Jan 2023–Aug 2024, 225,506 rows) was added, noting expanded coverage. Linked from the previous dataset and combination task."
+  },
+  {
+    "referredNodes": [
+      "task_1",
+      "data_9"
+    ],
+    "newNodes": [
+      {
+        "id": "data_10",
+        "type": "Data",
+        "label": "Combined stop and search dataset (Apr 2022–Aug 2024)",
+        "source": "joint",
+        "description": "A dataset generated by combining all uploaded monthly stop-and-search CSV files from April 30, 2022, to August 31, 2024, from data.police.uk. Contains 336,618 records. Variables include: date and location of stop, reason for stop, outcome, self-defined and officer-defined ethnicity, age, and gender. Final combined dataset is now ready for analysis of counts, demographic breakdowns, spatial/temporal analysis, and disproportionality metrics.",
+        "emphasis": 16,
+        "versions": [
+          "data_8",
+          "data_9"
+        ],
+        "referred": [
+          16,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          38
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_1",
+        "target": "data_10",
+        "label": "output"
+      },
+      {
+        "source": "data_9",
+        "target": "data_10",
+        "label": "updated to final version"
+      }
+    ],
+    "summary": "<b>Combined all uploaded stop-and-search CSV files</b> into a single dataset (<b>Combined stop and search dataset (Apr 2022–Aug 2024)</b>), updating previous partial merges. The new <b>data_10</b> node replaces earlier versions and is now linked as the output of the original combination task. This node is ready for further demographic, spatial, and disproportionality analyses."
+  },
+  {
+    "referredNodes": [
+      "data_10"
+    ],
+    "newNodes": [
+      {
+        "id": "task_4",
+        "type": "Task",
+        "label": "Provide download access for combined stop and search dataset",
+        "source": "system",
+        "description": "Provide a direct download link for the final combined stop-and-search dataset (April 30, 2022–August 31, 2024) as a CSV file for the analyst to access.",
+        "emphasis": 9,
+        "versions": [],
+        "referred": [
+          18
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_4",
+        "target": "data_10",
+        "label": "enables access to"
+      }
+    ],
+    "summary": "<b>Task node</b> added for <b>providing download access for the combined stop and search dataset</b>. This new node is linked to the existing <b>Combined stop and search dataset (Apr 2022–Aug 2024)</b> data node, reflecting the task of making the data available to the analyst via a direct download."
+  },
+  {
+    "referredNodes": [
+      "data_10"
+    ],
+    "newNodes": [
+      {
+        "id": "task_5",
+        "type": "Task",
+        "label": "Explore self-defined and officer-defined ethnicity columns in stop and search dataset",
+        "source": "joint",
+        "description": "Analyze the proportions of different ethnicities using both the self-defined and officer-defined ethnicity columns in the combined Metropolitan Police stop and search dataset (Apr 2022–Aug 2024). Examine notable differences or mismatches between the two classification systems. Tasks include:\n- Calculate proportional breakdown for each ethnicity (self-defined)\n- Calculate proportional breakdown for each ethnicity (officer-defined)\n- Identify differences or patterns in how ethnicities are recorded by officers versus subjects",
+        "emphasis": 11,
+        "versions": [],
+        "referred": [
+          20,
+          22
+        ]
+      },
+      {
+        "id": "finding_2",
+        "type": "Finding",
+        "label": "Distributions of self-defined and officer-defined ethnicities in stop and search dataset",
+        "source": "system",
+        "description": "Generated summary distributions of self-defined and officer-defined ethnicity categories within the combined stop and search dataset. The analyst can compare these to identify potential mismatches, over-classification, or other patterns between officer and self-reported ethnic identities. Visualizations of the proportions are referenced but not displayed. Further investigation into visualizing the comparison, analyzing mismatches, and calculating disproportionality using population baselines is possible.",
+        "emphasis": 11,
+        "versions": [],
+        "referred": [
+          20,
+          22
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_5",
+        "target": "data_10",
+        "label": "operates on"
+      },
+      {
+        "source": "finding_2",
+        "target": "task_5",
+        "label": "result of"
+      }
+    ],
+    "summary": "<b>New task</b> node added for exploring <b>self-defined and officer-defined ethnicity columns</b> within the <b>combined stop and search dataset (Apr 2022–Aug 2024)</b>. Also, a <b>finding</b> node summarizes the system's generation of ethnic group distributions for comparison, referencing the dataset and the exploration task. These nodes are linked to the core dataset and each other, emphasizing analytical focus on <b>ethnicity classification and proportionality</b>."
+  },
+  {
+    "referredNodes": [
+      "data_10",
+      "task_5",
+      "finding_2",
+      "data_5"
+    ],
+    "newNodes": [
+      {
+        "id": "task_6",
+        "type": "Task",
+        "label": "Compare officer-defined ethnicity proportions in stop and search dataset to London population",
+        "source": "joint",
+        "description": "Retrieve and compare the proportions of officer-defined ethnicities (from Metropolitan Police stop and search dataset, April 2022–August 2024) to the corresponding ethnicity proportions in the London 2021 Census population. Identify any ethnic groups that are disproportionately represented in stop-and-search events relative to population share. Highlight key disparities, such as over- or under-representation by ethnic group.",
+        "emphasis": 14,
+        "versions": [],
+        "referred": [
+          22,
+          24,
+          26,
+          38
+        ]
+      },
+      {
+        "id": "finding_3",
+        "type": "Finding",
+        "label": "Officer-defined stop-and-search ethnicity proportions vs Census population in London",
+        "source": "system",
+        "description": "Comparison between officer-defined ethnicity proportions in the stop and search dataset and London’s 2021 Census: Black individuals are roughly 25% of stops but just 13.5% of the population, a nearly 2× over-representation; White individuals ~45% of stops but 54% of the population; Asians ~15% of stops vs 21% of population. Mixed/Other groups also slightly over-represented. Interpretation: Black individuals are stopped at rates far higher than their population share, suggesting pronounced disproportionality in policing. Whites/Asians stopped less than population baseline indicates targeted patterns. This aligns with published findings for London and the UK.",
+        "emphasis": 13,
+        "versions": [],
+        "referred": [
+          22,
+          24,
+          38
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_6",
+        "target": "data_10",
+        "label": "appliesTo"
+      },
+      {
+        "source": "task_6",
+        "target": "data_5",
+        "label": "requiresComparisonTo"
+      },
+      {
+        "source": "finding_3",
+        "target": "task_6",
+        "label": "answers"
+      },
+      {
+        "source": "finding_3",
+        "target": "data_10",
+        "label": "derivedFrom"
+      },
+      {
+        "source": "finding_3",
+        "target": "data_5",
+        "label": "comparedWith"
+      },
+      {
+        "source": "finding_3",
+        "target": "rq_5",
+        "label": "providesEvidenceFor"
+      }
+    ],
+    "summary": "<b>New task</b> (<b>task_6</b>) captures the comparison of officer-defined stop-and-search ethnicity proportions to London population census data, and <b>finding_3</b> summarizes the observed disproportionality, notably over-representation of Black individuals. Both are linked to <b>data_10</b> (stop and search dataset), <b>data_5</b> (Census), and the specific research question <b>rq_5</b>. <b>task_5</b> and <b>finding_2</b> are referenced as the previous detailed ethnicity analysis steps."
+  },
+  {
+    "referredNodes": [
+      "task_6",
+      "finding_3",
+      "data_5",
+      "data_10"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_4",
+        "type": "Finding",
+        "label": "Updated officer-defined stop-and-search ethnicity disproportionality relative to London Census",
+        "source": "system",
+        "description": "The accurate officer-defined ethnicity proportions from the London stop-and-search dataset (April 2022–August 2024) have been compared with the 2021 Census ethnic composition of London:\n\nLondon 2021 Census:\n  - White: 53.8%\n  - Asian: 20.7%\n  - Black: 13.5%\n  - Mixed: 5.7%\n  - Other: 6.3%\n\nKey disproportionality observations:\n- Black individuals: 2.2× overrepresented in stop-and-search incidents compared to their population share.\n- White and Asian individuals: underrepresented among stops versus population.\n- 'Other' ethnic group: ~1.4× overrepresented.\n- Mixed ethnicities: slightly underrepresented.\n\nThese results confirm strong disproportionality affecting Black individuals, and lesser disproportionality affecting other groups.\n",
+        "emphasis": 14,
+        "versions": [
+          "finding_3"
+        ],
+        "referred": [
+          24,
+          26,
+          38
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_4",
+        "target": "task_6",
+        "label": "results from"
+      },
+      {
+        "source": "finding_4",
+        "target": "data_10",
+        "label": "draws on"
+      },
+      {
+        "source": "finding_4",
+        "target": "data_5",
+        "label": "compares to"
+      },
+      {
+        "source": "finding_4",
+        "target": "finding_3",
+        "label": "supersedes"
+      }
+    ],
+    "summary": "<b>Finding_4</b> was added to update and correct the previous comparison of <b>officer-defined stop-and-search ethnicity proportions</b> versus <b>London 2021 Census</b> population. <b>Finding_4</b> replaces <b>finding_3</b>, linking to both the underlying <b>data_10</b> (stop-and-search dataset) and <b>data_5</b> (Census), showing stronger overrepresentation for Black and 'Other' ethnic groups, and confirming racial disproportionality. All links and relationships are explicit for traceability in the analysis."
+  },
+  {
+    "referredNodes": [
+      "finding_4",
+      "data_10",
+      "data_7",
+      "task_6",
+      "rq_5",
+      "goal_1"
+    ],
+    "newNodes": [
+      {
+        "id": "viz_1",
+        "type": "Visualization",
+        "label": "Spatial distribution of stop-and-search events in London (2022–2024)",
+        "source": "system",
+        "description": "A spatial map visualization plotting the distribution of stop-and-search events across London using longitude and latitude from the April 2022–August 2024 dataset. Each point represents a recorded stop-and-search. Highlights clustering in central/densely populated areas such as Westminster, Camden, Lambeth, Hackney. Designed to enable spatial analysis such as borough-level aggregation, per-capita comparisons, and spatial clustering/hotspot analysis. Filename referenced: map_plot.png.",
+        "emphasis": 14,
+        "versions": [],
+        "referred": [
+          26,
+          28
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "viz_1",
+        "target": "data_10",
+        "label": "visualizes data from"
+      },
+      {
+        "source": "viz_1",
+        "target": "rq_5",
+        "label": "informs"
+      },
+      {
+        "source": "viz_1",
+        "target": "goal_1",
+        "label": "advances"
+      }
+    ],
+    "summary": "<b>Spatial distribution visualization</b> node (<b>viz_1</b>) was added, representing a map of stop-and-search events across London based on <b>data_10</b>. This visualization is linked to the dataset, the main analysis <b>goal</b>, and the central <b>research question</b> (<b>rq_5</b>). Previous findings about disproportionality (<b>finding_4</b>), population baselines (<b>data_7</b>), and the comparison task (<b>task_6</b>) were referenced as foundations for this mapping. New node and semantic links fortify the analytic network."
+  },
+  {
+    "referredNodes": [
+      "viz_1",
+      "data_10",
+      "rq_5"
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_1",
+        "type": "Suggestion(s)",
+        "label": "Temporal analysis of stop and search incidents",
+        "source": "analyst",
+        "description": "Shift from spatial analysis (visualization suffers from occlusion and limited pattern detection) to temporal analysis:\n- Investigate temporal dynamics of stop and search incidents in London\n- Analyze monthly patterns or trends over time",
+        "emphasis": 14,
+        "versions": [],
+        "referred": [
+          28
+        ]
+      },
+      {
+        "id": "viz_2",
+        "type": "Visualization",
+        "label": "Monthly stop-and-search incident time series (2022–2024)",
+        "source": "system",
+        "description": "Time series plot of the number of stop-and-search incidents in London from mid-2022 through August 2024. Summary:\n- Cyclical patterns observable (seasonal effects, policing operations)\n- No obvious long-term trend\n- Insights include possible links to holidays, policing campaigns, no clear upward/downward trend.\nAnalyst is invited to further decompose time series, break down by ethnicity/age, or look for links to external events.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          28,
+          30,
+          32,
+          34
+        ]
+      },
+      {
+        "id": "finding_5",
+        "type": "Finding",
+        "label": "Temporal pattern in London stop and search incidents (2022–2024)",
+        "source": "system",
+        "description": "Key finding from monthly time series of stop-and-search incidents:\n- Clear cyclical fluctuations with noticeable peaks/dips\n- Possible influences: seasonality, operational campaigns\n- No strong long-term increase/decrease visible\n\nNext steps could include decomposition, demographic breakdowns, or investigation of external influencing events.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          28,
+          30,
+          32,
+          34
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "suggestion_1",
+        "target": "viz_1",
+        "label": "shifts focus from"
+      },
+      {
+        "source": "viz_2",
+        "target": "data_10",
+        "label": "visualizes temporal trend of"
+      },
+      {
+        "source": "viz_2",
+        "target": "suggestion_1",
+        "label": "addresses suggestion"
+      },
+      {
+        "source": "finding_5",
+        "target": "viz_2",
+        "label": "derived from"
+      },
+      {
+        "source": "finding_5",
+        "target": "rq_5",
+        "label": "informs"
+      }
+    ],
+    "summary": "<b>Suggestion</b> to shift analytical focus from spatial patterns (due to occlusion in mapping) to <b>temporal analysis</b> of stop and search incidents is extracted. A new <b>visualization</b> node captures the monthly time series chart output, and a new <b>finding</b> summarizes key temporal trends: cyclical (seasonal/campaign) fluctuations, without a clear trend. Nodes are connected to the prior spatial work, the overall dataset, and the research question about spatiotemporal-demographic stop and search patterns."
+  },
+  {
+    "referredNodes": [
+      "viz_2",
+      "finding_5",
+      "data_10"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_6",
+        "type": "Finding",
+        "label": "Abrupt drop in stop-and-search records: April 2022",
+        "source": "system",
+        "description": "A sharp decrease in stop-and-search incidents occurs in April 2022 with only 27 records, which is extremely low compared to all other months in the dataset (Apr 2022–Aug 2024).\n\nPossible explanations considered:\n- Data coverage issue: Very likely incomplete ingestion or partial recording for April 2022 (e.g., only one record from April 30, 2022).\n- System transition or reporting delay in the Met’s data system causing underreporting for that month.\n- Operational effect (e.g., policing pause or major event) deemed implausible—such a low count is not supported by external records.\n\nConclusion: This drop is almost certainly a data artifact, not a real decline in stop-and-search activity for April 2022.",
+        "emphasis": 15,
+        "versions": [],
+        "referred": [
+          30
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_6",
+        "target": "viz_2",
+        "label": "explains anomaly in"
+      },
+      {
+        "source": "finding_6",
+        "target": "finding_5",
+        "label": "qualifies temporal pattern in"
+      },
+      {
+        "source": "finding_6",
+        "target": "data_10",
+        "label": "derived from data"
+      }
+    ],
+    "summary": "<b>Finding \"Abrupt drop in stop-and-search records: April 2022\"</b> added. This finding details the anomaly of extremely low stop-and-search incidents in April 2022, after referring to the <b>monthly time series visualization</b> (<b>viz_2</b>) and related <b>finding_5</b> (cyclical monthly pattern). The node attributes the drop to data incompleteness or system issues rather than operational changes, and explicitly links to the <b>combined stop-and-search dataset</b> (<b>data_10</b>)."
+  },
+  {
+    "referredNodes": [
+      "viz_2",
+      "finding_5"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_7",
+        "type": "Finding",
+        "label": "Seasonal dip in stop-and-search activity: December 2022",
+        "source": "system",
+        "description": "A noticeable reduction in stop-and-search incidents observed in December 2022, with 5,706 recorded events—a clear decrease compared to surrounding months. Possible explanations include:\n- Seasonal slowdown: police activity may lessen in December due to holidays (e.g., Christmas).\n- Reduced public presence leading to fewer stops.\n- Police resource shift: officers diverted to crowd control or holiday duties.\n- Weather and short daylight: fewer people in public, typically seen in winter.\nPattern is recurrent in past policing data, suggesting seasonality as the main driver.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          32,
+          34
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_7",
+        "target": "finding_5",
+        "label": "refines temporal fluctuation finding with specific seasonal detail"
+      },
+      {
+        "source": "finding_7",
+        "target": "viz_2",
+        "label": "draws detail from monthly time series visualization"
+      }
+    ],
+    "summary": "<b>New finding node</b> <b>finding_7</b> created for the <b>seasonal dip in December 2022</b> in stop-and-search activity, with possible explanations attributed to holidays, resource shifts, and weather. This <b>refines</b> the generic temporal/cyclical pattern captured in <b>finding_5</b> and utilizes the pattern from the monthly time series (<b>viz_2</b>). The new node is <b>linked to both prior findings and visualization nodes</b> to integrate this specific insight into the broader temporal analysis context."
+  },
+  {
+    "referredNodes": [
+      "viz_2",
+      "finding_5",
+      "finding_7"
+    ],
+    "newNodes": [
+      {
+        "id": "task_7",
+        "type": "Task",
+        "label": "Investigate external factors behind December 2022 stop-and-search dip",
+        "source": "analyst",
+        "description": "Search for potential external factors (policy change, organizational transition, or leadership change) that could explain the notable decline in stop-and-search incident volume in December 2022, as shown in the time series. Evaluate timing and description of relevant events/policies for alignment with the dip.",
+        "emphasis": 17,
+        "versions": [],
+        "referred": [
+          34
+        ]
+      },
+      {
+        "id": "finding_8",
+        "type": "Finding",
+        "label": "Possible causal factors for December 2022 stop-and-search decline",
+        "source": "system",
+        "description": "1. Major leadership transition: Met Commissioner changeover and internal reviews during 2022, possibly affecting operations/data routines.\n2. Policy change: July 2022 Serious Violence Reduction Orders (SVROs) introduced by the Police, Crime, Sentencing and Courts Act—potential cautious implementation and reporting delays.\n3. Strategic shift: December 5, 2022, joint action (Mayor & Commissioner) for reducing disproportionality and increasing oversight—community panels, publicized body-camera reviews. Likely led to recalibration of stop-and-search intensity and focus.\nSynthesis: The confluence of leadership change, newly implemented powers, and a strategic push to address disproportionality likely lowered stop volumes for December 2022. Data recording/process adjustments may also have contributed.",
+        "emphasis": 18,
+        "versions": [],
+        "referred": [
+          34,
+          36
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_7",
+        "target": "finding_7",
+        "label": "motivated by"
+      },
+      {
+        "source": "finding_8",
+        "target": "task_7",
+        "label": "addresses"
+      },
+      {
+        "source": "finding_8",
+        "target": "finding_7",
+        "label": "explains causal mechanism for"
+      }
+    ],
+    "summary": "<b>Task</b> node (<b>task_7</b>) created to <b>investigate external factors behind the December 2022 dip</b> in stop-and-search incidents, directly referring to the prior seasonal/temporal pattern findings (<b>viz_2</b>, <b>finding_5</b>, <b>finding_7</b>). <b>Finding</b> node (<b>finding_8</b>) summarizes plausible <b>causal drivers</b>: <b>leadership transition</b>, <b>policy implementation</b> (SVROs), and <b>targeted efforts to reduce disproportionality</b>. Links situate the investigation as prompted by the December dip and the finding as the result/explanation for that temporal anomaly."
+  },
+  {
+    "referredNodes": [
+      "finding_8"
+    ],
+    "newNodes": [
+      {
+        "id": "data_11",
+        "type": "Data",
+        "label": "The Guardian article on Met officers in schools and targeting Black children (Dec 2022)",
+        "source": "analyst",
+        "description": "Online news article published by The Guardian on 4 December 2022 titled “Met officers in schools to be checked to see if Black children are being targeted.” Highlights concerns over potential adultification bias and disproportionate stop-and-search practices affecting Black youth, especially in school settings. Article references findings from child safeguarding reviews and pressures from community and watchdog organizations. Directly precedes and likely influences the Met Police & Mayor’s press release (5 December 2022). Link: https://www.theguardian.com/uk-news/2022/dec/04/met-officers-in-schools-to-be-checked-to-see-if-black-children-are-being-targeted",
+        "emphasis": 18,
+        "versions": [],
+        "referred": [
+          36
+        ]
+      },
+      {
+        "id": "finding_9",
+        "type": "Finding",
+        "label": "Evidence connecting December 2022 operational shift to Guardian article and Met press release",
+        "source": "joint",
+        "description": "Strong evidence that the significant decline in stop-and-search activity in December 2022 is temporally connected to increased media scrutiny (The Guardian article on 4 December 2022 regarding targeting of Black children by Met officers in schools) and an immediate response from the Metropolitan Police/Mayor (press release on 5 December promising increased scrutiny, oversight, and community engagement). The scrutiny likely led to:\n- operational recalibration, especially for stops involving youth or school settings\n- temporary reduction or added caution in use of stop powers by frontline officers\n- intensified supervisor oversight\n- likely explain pronounced fall in December 2022 stops, above/beyond typical seasonality",
+        "emphasis": 19,
+        "versions": [],
+        "referred": [
+          36,
+          38
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_11",
+        "target": "finding_8",
+        "label": "Precipitating media event for"
+      },
+      {
+        "source": "finding_9",
+        "target": "finding_8",
+        "label": "Builds on context of"
+      },
+      {
+        "source": "finding_9",
+        "target": "data_11",
+        "label": "Supports link between article and operational changes"
+      }
+    ],
+    "summary": "<b>Guardian article about Met police in schools</b> (node: data_11) and a new <b>finding connecting December 2022 operational changes to media scrutiny and press release</b> (node: finding_9) have been added. <b>data_11</b> is directly linked to prior <b>finding_8</b> as a precipitating event; <b>finding_9</b> builds on <b>finding_8</b> and supports the article's role in operational shifts. No prior nodes required major updates—these extend explanation of the December 2022 stop-and-search drop by tracing it to specific media and policy events."
+  },
+  {
+    "referredNodes": [
+      "finding_9",
+      "data_10",
+      "task_6",
+      "finding_3",
+      "finding_4"
+    ],
+    "newNodes": [
+      {
+        "id": "task_8",
+        "type": "Task",
+        "label": "Temporal analysis of stop-to-population ratios by ethnicity",
+        "source": "analyst",
+        "description": "Conduct a time series analysis of stop-to-population ratios broken down by officer-defined ethnic categories using the Metropolitan Police stop-and-search dataset (April 2022–August 2024) and 2021 London Census data. Evaluate whether disproportionality (e.g., Black, White, Asian, Mixed, Other groups) in stop-and-search rates has changed over time, especially before and after December 2022 operational/policy shifts and press scrutiny events.",
+        "emphasis": 20,
+        "versions": [],
+        "referred": [
+          38,
+          40
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_8",
+        "target": "finding_9",
+        "label": "informed by"
+      },
+      {
+        "source": "task_8",
+        "target": "data_10",
+        "label": "requires"
+      },
+      {
+        "source": "task_8",
+        "target": "task_6",
+        "label": "extends"
+      },
+      {
+        "source": "task_8",
+        "target": "finding_3",
+        "label": "updates/extends"
+      },
+      {
+        "source": "task_8",
+        "target": "finding_4",
+        "label": "updates/extends"
+      }
+    ],
+    "summary": "<b>New task node</b> (<b>task_8</b>): <b>Temporal analysis of stop-to-population ratios by ethnicity</b> has been added, based on the analyst’s request to break down stop/search disproportionality dynamically over time and track changes related to external events (like the December 2022 policy/media episode). This node <b>refers to previous findings and comparative approaches</b> (finding_3, finding_4), the <b>operational-event connection</b> (finding_9), <b>requires</b> the combined stop-and-search dataset (data_10), and <b>extends</b> prior static disproportionality comparisons (task_6)."
+  },
+  {
+    "referredNodes": [
+      "task_8"
+    ],
+    "newNodes": [
+      {
+        "id": "finding_10",
+        "type": "Finding",
+        "label": "Temporal stop-to-population disproportionality trends by ethnicity in London (Apr 2022–Aug 2024)",
+        "source": "system",
+        "description": "Stop-to-population ratio per 1,000 people by officer-defined ethnicity calculated over time using the Metropolitan Police dataset (April 2022–August 2024), for all ethnic categories present (note: \"Mixed\" group not present in this dataset). Key insights:\n- Black individuals have the highest, persistently elevated stop-to-population ratio, and the gap—while slightly narrowing after December 2022 event (marked in red)—remains substantial throughout.\n- White and Asian groups show significantly lower, relatively stable ratios over time.\n- No strong seasonal pattern apparent, but short-term dips and rebounds suggest policy or operational effects (notably post-Dec 2022 press scrutiny and event).\n- Analysis restricted to ethnic groups actually found in the dataset.\nVisualization: stop-to-population-1.png.",
+        "emphasis": 22,
+        "versions": [],
+        "referred": [
+          40,
+          42,
+          44
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "finding_10",
+        "target": "task_8",
+        "label": "addresses"
+      }
+    ],
+    "summary": "<b>Finding</b> node <b>\"Temporal stop-to-population disproportionality trends by ethnicity in London (Apr 2022–Aug 2024)\"</b> was added. It summarizes the <b>results of the time series analysis of stop-to-population ratios by ethnicity</b> as requested in <b>task_8</b>, including persistence of racial disproportionality, the effect of the Dec 2022 policy/media event, and absence of the \"Mixed\" group. The node is linked to <b>task_8</b> to indicate direct analytical fulfillment."
+  },
+  {
+    "referredNodes": [
+      "finding_10"
+    ],
+    "newNodes": [
+      {
+        "id": "viz_3",
+        "type": "Visualization",
+        "label": "Stop-to-population ratio by ethnicity (enhanced colors, Apr 2022–Aug 2024)",
+        "source": "system",
+        "description": "Updated plot of stop-to-population ratio per 1,000 people over time for each officer-defined ethnicity group in the London stop-and-search dataset (April 2022–August 2024). Plot features:\n- Distinct, more easily distinguished color mapping:\n    🔵 White\n    🔴 Black\n    🟢 Asian\n    🟠 Other\n- Bolder line weights for visibility\n- Dashed vertical line indicating the December 5, 2022 policy event (press scrutiny/operational change)\n- Follows previous insight on trends, disproportionality structure, and time shifts as detailed in earlier findings.\nFile referenced: stop-to-population-2.png.",
+        "emphasis": 22,
+        "versions": [
+          "finding_10"
+        ],
+        "referred": [
+          42,
+          44
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "viz_3",
+        "target": "finding_10",
+        "label": "visualizes"
+      }
+    ],
+    "summary": "<b>Visualization</b> node <b>viz_3</b> was added to capture the updated ethnic disproportionality time series plot, featuring more distinguishable colors for improved trend separation. This visualization links directly to the previously established <b>finding_10</b> on temporal stop-to-population disproportionality by ethnicity, further clarifying and communicating the trends described there."
+  },
+  {
+    "referredNodes": [
+      "rq_3",
+      "finding_10",
+      "viz_3",
+      "goal_1"
+    ],
+    "newNodes": [
+      {
+        "id": "data_12",
+        "type": "Data",
+        "label": "Datasets on public perceptions of the police by ethnicity (London and UK)",
+        "source": "system",
+        "description": "Datasets suitable for exploring public opinion about the police by racial/ethnic group, with a special focus on London and (where possible) fine demographic detail:\n\n1. MOPAC Public Attitudes Survey (PAS)\n- Source: London.gov.uk PAS\n- London-only; quarterly since early 2010s\n- Variables: Trust/confidence, fear of crime, fairness, safety, police contact\n- Disaggregated by: Borough, Age, Ethnicity, Gender\n- Format: CSVs, dashboards\n- Usefulness: Most detailed public trust data for London by demographic\n\n2. Crime Survey for England and Wales (CSEW)\n- Source: UK Data Service\n- National coverage; ~30,000+ respondents/year\n- Variables: Police confidence, stop-and-search experiences, perceived legitimacy/fairness, ethnicity\n- Some data at London/regional level; more powerful for cross-ethnic comparisons nationally\n- Access: Registration required for microdata\n\n3. YouGov or Ipsos MORI Polling\n- Occasional polling at UK or London level\n- Variables: Confidence, trust in police, perceived racism/bias\n- Format: Summary reports, dashboards (limited raw microdata)\n\nSuggested analysis includes comparison of police trust by race/ethnicity, trend analysis (especially around Dec 2022 event), spatial contrasts, and links to stop-and-search experience.",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          44,
+          46,
+          54
+        ]
+      },
+      {
+        "id": "suggestion_2",
+        "type": "Suggestion(s)",
+        "label": "Analysis suggestions: linking racial disparity in stop-and-search with police trust datasets",
+        "source": "system",
+        "description": "Proposed directions for analysis:\n- Compare whether ethnic groups most disproportionately stopped (e.g., Black Londoners) also report the lowest levels of trust/confidence in the police (using MOPAC PAS, CSEW, or polling data)\n- Assess if trust/confidence changed after Dec 2022 scrutiny/policy event\n- Explore spatial patterns (boroughs with greatest disparity in stops—to attitudes)\n- Examine if recent/forced contact with police (such as stop-and-search) is linked to negative attitudes, especially for minority groups\n- Offer assistance in acquiring, cleaning, or merging opinion survey datasets with prepared stop-and-search time series",
+        "emphasis": 23,
+        "versions": [],
+        "referred": [
+          44,
+          46
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_12",
+        "target": "rq_3",
+        "label": "enables demographic breakdown of police perceptions"
+      },
+      {
+        "source": "suggestion_2",
+        "target": "finding_10",
+        "label": "driven by recent findings on persistent racial disparity"
+      },
+      {
+        "source": "suggestion_2",
+        "target": "viz_3",
+        "label": "motivated by visualized trends in disproportionality"
+      },
+      {
+        "source": "data_12",
+        "target": "goal_1",
+        "label": "serves as key data for evaluating police perceptions"
+      }
+    ],
+    "summary": "<b>Data node</b> <b>data_12</b> added for <b>public perceptions of the police by ethnicity</b> (MOPAC PAS, CSEW, YouGov/Ipsos), highlighting their features, granularity, and relevance for London. <b>Suggestion(s) node</b> <b>suggestion_2</b> added proposing analyses linking racial disparity in stop-and-search (see finding_10, viz_3) to public trust by ethnicity—comparing attitudes before/after key events and spatial/demographic cross-links. Links created anchoring these nodes to <b>rq_3</b> (demographic perception differences), <b>goal_1</b>, and immediate findings and visualizations."
+  },
+  {
+    "referredNodes": [
+      "data_12",
+      "goal_1",
+      "rq_2",
+      "rq_3",
+      "suggestion_2"
+    ],
+    "newNodes": [
+      {
+        "id": "data_13",
+        "type": "Data",
+        "label": "MOPAC PAS: demographic breakdown on public perceptions",
+        "source": "system",
+        "description": "Dataset from the Public Attitudes Survey (PAS), providing borough-level statistics on key indicators of public perceptions of police in London with demographic breakdowns:\n- Agreement with \"police treat everyone fairly\"\n- Confidence in police performance\n- Knowledge of contact points for local officers\n- Feeling informed/heard\nBreakdowns are available for: Borough, Ethnicity (White, Black, Asian, Mixed, etc), and other demographics. Coverage covers March 2022–June 2025. Accessible via data.gov.uk ('Public Perceptions of the Police' dataset, updated June 2025). CSV includes breakdown by ethnicity and quarter.\nCan be used to: Track public perception indicators over time by ethnic group; align changes with stop-to-population ratio trends and Dec 2022 policy/scrutiny event.",
+        "emphasis": 25,
+        "versions": [],
+        "referred": [
+          46,
+          48,
+          54
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_13",
+        "target": "data_12",
+        "label": "concrete instance/refinement"
+      },
+      {
+        "source": "data_13",
+        "target": "suggestion_2",
+        "label": "addresses data need for"
+      },
+      {
+        "source": "data_13",
+        "target": "rq_2",
+        "label": "supports analysis of"
+      },
+      {
+        "source": "data_13",
+        "target": "rq_3",
+        "label": "supports analysis of"
+      },
+      {
+        "source": "data_13",
+        "target": "goal_1",
+        "label": "enables investigation of"
+      }
+    ],
+    "summary": "<b>MOPAC PAS: demographic breakdown on public perceptions</b> (node <b>data_13</b>) added: a borough-level dataset from the Public Attitudes Survey providing indicators of trust and fairness in the police, including ethnic, borough, and demographic breakdowns (Mar 2022–Jun 2025). This concretely refines <b>data_12</b>, addresses the data need identified in <b>suggestion_2</b>, and supports research on <b>rq_2</b> and <b>rq_3</b>, all relevant for the overall <b>goal_1</b>."
+  },
+  {
+    "referredNodes": [
+      "data_13"
+    ],
+    "newNodes": [
+      {
+        "id": "data_14",
+        "type": "Data",
+        "label": "Aggregate public perception metrics of police over time (no demographic breakdown)",
+        "source": "analyst",
+        "description": "Dataset with time series of aggregated public perception of police in London, structure:\n- date: e.g., \"Dec-14\"\n- measure: question on police perceptions (e.g., \"Agree the police treat everyone fairly regardless of who they are\", \"Agree the police can be relied upon to be there when needed\")\n- proportion: % of overall respondents agreeing (e.g., 74%)\nNo breakdown by ethnicity, age, or other demographic variables is present.",
+        "emphasis": 27,
+        "versions": [],
+        "referred": [
+          48,
+          50,
+          52,
+          56
+        ]
+      },
+      {
+        "id": "task_9",
+        "type": "Task",
+        "label": "Temporal analysis of aggregate public perception measures",
+        "source": "joint",
+        "description": "Analyze trends in the aggregate time series of public perception of police in London using available perception measures (e.g., fairness, listening, reliability) over time. Task steps:\n- Convert date variable to datetime format\n- Pivot data to create individual time series for each perception measure\n- Visualize how each measure changes over time\n- Look for trend inflections or notable dips/declines (especially post-policy/scrutiny events)\n- Observations include: Most metrics stable, some show gradual declines/dips 2020–2023, no drastic shift in December 2022 (in aggregate), slight downward trend for 'treat everyone fairly'",
+        "emphasis": 24,
+        "versions": [],
+        "referred": [
+          48
+        ]
+      },
+      {
+        "id": "finding_11",
+        "type": "Finding",
+        "label": "Aggregate public perception trends: stability and gradual decline (2014–2024)",
+        "source": "system",
+        "description": "Key findings from the aggregated time series of public perception of police:\n- Most perception metrics remained relatively stable over the long term.\n- Some indicators show a gradual decline or dips from 2020 to 2023.\n- No major shift specifically at December 2022, though this may be masked without demographic detail.\n- Perceptions of fairness ('treat everyone fairly') and responsiveness have trended slightly downward in recent years.\n- Visualization: public-perception-temporal.png\nCaveat: Additional demographic data would be required to link public perception shifts specifically to population subgroups most impacted by stop-and-search disproportionality.",
+        "emphasis": 25,
+        "versions": [],
+        "referred": [
+          48,
+          52
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "data_14",
+        "target": "data_13",
+        "label": "aggregated version (no demographic breakdown) of"
+      },
+      {
+        "source": "task_9",
+        "target": "data_14",
+        "label": "analyzes"
+      },
+      {
+        "source": "finding_11",
+        "target": "task_9",
+        "label": "result of"
+      }
+    ],
+    "summary": "<b>New nodes</b> have been added for the <b>aggregate public perception dataset (data_14)</b>, a <b>task to analyze aggregate temporal perception trends (task_9)</b>, and a <b>finding summarizing observed trends (finding_11)</b>. The <b>aggregate dataset</b> is linked as an extracted/no-demographics version of <b>data_13</b> (which featured demographic breakdowns). <b>Task_9</b> is linked to <b>data_14</b>, and <b>finding_11</b> is the outcome of <b>task_9</b>. Stability and slight declines in public police perception were found in the aggregate data, with no clear shift in December 2022."
+  },
+  {
+    "referredNodes": [
+      "data_14"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_1",
+        "type": "Explanation",
+        "label": "Survey question removal rationale: 'well informed' and 'local officer contact' (2022)",
+        "source": "system",
+        "description": "From the Public Perceptions of the Police dataset description (London Datastore, March 2025):\n- From March 2022, survey responses are only available for: listening, reliability, fairness, addressing local concerns, overall job quality.\n- The following questions were removed: 'Feels well informed about local police activities' and 'Knows how to contact their local ward officer.'\nReasons for removal:\n  - Strategic refocus: Shifted survey to prioritize core measures (fairness, confidence, community relevance).\n  - Redundancy/low policy relevance: Information and contact knowledge not seen as central to the main trust/confidence focus.\n  - Survey fatigue: Dropping low-impact items helps reduce participant burden and improves survey focus/quality.",
+        "emphasis": 25,
+        "versions": [],
+        "referred": [
+          50
+        ]
+      },
+      {
+        "id": "finding_12",
+        "type": "Finding",
+        "label": "Implications of dropped survey measures for analysis",
+        "source": "system",
+        "description": "The discontinuation of 'feels well informed about local police activities' and 'knows how to contact local ward officer' after March 2022 means these public perception sub-indicators cannot be tracked beyond early 2022. Earlier downward trends for these questions may remain relevant context (e.g., were they discontinued due to persistently low scores). Focus now shifts to fairness, reliability, responsiveness, and local effectiveness for post-2022 analysis; direct comparisons over the full time span for the dropped measures are not possible.",
+        "emphasis": 25,
+        "versions": [],
+        "referred": [
+          50
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_1",
+        "target": "data_14",
+        "label": "explains change in"
+      },
+      {
+        "source": "finding_12",
+        "target": "explanation_1",
+        "label": "draws from"
+      },
+      {
+        "source": "finding_12",
+        "target": "data_14",
+        "label": "constrains interpretation of"
+      }
+    ],
+    "summary": "<b>Explanation</b> node summarizes the official reasoning for dropping the <b>'well informed about local police activities'</b> and <b>'knows how to contact local ward officer'</b> survey measures as of March 2022, including policy motivation and survey methodology considerations. A new <b>Finding</b> spells out the analytic implications: those perception trends cannot be tracked post-2022 and focus must now shift to remaining public perception variables. Both are linked to the aggregate perception <b>Data</b> node for <b>public perception metrics</b>."
+  },
+  {
+    "referredNodes": [
+      "finding_11",
+      "data_14"
+    ],
+    "newNodes": [
+      {
+        "id": "suggestion_3",
+        "type": "Suggestion(s)",
+        "label": "Comparative analysis directions for declining police trust",
+        "source": "system",
+        "description": "Several proposed analytical comparisons to investigate the ongoing decline in public trust in police:\n\n1. Correlate temporal trends in trust/perception metrics (e.g., fairness, doing a good job) with contemporaneous stop-to-population ratios for Black, White, Asian groups, especially to test if higher disproportionality aligns with lower overall trust.\n2. Overlay/main event analysis: Place vertical markers of policy events, major leadership transitions, misconduct scandals in the trust time series to observe coincident dips or trend inflections (examples: Dec 2022 Guardian article, Met leadership change, SVRO rollout).\n3. Borough-level trust vs. stop/search disparity: (if data allows) Compare borough-level trust survey scores to local stop rates/disparities; look for areas with the steepest trust decline or highest disproportionality.\n4. (If demographic splits available) Cross-tab by ethnicity, age, and gender: Compare trust trends (e.g. Black vs. White, younger vs older) to see which groups are losing trust most rapidly.\n5. Compare trust by contact type: Where survey microdata are available, contrast perception among respondents with involuntary (stops) vs. voluntary contact with police (victims, callers), to test procedural justice theory.\n6. Statistical/lags: Quantify relationship (e.g. lagged regression, Granger causality, interrupted time series) between trust measures and stop/search disparity; test directionality and magnitude of effects.",
+        "emphasis": 26,
+        "versions": [],
+        "referred": [
+          52
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "suggestion_3",
+        "target": "finding_11",
+        "label": "proposes further analysis building on"
+      },
+      {
+        "source": "suggestion_3",
+        "target": "data_14",
+        "label": "suggests comparative approaches using"
+      }
+    ],
+    "summary": "<b>Suggestion(s)</b> node (<b>suggestion_3</b>) added, outlining multiple comparative analytical directions to further investigate the downward trend in <b>police trust</b>. These include: correlating perception measures with stop-and-search disproportionality, event overlay analysis, borough-level and cross-demographic comparisons, contact type effects, and statistical modeling. Node links back to <b>finding_11</b> (trend stability/decline in public perception) and <b>data_14</b> (aggregate trust metrics)."
+  },
+  {
+    "referredNodes": [
+      "data_6",
+      "rq_3",
+      "data_12",
+      "data_13"
+    ],
+    "newNodes": [
+      {
+        "id": "explanation_2",
+        "type": "Explanation",
+        "label": "Crime Survey for England and Wales (CSEW): scope and demographic trust data",
+        "source": "system",
+        "description": "Overview of the Crime Survey for England and Wales (CSEW):\n\n- Large-scale annual national survey (~30,000 households/year; ONS-run)\n- Nationally representative by age, ethnicity, gender, region (including possible London-level analysis)\n\nKey variables:\n- Police trust/confidence: e.g., confidence in local police, fairness, effectiveness in dealing with crime, willingness to cooperate\n- Demographic breakdowns: ethnicity, age group, gender, region\n- Experience-based factors: being a crime victim, stop-and-search experience, other police contact; type and valence of police contact (positive or negative)\n\nData access:\n- UK Data Service (registration and research purpose statement required; anonymized microdata in SPSS/Stata/CSV)\n\nAnalytical uses for current research:\n- Directly compare police trust across ethnic and age groups\n- Study effect of personal experience (stops, victimization) on police perceptions\n- Evaluate trust/attitude trends nationally or regionally, by subgroup\n\nSystem offers support for dataset access, workflow design, and analysis setup.",
+        "emphasis": 26,
+        "versions": [],
+        "referred": [
+          54
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "explanation_2",
+        "target": "data_6",
+        "label": "explains use and structure"
+      },
+      {
+        "source": "explanation_2",
+        "target": "rq_3",
+        "label": "enables demographic trust analysis"
+      },
+      {
+        "source": "explanation_2",
+        "target": "data_12",
+        "label": "complements as survey data"
+      },
+      {
+        "source": "explanation_2",
+        "target": "data_13",
+        "label": "alternative if London subgroups needed"
+      }
+    ],
+    "summary": "<b>Crime Survey for England and Wales (CSEW)</b> has been added as an <b>Explanation node</b> describing its detailed coverage, variables, demographic breakdowns, and use for demographic trust assessment. This supports and contextualizes <b>existing network nodes</b> for <b>CSEW data</b>, <b>research questions about police trust by demographic group</b>, and other perception datasets (e.g. <b>MOPAC PAS</b>). Four new links connect this explanation to CSEW, research question, and perception data nodes."
+  },
+  {
+    "referredNodes": [
+      "data_6",
+      "data_14",
+      "goal_1",
+      "rq_3"
+    ],
+    "newNodes": [
+      {
+        "id": "task_10",
+        "type": "Task",
+        "label": "Compare police perception scores: London (Metropolitan Police) vs England & Wales (CSEW 2024)",
+        "source": "joint",
+        "description": "Clean and preprocess CSEW public perception dataset for year ending March 2024:\n- Remove first four metadata/header rows\n- Rename perception columns using correct column headers (row 4 of file)\n- Extract data for Metropolitan Police (London: 'City of London / Metropolitan Police') and combine if necessary\n- Extract national average (England and Wales)\n- Compare key perception metrics (e.g., 'Can be relied on', 'Treat everyone fairly', 'Confidence', 'Understanding community issues') for London (Metropolitan) vs England and Wales\n- Document summary sample size (30,172 respondents)\n- Prepare data for tabular and/or visual comparison analysis",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          56,
+          58
+        ]
+      },
+      {
+        "id": "finding_13",
+        "type": "Finding",
+        "label": "CSEW 2024 comparison: public perceptions of police, London vs England & Wales",
+        "source": "system",
+        "description": "Key measures from the CSEW year ending March 2024 show:\n- London (Metropolitan Police):\n    - Slightly higher agreement for 'Can be relied on to be there' (+3.8 points)\n    - Slightly higher 'Treat everyone fairly' (+1.8 points)\n    - Lower 'Understanding community issues' and 'Overall confidence in local police' (–3.4 and –3.5 pts vs national avg)\n- Interpretation: Londoners report marginally higher police reliability/fairness but slightly lower overall confidence and sense that police understand local issues compared to England/Wales overall (N=30,172).",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          56,
+          58
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_10",
+        "target": "data_6",
+        "label": "analyzes"
+      },
+      {
+        "source": "task_10",
+        "target": "data_14",
+        "label": "compares with"
+      },
+      {
+        "source": "task_10",
+        "target": "rq_3",
+        "label": "addresses"
+      },
+      {
+        "source": "task_10",
+        "target": "goal_1",
+        "label": "advances"
+      },
+      {
+        "source": "finding_13",
+        "target": "task_10",
+        "label": "result of"
+      }
+    ],
+    "summary": "<b>Task:</b> Added <b>\"Compare police perception scores: London (Metropolitan Police) vs England & Wales (CSEW 2024)\"</b>, which involves cleaning, extracting, and comparing public perception metrics for London and the national average using the 2024 CSEW dataset. <b>Finding:</b> Added <b>\"CSEW 2024 comparison: public perceptions of police, London vs England & Wales\"</b>, summarizing key measures and London’s relative standing. These nodes link to <b>Crime Survey for England and Wales</b>, <b>aggregate perception data</b>, <b>demographic perception RQ</b>, and <b>overall analysis goal</b>."
+  },
+  {
+    "referredNodes": [
+      "goal_1",
+      "rq_2",
+      "rq_3",
+      "data_6",
+      "task_10",
+      "finding_13"
+    ],
+    "newNodes": [
+      {
+        "id": "task_11",
+        "type": "Task",
+        "label": "Spatial breakdown of police confidence by region (CSEW 2024)",
+        "source": "joint",
+        "description": "Analyze and visualize confidence in local police as measured by the Crime Survey for England and Wales (CSEW, year ending March 2024), broken down by police force area (regional spatial unit).\n- Prepare and clean CSEW data at police force area level.\n- Compare confidence scores for City of London / Metropolitan Police to other police force areas.\n- Document extremes (highest/lowest confidence: e.g. Cheshire, North Yorkshire, Hertfordshire >70%; Leicestershire, Gwent, Cleveland <60%).\n- Assess national variation and regional patterns.\n- Highlight London’s position and investigate overall range of confidence scores (~57%–74%).\n- Task may include mapping or urban/rural comparison on request.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          58
+        ]
+      },
+      {
+        "id": "finding_14",
+        "type": "Finding",
+        "label": "Spatial variation in police confidence by police force: CSEW 2024",
+        "source": "system",
+        "description": "Key findings from spatial (police force area) analysis of 'confidence in local police' (CSEW, YE Mar 2024):\n- London (City of London / Metropolitan Police) is mid-table, slightly below the national average (~67%).\n- Highest confidence: Cheshire, North Yorkshire, Hertfordshire (all >70%).\n- Lowest confidence: Leicestershire, Gwent, Cleveland (<60%).\n- Range is modest (57%–74%) but clear regional patterns are present.\n- Preliminary insight: London’s police confidence is not an extreme outlier. Broader spatial or demographic context may reveal further patterns.",
+        "emphasis": 28,
+        "versions": [],
+        "referred": [
+          58
+        ]
+      }
+    ],
+    "newLinks": [
+      {
+        "source": "task_11",
+        "target": "task_10",
+        "label": "extends regional comparison to spatial detail"
+      },
+      {
+        "source": "task_11",
+        "target": "finding_13",
+        "label": "seeks to spatialize comparison"
+      },
+      {
+        "source": "finding_14",
+        "target": "task_11",
+        "label": "result of spatial breakdown task"
+      },
+      {
+        "source": "finding_14",
+        "target": "goal_1",
+        "label": "provides context for trust variation"
+      },
+      {
+        "source": "finding_14",
+        "target": "rq_2",
+        "label": "informs spatial element"
+      },
+      {
+        "source": "finding_14",
+        "target": "rq_3",
+        "label": "offers structural/trust disparities"
+      },
+      {
+        "source": "finding_14",
+        "target": "data_6",
+        "label": "derived from CSEW 2024"
+      }
+    ],
+    "summary": "<b>Two new nodes</b> were added: <b>Spatial breakdown of police confidence by region (CSEW 2024)</b> (task) and <b>Spatial variation in police confidence by police force: CSEW 2024</b> (finding), both linked to prior regional/national comparison and the CSEW dataset. These additions extend the analysis to finer-grained spatial units (police force areas), highlighting regional patterns and placing London in context relative to the national range. Earlier nodes on comparison and trust are referenced and integrated via semantic task/result links."
+  }
+]

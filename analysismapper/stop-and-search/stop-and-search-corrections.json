@@ -1,0 +1,62 @@
+[
+    [
+        8,
+        "network correction:\npleaes group all the findings and the insight into a single node"
+    ],
+    [
+        8,
+        "network correction:\nconnect the node to research question"
+    ],
+    [
+        20,
+        "network correction:\nchange the node (label, description, type) to reflect the output - the request and the output (i.e., distribution)"
+    ],
+    [
+        22,
+        "network correction:\ncan you add a node to capture the analyst's observation about self-defined ethnicity? and another to reflect the new request (proportions compare) and the outcome?"
+    ],
+    [
+        22,
+        "network correction:\nChange that last node's type to observation. And have it structured like this \"Comparing the proportions ... shows that ...\""
+    ],
+    [
+        28,
+        "network correction:\nChange the task node to be a visualisation node: \"Temporal dynamics of ...\""
+    ],
+    [
+        30,
+        "network correction:\nundo that last update. instead add a new 'observation' node (that captures both the analyst request and the explanations)"
+    ],
+    [
+        30,
+        "network correction:\nyou didn't actually undo the update in the way I requested. the observation node that reads \"sharp drop in monthly stop and..\" needs to be a 'visualisation' node that captures just information about what the visualisation is showing."
+    ],
+    [
+        30,
+        "network correction:\nand then link to this node a new node of type observation that captures the analysts observation of the drop in April 2022 and th epossible explanations for it"
+    ],
+    [
+        32,
+        "network correction:\ninstead of adding the new observation node, just update the previous observation node"
+    ],
+    [
+        32,
+        "network correction:\n(and remove the last added observation node; it is now redundant)"
+    ],
+    [
+        48,
+        "network correction:\ncan we actually split out the observations from this last node? make them their own node and link them to the visualization?"
+    ],
+    [
+        52,
+        "network correction:\ncan you actually add a new task node to capture the analyst's new line of inquiry? and link your suggestion node to it."
+    ],
+    [
+        52,
+        "network correction:\nok, but flip the linking. the task should be linked to the previous observation (that seemed to have inspired it). the suggestion is then linked to the task."
+    ],
+    [
+        56,
+        "network correction:\nI don't need the intermediate task node. just link the observation directly to the data (and remove the task node)"
+    ]
+]
