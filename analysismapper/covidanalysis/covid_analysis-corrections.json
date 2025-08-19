@@ -1,62 +1,54 @@
 [
     [
-        8,
-        "network correction:\ncan you integrate the ranking directly into the data node? and remove the finding node..?"
-    ],
-    [
-        14,
-        "network correction:\ncan you actually make a separate node for v-dem (linking to the broader, existing v-dem node) - to capture all our details and discussion about vdem?"
-    ],
-    [
-        16,
-        "network correction:\nchange the source of this last node you added to 'joint' (since it was the analyst who initiated the discussion about populist)"
-    ],
-    [
         24,
-        "network correction:\ncan also separate out a data node for oxcgrt (from the overall datasets node) just like we have for populist and vdem?"
+        "network correction:\nremove last node; no additional info was provided by it..."
     ],
     [
         30,
-        "network correction:\nno, just update the other populist data node instead (remove the new one)"
+        "network correction:\ncan you please merge the two data populist 3.0 nodes? they serve the same purpose"
     ],
     [
         36,
-        "network correction:\nno, actually this time create a new data node for austria (link it to populist). and re-link the vis node to the austria node (instead of the populist node)"
+        "network correction:\nI don't need the task node (task-2), please remove it. connect data-8 node directly to the populist data node, then the visualization-1 node to the data-8 node."
     ],
     [
-        44,
-        "network correction:\ncan this be captured in distinct 'suggestions' node (linked to the populist data node)?"
+        38,
+        "network correction:\nwe don't need the explanation node, please remove it. just include the explanations directly in the visualization-1 node description"
     ],
     [
-        48,
-        "network correction:\nok, and delete the insight on austrial parties post-1989 (since that was a misunderstanding)"
+        40,
+        "network correction:\nactually can you leave the old data-8 node as it was (without the extra 2 columns) and instead create a new data node with the two columns (and link it to data-8)"
+    ],
+    [
+        42,
+        "network correction:\nplease leave visualization-1 as was (and connected to data-8); create a new node for the updated visualization and connected it to data-9."
+    ],
+    [
+        42,
+        "network correction:\nbut the links are not correct. please link visualization-1 just to data-8 (austria-only party subset) and visualization-2 just to data-9 (party subset with foundation/dissolution years)"
+    ],
+    [
+        54,
+        "network correction:\nplease revert visualization-3 to its previous state and instead create a new visualization node for the new visualization"
+    ],
+    [
+        54,
+        "network correction:\nplease link visualization-4 to the populist 3.0 data node!"
+    ],
+    [
+        56,
+        "network correction:\nagain, revert visualization-4 to what it was before and create a new node for the normalized visualization; and you can remove the data-10 node and instead add those details to the new viz node you will create"
+    ],
+    [
+        62,
+        "network correction:\nplease connect data-11 to data-6-vdem"
     ],
     [
         68,
-        "network correction:\nlet's leave the old romania visualisation as it was and create a new node vis node for 2000 onwards; the insight node should be linked to the old vis node and the new visualisation node to the insight."
+        "network correction:\nagain, please revert vizualization-6 to its previus state and create a new node for the new visualization. link this to v-dem romania data node; the new insight-2 can stay, but link it to the new viz node you create"
     ],
     [
-        72,
-        "network correction:\ncan you actually make a new data node (2000 onwards) for the dataset that the analyst uploaded (linked to the general vdem data), then from it three data nodes for each regions?"
-    ],
-    [
-        74,
-        "network correction:\ni noticed you left in the old v-dem regional datasets splits. can you remove it - since we've captured that in three individual data nodes?"
-    ],
-    [
-        76,
-        "network correction:\nok, but connect the new vis node to the suggestion for batch processing"
-    ],
-    [
-        80,
-        "network correction:\nactually, just update the old visualisation to reflect the addition (and remove the new, now redundant node)"
-    ],
-    [
-        88,
-        "network correction:\ncan we also add a node to capture the analyst's observation? link to the general v-dem 2000 onwards node and the europe + west small multiples vis node"
-    ],
-    [
-        88,
-        "network correction:\nalso link the europ+west countries with election in 2003 to that last insight node"
+        94,
+        "network correction:\nwe don't need task-4 you can remove it"
     ]
 ]
