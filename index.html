@@ -1,117 +1,603 @@
-<!DOCTYPE html>
 <html>
-
 <head>
- <style type="text/css">
-   body{
-      background-color:rgb(50,50,50);
-      color:white
-   }
-   a{
-      color:rgb(210,210,255)
-   }
-   img{
-      margin: 15px 15px 15px 15px
-   }
-   hr{
-      border-top: 1px solid gray;
-   }
-   .infotd{
-     vertical-align:top
-   }
- </style>
+<title>Radu Jianu</title>
+
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-18345098-1']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 
+
+'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+
+'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; 
+
+s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+function pubtypechange()
+{
+	var index = 1;
+	for (var i=1; i<5; i++)
+	{
+		var id = "r" + i;
+		if (document.getElementById(id).checked)
+			index = i;
+	}
+
+
+	if (index == 1) //all
+	{
+		show("journal","block");
+		show("conference","block");
+		show("poster","block");		
+	}
+	if (index == 2) //journal
+	{
+		show("journal","block");
+		show("conference","none");
+		show("poster","none");		
+	}
+	if (index == 3) 
+	{
+		show("journal","none");
+		show("conference","block");
+		show("poster","none");		
+	}
+	if (index == 4)
+	{
+		show("journal","none");
+		show("conference","none");
+		show("poster","block");		
+	}
+
+}
+
+function show(which,how)
+{
+	for (var i=0; i<1000; i++)
+	{
+		var id = which + i;
+		var e = document.getElementById(id);
+		if (e == null) continue;
+		e.style.display = how;
+	}
+}
+
+
+
+</script>
+
 </head>
 
-<body style="background-color:rgb(50,50,50); color:white">
-<table width= 1000px>
-  <tr>
-    <td class="infotd">
-      <h3>Radu Jianu</h3>
-      <p>In 2016 I became part of the <a href="https://www.gicentre.net/">giCentre</a> at City, University of London where I teach and conduct research 
+<body>
+
+<p>&nbsp;</p>
+
+<table width="100%">
+	<tr><td><table width="100%"><tr>
+		
+		<td width="300px">
+			<img border="0" src="welcome2.png" width="250"></td>
+		</td>
+		
+		<td>
+   			<p align=center style='text-align:center'><span class=SpellE><span
+    style='font-size:24.0pt'>Radu</span></span><span style='font-size:24.0pt'> <span
+    class=SpellE>Jianu</span></span> </p>
+
+    <p>In 2016 I became part of the <a href="https://www.gicentre.net/">giCentre</a> at City, University of London where I teach and conduct research 
        in information visualization, visual analytics, and human computer interaction. </p>
        I received a Ph.D in Computer Science, with a focus on data visualization, from Brown University in 2012. 
        Between my PhD and my move to London I was an Assistant Professor at Florida International University.
 
        
+
      <p>I am currently exploring novel ways in which the increasingly affordable eye-tracking technology can change how people 
      use visual data analysis systems. Specifically, I explore both diagnostic uses of eye-tracking (e.g., understanding how analysts 
      explore information and aggregate knowledge), and interactive uses of eye-tracking (e.g., highlighting visualization elements users focus on). 
     In a separate project, I look at how evaluating visualizations via user studies can be automated using crowd-sourcing and benchmark tasks. 
     Finally, I search for practical applications of such fundamental computer science research through interdisciplinary collaborations with 
     researchers in areas such as proteomics, genomics, neuroscience, economics, or architecture. </p>
- 
-    </td>
-    <td>
-	<img src="imageofme.png" width=350px></img>
-    </td>
-  </tr>
-  <tr>
-    <td colspan=2>
-	<hr>
-    </td>
-  </tr>
+
+     <p><b>Are you a City student looking for a project supervisor? Check out <a href='projects.html'>this page</a>!</b></p>
+
+  
+
+		</td>
+
+	</tr></table></td></tr>
+
+	<tr><td><hr color="#000000"></td></tr>
+
+
+	<tr><td><table><tr>
+
+		<td width="100%" valign="top">
+			<table><tr><td valign="top">
+			<br>
+
+			<span style="font-size:22px; font-style:italic; font-weight:bold;"> Publications &nbsp &nbsp&nbsp&nbsp </span>
+				<input type="radio" name="radioGroup" value="Coarse" id="r1" onclick="pubtypechange()" checked> <span style="font-size:15px; color:#333344">All&nbsp&nbsp</span>
+				<input type="radio" name="radioGroup" value="Fine" id="r2" onclick="pubtypechange()"> <span style="font-size:15px; color:#333344">Journal </span>
+				<input type="radio" name="radioGroup" value="Fine" id="r3" onclick="pubtypechange()"> <span style="font-size:13px; color:#333344">Conference</span>
+
+				<input type="radio" name="radioGroup" value="Fine" id="r4" onclick="pubtypechange()"> <span style="font-size:11px; color:#333344">Poster</span>
+				 
+				<br>
+
+
+<br><br><font size="4"><b><i>[2017]</i></b></font>
+
+	    <span id="journal16">
+                <br>
+                Sayeed Alam, and Radu Jianu.
+                <b> A Data Model and Task Space for Data of Interest (DOI) Eye-Tracking Analyses.</b>
+                In <i> TVCG</i>, 2016.</a>
+                <br>
+           </span> 
+
+<br><br><font size="4"><b><i>[2016]</i></b></font>
+
+	    <span id="journal16">
+                <br>
+                Sayeed Alam, and Radu Jianu.
+                <b> Analyzing Eye-Tracking Information in Visualization and Data Space: from Where on the Screen to What on the Screen.</b>
+                In <i> TVCG</i>, 2016.</a>
+                <br>
+           </span>
+
+	    <span id="journal17">
+                <br>
+                Angela Laird, Mark Riedel, Mershack Okoe, Radu Jianu, KL Ray, SB Eickhoff, SM Smith, PT Fox, MT Sutherland
+                <b> Heterogeneous fractionation profiles of meta-analytic coactivation networks.</b>
+                In <i> Neuroimage</i>, 2016.</a>
+                <br>
+           </span>
+
+	    <span id="conference22">
+                <br>
+                Renata Pinheiro, Nipesh Pradhananga, Radu Jianu, and Waleed Orabi.
+                <b> Eye-tracking technology for construction safety: A feasibility study.</b>
+                In <i> 33rd International Symposium on Automation and Robotics in Construction.</i>, 2016.</a>
+                <br>
+           </span>   
+
+
+<br><br><font size="4"><b><i>[2015]</i></b></font>
+
+          <span id="journal13">
+                <br>
+                Mershack Okoe, and Radu Jianu.
+                <b> GraphUnit: Evaluating Interactive Graph Visualizations Using Crowdsourcing.</b>
+                In <i> Eurovis2015</i>, 2015. &nbsp<a href="paper_Eurovis2015.pdf">(pdf)</a>
+                <br>
+           </span> 
+
+
+          <span id="poster11">
+                <br>
+                Sayeed Alam, and Radu Jianu.
+                <b> What Are They Doing? : Real-time Analysis of Eye-Tracking Data.</b>
+                In <i> IEEE VIS 2015, poster track</i>, 2015. &nbsp<a href="poster1_Vis2015.pdf">(pdf)</a>
+                <br>
+           </span> 
+
+          <span id="poster12">
+                <br>
+                Mershack Okoe, and Radu Jianu.
+                <b> Ecological Validity in Quantitative User Studies – a Case Study in  Graph Evaluation.</b>
+                In <i> IEEE VIS 2015, poster track</i>, 2015. &nbsp<a href="poster2_Vis2015.pdf">(pdf)</a>
+                <br>
+           </span> 
+
+          <span id="journal14">
+                <br>
+                Steven Gomez, Radu Jianu, Ryan Cabeen, Hua Guo, and David H. Laidlaw.
+                <b> Fauxvea: Crowdsourcing Gaze Estimates for Visualization Analysis Tasks.</b>
+                In <i> IEEE TVCG</i>, 2015 (in review, minor revision requested).
+                <br>
+           </span> 
 
 
 
- <tr>
-  <td class="infotd">
-    <h3>Bootcamp 2020: Forest scene</h3>
-    <p>
-	My first programming project, concluding the 2 week Programming Bootcamp at 
-	City (2020). This Processing project demonstrates a comprehensive understanding 
-	of the use of arrays, loops, and randomness. I created a forest scene in which 
-	details of each tree (e.g. position, trunk color and size, crown color and shape) 
-	are stored in parallel 2D arrays. Trees are arranged in a regular grid but their 
-	positions are jittered by  small random offsets to create the impression of a real 
-	forest. Similarly, each tree trunk and crown has a individual color shade, obtained
-	using  random variations of brown and green. Finally, the forest changes over time:
-	trees grow and their crowns become more pale to suggest seasonal change ( from 
-        spring to autumn).
-    </p>
-  <td>
-	<video width="429" height="200" controls>
-	<source src="Untitled.mp4" type="video/mp4">
-	</video>
-  <td>
-  </td>
-<tr>
- <td colspan = 2 align=center>
-	<img src="pic1.png" width="285px">
-	<img src="pic2.png" width="265px">
-	<img src="pic3.png" width="255px">
- </td>
- </tr>
+<br><br><font size="4"><b><i>[2014]</i></b></font>
+          <span id="journal6">
+		<br>
+		Radu Jianu, Adrian Rusu, Yifan Hu, and Douglas Taggart. 
+		<b>How to Display Group Information on Node-Link Diagrams: an Evaluation.</b>  
+		In <i> IEEE Transactions on Visualization and Computer Graphics (TVCG)</i>, 2014.
+		&nbsp;<a href="paper_TVCG2014_groupinfo.pdf">(pdf)</a>
+		<br>
+	  </span>
 
-<tr>
-    <td colspan=2>
-	<hr>
-    </td>
-  </tr>
+          <span id="journal12">
+		<br>
+		Mershack Okoe, Sayeed Safayet, and Radu Jianu.
+		<b>GraphUnit: Evaluating Interactive Graph Visualization Using CrowdSourcing.</b>  
+		In <i> Eurovis2014 and Computer Graphics Forum Journal (CGF) </i> 2014.
+		&nbsp;<a href="paper_Vis2014_graphunit.pdf">(pdf)</a>
+		<br>
+	 </span>
+
+          <span id="poster8">
+		<br>
+		Mershack Okoe and Radu Jianu.
+		<b>A Gaze-enabled Graph Visualization to Improve Graph Reading Tasks.</b>  
+		In <i> IEEE VIS 2014 poster program </i> 2014.		
+		&nbsp;<a href="paper_EuroVis2014_gazegraph.pdf">(pdf)</a>
+		<br>
+	 </span>
+
+          <span id="poster9">
+		<br>
+		<span style="color:red">Honorable Mention:</span>: Nahid Ferdous and Radu Jianu.
+		<b>Using Pupil Size as an Indicator for Task Difficulty in Data Visualization.</b>  
+		In <i> IEEE VIS 2014 poster program </i> 2014.	
+		&nbsp;<a href="paper_Vis2014_pupil.pdf">(pdf)</a>
+		<br>
+	 </span>
+
+          <span id="poster10">
+		<br>
+		Sayeed Safayet, and Radu Jianu.
+		<b>Data of Interest (DOI)-Based Analysis of Eye-Tracker Data for Interactive Visualizations.</b>  
+		In <i> IEEE VIS 2014 poster program </i> 2014.	
+		&nbsp;<a href="paper_Vis2014_doi.pdf">(pdf)</a>
+		<br>
+
+	  </span>
+
+ <br><br><font size="4"><b><i>[2013]</i></b></font>
+          <span id="conference13">
+		<br>
+		Adrian Rusu and Radu Jianu.
+		<b>Combining Scientific and Information Visualization Artifacts for Complex System Diagnosis.</b>  
+		In <i> Proc. of the 17th International Conference on Information Visualisation (IV), </i>, 2013.
+		<br>
+
+	  </span>
+
+          <span id="poster7">
+		<br>
+		Mershack Okoe, Sayeed Safayet, and Radu Jianu.
+		<b>Using Eye-Tracking as Interactive Input Enhances Graph Visualization.</b>  
+		In <i> IEEE Visualization 2013 Poster Compendium </i> 2013.
+		<br>
+
+	  </span>
+
+             <span id="conference14">
+		<br>
+		Radu Jianu and David&nbsp;H. Laidlaw.
+		<b>What Google Maps can do for biomedical data dissemination:examples and a design study</b>  
+		In <i> BMC Research Notes vol. 6 </i> 2013.
+		<br>
+
+	  </span>
 
 
- <tr>
-  <td class="infotd">
-    <h3>Java project: 2D Game, Student in University</h3>
-    <p>
-	My Java project involved students, universities, and assignments. It was a great
-        opportunity to learn about object oriented programming, model view programming,
-        interaction and GUIs, files, etc.
-    </p>
-
-  <td>
-	  
-	<video width="429" height="200" controls>
-	<source src="unigame.mp4" type="video/mp4">
-	</video>
-  </td>
-  </td>
 
 
-<tr>
- <td colspan = 2 align=center>
-	
- </td>
-</tr>
+ <br><br><font size="4"><b><i>[2012]</i></b></font>
+          <span id="journal5">
+		<br>
+		Steven R. Gomez, Radu Jianu, Hua Guo, Caroline Ziemkiewicz, and David&nbsp;H. Laidlaw.
+		<b>Different Strokes for Different Folks: Visual Presentation Design Between Disciplines</b>  
+		In <i> IEEE Transactions on Visualization and Computer Graphics (TVCG)</i>, <i>VisWeek 2012</i>, 2012.
+		&nbsp;<a href="paper_Vis2013_diffstrokes.pdf">(pdf)</a>
+		<br>
+	  </span>
+
+          <span id="conference12">
+		<br>
+		Radu Jianu and David&nbsp;H. Laidlaw.
+		<b>An Evaluation of How Small User Interface Changes Can Improve Scientists’ Analytic Strategies</b>  
+		In <i> Symposium on Human Factors in Computing (CHI) </i> 2012.
+		&nbsp;<a href="paper_CHI2012.pdf">(pdf)</a>
+		<br>
+	 </span>
+
+          <span id="conference15">
+		<br>
+		Radu Jianu, Wenjin Zhou, Ryan Cabeen, Daniel Dickstein, and David&nbsp;H. Laidlaw.
+		<b>Visualizing tractography metrics of cortical-connectivity integrity in diffusion imaging</b>  
+		In <i> ISMRM </i> 2012.
+		&nbsp;<a href="paper_ISMRM2012.pdf">(pdf)</a>
+		<br>
+ 	</span>
+
+          <span id="journal8">
+		<br>
+		J Ericson, M Painter, S Davis, C Laplace, G Hyatt, H Paik, K Rothamel, R Cruse, G Doran, T Heng, N Asinovski, Ortiz-A Lopes, A Ergun, D Gray, E Wakamatsu, J Hill, M Mingueneau, D Cipoletta, H Yoshida, C Benoist, D Mathis, N Cohen, E Kim, P Brennan, L Lynch, M Brenner, J Costello, JJ Collins, D Blair, M Dustin, J Knell, E Yang, A Best, L Shaw, A Doedens, A Goldrath, S Shinton, Y Zhou, R Hardy, V Jojic, S Mostafavi, D Koller, Radu Jianu, David H. Laidlaw, N Bezman, J Sun, Y Zhu, D Hendricks, Y Kamimura, G Min-Oo, M Morvan, T Nabekura, V Lam, C Kim, L Lanier, M Greter, J Helft, A Chow, M Bogunovic, A Mortha, J Price, D Hashimoto, J Miller, P Sathe, A Chudnovskiy, Y Lavin, J Idoyaga, M Merad, E Gautier, C Jakubzick, D' J Angelo, G Randolph, T Shay, A Regev, R Gazit, Rossi D, T Kreslawsky, Bohmer H von, A Bellemare-Pelletier, K Elpek, L Spelv, A Fletcher, D Malhotra, V Cremasco, S Turley, F Kim, TN Rao, A Wagers, and Immunological Genome Project. 
+		<b> Identification of transcriptional regulators in the mouse immune system</b>  
+		In <i> Consortium biology in immunology: the perspective from the Immunological Genome Project</i>, 2012.		
+		<br>
+	  </span>
+
+
+          <span id="journal9">
+		<br>
+		Emmanuel L Gautier, Tal Shay, Jennifer Miller, Melanie Greter, Claudia Jakubzick, Stoyan Ivanov, Julie Helft, Andrew Chow, Kutlu G Elpek, Simon Gordonov, Amin R Mazloom, Avi Ma'ayan, Wei-Jen Chua, Ted H Hansen, Shannon J Turley, Miriam Merad, Gwendalyn J Randolph, David H. Laidlaw, and Radu Jianu.
+		<b>Gene-expression profiles and transcriptional regulatory pathways that underlie the identity and diversity of mouse tissue macrophages</b>  
+		In <i> Nature Immunology </i>, 2012.		
+		<br>
+	  </span>
+
+          <span id="journal10">
+		<br>
+		D Malhotra, Anne L Fletcher, J Astarita, V Lukacs-Kornek, P Tayalia, SF Gonzalez, KG Elpek, SK Chang, K Knoblich, ME Hemler, MB Brenner, MC Carroll, DJ Mooney, SJ Turley, The Immunological Genome Project Consortium the, Y Zhou, SA Shinton, RR Hardy, NA Bezman, JC Sun, CC Kim, LL Lanier, J Miller, M Merad, AL Fletcher, A Bellemare-Pelletier, K Narayan, K Sylvia, J Kang, R Gazit, B Garrison, DJ Rossi, V Jojic, D Koller, Radu Jianu, David H. Laidlaw, J Costello, J Collins, N Cohen, P Brennan, T Shay, A Regev, F Kim, TN Rao, A Wagers, EL Gautier, C Jakubzick, GJ Randolph, P Monach, AJ Best, J Knell, A Goldrath, T Heng, T Kreslavsky, M Painter, D Mathis, and C Benoist.
+		<b>Transcriptional profiling of stroma from inflamed and resting lymph nodes defines immunological hallmarks</b>  
+		In <i> Nature Immunology </i>, 2012.		
+		<br>
+	  </span>
+
+          <span id="journal11">
+		<br>
+		Jennifer C Miller, Brian D Brown, Tal Shay, Emmanuel L Gautier, Vladimir Jojic, Ariella Cohain, Gaurav Pandey, Marylene Leboeuf, Kutlu G Elpek, Julie Helft, Daigo Hashimoto, Andrew Chow, Jeremy Price, Melanie Greter, Milena Bogunovic, Angelique Bellemare-Pelletier, Paul S Frenette, Gwendalyn J Randolph, Shannon J Turley, Miriam Merad, David H. Laidlaw, and Radu Jianu.
+		<b>Deciphering the transcriptional network of the dendritic cell lineage.</b>  
+		In <i> Nature Immunology </i>, 2012.		
+		<br>
+	  </span>
+
+
+<br><br><font size="4"><b><i>[2011]</i></b></font>
+
+
+          <span id="journal7">
+		<br>
+		Radu Jianu, Cagatay Demiralp, and David&nbsp;H. Laidlaw.
+		<b>Exploring brain connectivity with two-dimensional neural maps.</b>  
+		In <i> IEEE Transactions on Visualization and Computer Graphics (TVCG)</i> 2011.
+		&nbsp;<a href="./Jianu-2011-EBJ.pdf">(pdf)</a>
+
+		<br>
+	  </span>
+
+         <span id="conference11">
+		<br>
+		Cagatay Demiralp, Radu Jianu and David&nbsp;H. Laidlaw.
+		<b>Exploring brain connectivity with two-dimensional maps.</b>  
+		In <i> New Developments in the Visualization and Processing of Tensor Fields.</i> 2011.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/Demiralp-2011-EBC.pdf">(pdf)</a>
+
+		<br>
+	 </span>
+
+	  <span id="conference10">
+		<br>
+		Amalia Rusu, Andrew Fabian, Radu Jianu and Adrian Rusu.
+		<b>Using the Gestalt Principle of Closure to Alleviate the Edge Crossing Problem in Graph Drawings.</b>  
+		In <i> 15th International Conference on Information Visualisation (IV), </i> 2011.
+		<br>
+
+	  </span>
+
+	  <span id="poster6">
+		<br>
+		Radu Jianu and David&nbsp;H. Laidlaw.
+		<b>Guiding Visualization Users Towards Improved Analytic Strategies Using Small Interface Changes</b>  
+		In <i>  IEEE Visualization 2011 Poster Compendium, </i> 2011.
+		<br>
+
+	  </span>
+
+
+ <br><br><font size="4"><b><i>[2010]</i></b></font>
+          <span id="conference9">
+		<br>
+		Steven Gomez, Radu Jianu, and David&nbsp;H. Laidlaw.
+		<b>A Fiducial-Based Tangible User Interface for White Matter Tractography.</b>  
+		In <i> Proceedings of International Symposium on Visual Computing '10,</i> 2010.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Gomez-2010-FBT.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="conference8">
+		<br>
+		Radu Jianu, Cagatay Demiralp, and David&nbsp;H. Laidlaw.
+		<b>Visualizing and exploring tractograms via two-dimensional connectivity maps.</b>  
+		In <i> Proceedings of ISMRM'10,</i> 2010.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2010-VET.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="conference7">
+		<br>
+		Radu Jianu and David&nbsp;H. Laidlaw.
+		<b>Visualizing Gene Co-Expression as Google Maps.</b>  
+		In <i> Proceedings of International Symposium on Visual Computing '10,</i> 2010.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2010-VGC.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="poster5">
+		<br>
+		Radu Jianu and David&nbsp;H. Laidlaw.
+		<b>Visualizing Protein Interaction Networks as Google Maps.</b>  
+		In <i> IEEE Visualization 2010 Poster Compendium,</i> 2010.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2010-VPI.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="poster4">
+		<br>
+		<span style="color:red">(Best Poster Award) </span> Radu Jianu, Cagatay Demiralp, and David&nbsp;H. Laidlaw.
+		<b>Exploring brain connectivity with two-dimensional neural maps.</b>  
+		In <i> IEEE Visualization 2010 Poster Compendium,</i> 2010.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2010-EBC.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+<br><br><font size="4"><b><i>[2009]</i></b></font>
+          <span id="journal4">
+		<br>
+		Radu Jianu, Cagatay Demiralp, and David&nbsp;H. Laidlaw.
+		<b>Exploring 3D DTI Fiber Tracts with Linked 2D Representations.</b>  
+		In <i> IEEE Transactions on Visualization and Computer Graphics (TVCG)</i> 2009.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2009-E3D.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="journal3">
+		<br>
+		R. Jianu, K. Yu, L. Cao, V. Nguyen, A. Salomon and D.H. Laidlaw.
+		<b>Visual integration of quantitative proteomic data, pathways and protein interactions.</b>  
+		In <i> IEEE Transactions on Visualization and Computer Graphics (TVCG)</i> 2009.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2009-EVI.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="conference6">
+		<br>
+		R. Jianu, A. Rusu, A.J. Fabian and D.H. Laidlaw.
+		<b>A Coloring Solution to the Edge Crossing Problem.</b>  
+		In <i> Proceedings of the 2009 13th International Conference on Information Visualisation.</i> 2009.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2009-CSE.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="journal2">
+		<br>
+		V. Nguyen, L. Cao, J.T. Lin, N. Hung, A. Ritz, K. Yu, R. Jianu, S.P. Ulin, B.J. Raphael, D.H. Laidlaw and A. Salomon.
+		<b>A new approach for quantitative phosphoproteomic dissection of signaling pathways applied to T cell receptor activation.</b>  
+		In <i> Molecular and Cellular Proteomics </i> 2009.
+		<br>
+
+	  </span>
+
+<br><br><font size="4"><b><i>[2008]</i></b></font>
+          <span id="journal1">
+		<br>
+		T.S. Heng, M. W Painter and Immunological Genome Project Consortium.
+		<b>The Immunological Genome Project: networks of gene expression in immune cells.</b>  
+		In <i> Nature Immunology Oct.</i> 2008.
+		<br>
+
+	  </span>
+
+
+<br><br><font size="4"><b><i>[2007]</i></b></font>
+          <span id="conference5">
+		<br>
+		K. Yu, L. Cao, R. Jianu, R. Park, C. Gatsonis, D.H. Laidlaw and A. Salomon.
+		<b>A software suite to expedite the study of cell signaling pathway: automated acquisition, organization and annotation.</b>  
+		In <i> 55 th ASMS Conference Proceedings.</i> 2007.
+		<br>
+
+	  </span>
+
+          <span id="conference4">
+		<br>
+		A. Rusu, C. Santiago and R. Jianu.
+		<b>Real-time Interactive Visualization of Information Hierarchies.</b>  
+		In <i> 11th International Conference on Information Visualization,</i> 2007.
+		<br>
+
+	  </span>
+
+          <span id="poster3">
+		<br>
+		M.Kostandov, J. Schwertfeger, O.C Jenkins, R. Jianu and others.
+		<b>Robot gaming and learning using augmented reality.</b>  
+		In <i> ACM SIGGRAPH 2007, Poster track.</i> 2007.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Kostandov-2007-RGL.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+
+<br><br><font size="4"><b><i>[2006]</i></b></font>
+          <span id="conference3">
+		<br>
+		A. Rusu, R. Jianu, C. Santiago and C. Clement.
+		<b>An Experimental Study on Algorithms for Drawing Binary Trees.</b>  
+		In <i> Proceedings of the 2006 Asia-Pacific Symposium on Information Visualisation</i> 2006.
+		<br>
+
+	  </span>
+
+          <span id="conference2">
+		<br>
+		A. Rusu, C. Clement and R. Jianu.
+		<b>Adaptive Binary-Trees Visualization with Respect to User-Specified Quality Measures.</b>  
+		In <i> 10th Conference on Information Visualization,</i> 2006.
+		<br>
+
+	  </span>
+
+          <span id="poster2">
+		<br>
+		R. Jianu, A. Salomon and D.H. Laidlaw.
+		<b>Visualizing Phosphorilation Experiments Data in the Context of Known Protein Interactions.</b>  
+		In <i> IEEE InfoVis '06, Poster Compendium,</i> 2006.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Jianu-2006-PED.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+          <span id="poster1">
+		<br>
+		M, Kostandov, R. Jianu, W. Zhou, and T. Moscovich.
+		<b>Interactive Layered Character Animation in Immersive Virtual Environments.</b>  
+		In <i> ACM SIGGRAPH 2006, Poster Track.</i> 2006.
+		&nbsp;<a href="http://www.cs.brown.edu/research/vis/docs/pdf/g/Kostandov-2006-ILC.pdf.html">(pdf)</a>
+
+		<br>
+	  </span>
+
+<br><br><font size="4"><b><i>[2005]</i></b></font>
+<br>
+
+<br><br><font size="4"><b><i>[2004]</i></b></font>
+          <span id="conference1">
+		<br>
+		R. Jianu, A. Rusu, V. Anand and K. Hansen.
+		<b>Area efficient visualization of Web Data.</b>  
+		In <i> Proc. 5th International Conference on Internet Computing</i> 2004.
+		<br>
+
+	  </span>
+
+		</td></tr></table>
+		</td>
+
+		<td width="210px" valign="top">
+		</td>
+		
+	</tr></table></td></tr>
 </table>
+
 </body>
+
 </html>
